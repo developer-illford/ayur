@@ -150,3 +150,26 @@ function triggerAutoResume() {
 // Initial start
 startAutoScroll();
 
+// JS for click-to-enlarge
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = modal.querySelector(".close");
+
+// Apply to all images (or restrict to certain class)
+document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", function () {
+        modal.style.display = "flex"; // use flex to center
+        modalImg.src = this.src;       // show clicked image
+    });
+});
+
+// Close modal
+closeBtn.onclick = () => modal.style.display = "none";
+
+// Close when clicking outside image
+modal.onclick = (e) => {
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+};
+

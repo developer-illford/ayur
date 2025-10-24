@@ -1,24 +1,25 @@
 
-  // Click to open image in lightbox
-  const images = document.querySelectorAll(".destination-card img");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
 
-  images.forEach(img => {
-    img.addEventListener("click", () => {
-      lightbox.style.display = "block";
-      lightboxImg.src = img.src;
+// Select all images you want clickable
+document.querySelectorAll("img").forEach(img => {
+    img.style.cursor = "pointer"; // show pointer
+    img.addEventListener("click", function () {
+        modal.style.display = "flex"; // show modal
+        modalImg.src = this.src;       // set clicked image
     });
-  });
+});
 
-  function closeLightbox() {
-    lightbox.style.display = "none";
-  }
+// Close modal when clicking close button
+document.querySelector(".close").onclick = function () {
+    modal.style.display = "none";
+}
 
-  // Optional: close when clicking outside the image
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      closeLightbox();
+// Close modal when clicking outside the image
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
-  });
+}
 

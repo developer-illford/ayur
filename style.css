@@ -18,6 +18,16 @@ body {
     margin: 0;
 }
 
+/* Hover zoom effect for all images */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* slightly enlarge on hover */
+}
+
+
 /* Hero Section */
 .destination-hero-section {
     position: relative;
@@ -961,14 +971,15 @@ body {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     color: #815153;
+    padding-top: 80px;
 }
 
 .ayurvedic-cures-description {
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.5px;
-    width: 50%;
-    padding-top: 30px;
+    width: 80%;
+    padding-top: 10px;
 }
 
 .ayurvedic-cures-heading {
@@ -986,6 +997,23 @@ body {
 .ayurvedic-cures-section {
     padding: 0px 10%;
 }
+
+.ayurvedic-cures-wrapper {
+    display: flex;
+    align-items: flex-start; 
+ 
+    padding-top: 30px;
+}
+
+.ayurvedic-cures-text {
+    flex: 1; 
+}
+
+.ayurvedic-cure {
+    max-width: 600px; 
+    height: auto;
+}
+
 
 .cures-card img {
     width: 100%;
@@ -1185,7 +1213,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 100px;
+    padding: 90px 100px;
 }
 
 .ayurveda-retreats-card {
@@ -1197,7 +1225,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding:20px;
     box-shadow: 0px 0px 20px 0px #00000061;
 }
 
@@ -1552,14 +1580,19 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.25);
+  /* background: rgba(0, 0, 0, 0.25); */
+}
+
+.overlay-content p{
+    width: 60%;
+    font-size: 20px;
 }
 
 .overlay-intro {
@@ -1618,7 +1651,7 @@ body {
   line-height: 1;
 }
 .exclusive-service{
-     width: 100% !important;
+    width: 100% ;
     display: flex;
     justify-content: center; 
     align-items: center;    
@@ -1672,20 +1705,152 @@ body {
   color: #fff;
 }
 
+.home-healing-journey {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 20% !important;
+}
+
+.home-cta-button {
+    padding: 10px 50px;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none;
+    background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
+    margin-top: 30px;
+}
+.cta-overlay-content {
+  height: 100%;
+  padding:0px  40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+
+}
+
+.content-container{
+    width: 80%;
+    height: max-content;
+}
+
+.leaf-wrapper {
+  display: flex;
+  align-items: flex-start; /* align leaf with top of text */
+  gap: 10px; /* space between leaf and paragraph */
+}
+
+.leaf-icon {
+  width: 100px !important; /* small size for the leaf */
+  height: auto;
+  margin-top: 4px; /* fine-tune vertical alignment */
+}
+
+.marquee-container {
+      width: 90%;
+      overflow: hidden;
+      position: relative;
+      cursor: grab;
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 20px;
+      animation: scroll 15s linear infinite;
+      user-select: none;
+    }
+
+    .marquee-container:active {
+      cursor: grabbing;
+    }
+
+    .marquee-track img {
+      width: 300px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    /* Alternate hover animation */
+    .marquee-track img:nth-child(odd):hover {
+      transform: translateY(15px) scale(1.05);
+    }
+
+    .marquee-track img:nth-child(even):hover {
+      transform: translateY(-15px) scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Duplicate images for smooth looping */
+    .marquee-track::after {
+      content: "";
+      display: flex;
+    }
 
 
 
 
+.ayurveda-heading h4 {
+   
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 15px;
+}
 
+.ayurveda-heading h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #815153;
+    text-align: center;
+    font-size: 60px;
+}
 
+.about-ayurveda-description {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    width: 80%;
+    padding-top: 10px;
+    
+}
 
+.ayurveda-heading  {
+    position: relative;
+    /* width: max-content; */
+    
+}
 
+.ayurveda-heading img {
+    position: absolute;
+    width: 80px;
+    left: 850px;
+    bottom: -15px;
+}
 
+.what-is-ayurveda {
+    padding: 0px 10%;
+}
 
+.ayurvedic-cures-wrapper {
+    display: flex;
+    align-items: flex-start; 
+     gap: 40px;
+    padding-top: 30px;
+}
 
-
-
-
-
-
-
+.ayurvedic-cures-text {
+    flex: 1; 
+}
