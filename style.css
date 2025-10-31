@@ -40,7 +40,7 @@ img:hover {
 }
 
 /* Overlay for darker readability */
-.hero-section::after {
+.destination-hero-section:after {
     content: "";
     position: absolute;
     inset: 0;
@@ -162,8 +162,10 @@ img:hover {
 
 .hero-content h1 {
     font-size: 38px;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+
 }
 
 .divider {
@@ -1887,15 +1889,13 @@ img:hover {
     /* ensures overlay doesn’t overflow */
 }
 
-.about-hero-section::before {
+.about-hero-section:after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-    /* adjust colors/opacity */
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
 }
-
 /* make sure your content stays above the overlay */
 .about-hero-section>* {
     position: relative;
@@ -2247,102 +2247,423 @@ img:hover {
 }
 
 .summer-offer {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .offer-heading {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .offer-icon {
-  position: absolute;
-  left: -60px;   /* shift image left of text */
-  top: -25px;    /* raise slightly above h3 */
-  width: 80px;   /* adjust to match badge size */
-  height: auto;
+    position: absolute;
+    left: -60px;
+    /* shift image left of text */
+    top: -25px;
+    /* raise slightly above h3 */
+    width: 80px;
+    /* adjust to match badge size */
+    height: auto;
 }
 
 .offer-text {
-  text-align: center; /* keeps h3 + h4 centered */
+    text-align: center;
+    /* keeps h3 + h4 centered */
 }
 
 .summer-offer h3 {
-  color: #815153;
-  font-size: 35px;
-  margin: 0;
-  line-height: 1.1;
+    color: #815153;
+    font-size: 35px;
+    margin: 0;
+    line-height: 1.1;
 }
 
 .summer-offer h4 {
-  color: #313131;
-  font-size: 25px;
-  margin: 5px 0 0;
-  line-height: 1.2;
-  padding-bottom: 20px;
+    color: #313131;
+    font-size: 25px;
+    margin: 5px 0 0;
+    line-height: 1.2;
+    padding-bottom: 20px;
 }
 
 .summer-offer p {
-  color: #313131;
-  font-size: 20px;
-  text-align: center;
-  width: 80%;
+    color: #313131;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
 }
 
 
 .yoga-meditation-section {
-  position: relative;
-  background: url("images/Yoga/yoga-meditation.png") center center / cover no-repeat;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  overflow: hidden;
+    position: relative;
+    background: url("images/Yoga/yoga-meditation.png") center center / cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: hidden;
 }
 
 .yoga-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.1); /* optional subtle dark overlay */
-  display: flex;
-  align-items: center;
-  justify-content:center;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    /* optional subtle dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .yoga-content {
-   background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(2px);
-  border-radius: 15px;
-   padding: 25px 25px; 
-  text-align: center;
-  max-width: 500px;
-   transform: translateY(90px);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    padding: 25px 25px;
+    text-align: center;
+    max-width: 500px;
+    transform: translateY(90px);
 }
 
 .yoga-and-meditation img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .yoga-content h2 {
-  font-size: 30px;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #fff;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
 }
 
 .yoga-desc p {
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.8;
-  margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 10px;
 }
+
+.yoga-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.yoga-section h3 {
+    font-size: 35px;
+    color: #815153;
+    text-align: center;
+    /* margin-bottom: 30px; */
+}
+
+/* New Flex Container */
+.yoga-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 70%;
+    margin: 0 auto 50px;
+}
+
+.yoga-flex img {
+    /* width: 160px; */
+    height: auto;
+    margin-top: -80px;
+
+}
+
+.yoga-flex p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #313131;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .yoga-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .yoga-flex img {
+        width: 120px;
+    }
+
+    .yoga-flex p {
+        width: 90%;
+    }
+}
+
+.who-we-serve {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 50px 40px;
+
+
+}
+
+.who-we-serve h3 {
+    color: #313131;
+    font-size: 26px;
+    text-align: left;
+}
+
+.who-we-serve p {
+    text-align: left;
+    color: #313131;
+    font-size: 20px;
+}
+
+.yoga-section li {
+    text-align: left;
+}
+
+.yoga-gallery {
+    position: relative;
+    background-color: #f4efe9;
+    /* beige base */
+    padding: 2rem 0;
+}
+
+.gallery-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Brown bar (partially behind last image) */
+.gallery-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -90px;
+    /* must have 'px' */
+    right: 0;
+    width: 70%;
+    height: 55%;
+    background-color: #815153;
+    z-index: 0;
+    /* behind the images */
+    border-top-left-radius: 4px;
+}
+
+/* Image row */
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+    /* above brown bar */
+    margin-left: -370px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 280px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        max-width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+.yoga-cta-content {
+    color: #313131;
+    font-size: 18px;
+    text-align: center;
+    width: 65%;
+}
+
+.yoga-cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.yoga-why-choose-us-img {
+    width: 95%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.yoga-healing-journey {
+
+    color: #815153;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700 !important;
+    margin-left: 60px;
+    padding-top: 50px;
+}
+
+.yoga-healing-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.yoga-healing-row img{
+    padding-top: 50px;
+}
+.yoga-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+.ayurveda-experiences-hero-section{
+    position: relative;
+    height: 100vh;
+    background: url('images/ayurveda-experiences/ayurveda-experiences-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.ayurveda-experiences-hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+
+.ayur-exp {
+  background: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 60px;
+  /* border-radius: 8px; */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.ayur-exp ul {
+  list-style-type: disc;
+  text-align: left;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.8;
+  columns: 3;              /* creates 3 columns */
+  column-gap: 60px;        /* space between columns */
+  padding-left: 30px;
+  margin: 0;
+}
+
+.ayur-exp li {
+  break-inside: avoid;     /* prevents items from splitting */
+  margin-bottom: 20px;
+}
+
+.ayur-exp strong {
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.ae-heading-wrapper h2 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 400;
+  color: #815153;
+  text-align: center;
+  padding-top: 50px; /* gives space for the leaf above */
+  margin-bottom: 40px;
+}
+
+
+.ae-heading-wrapper p {
+  width: 70%;
+  margin: 40px auto 0;
+  color: #444;
+  font-size: 17px; 
+}
+.ae-heading-wrapper h2 img {
+   position: absolute;
+  bottom: 30%;
+  right: 59%;
+  /* transform: translate(-150%, -60%); */
+
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .ayur-exp ul {
+    columns: 2;
+  }
+  .ae-heading-wrapper p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ayur-exp ul {
+    columns: 1;
+  }
+  .ayur-exp {
+    width: 90%;
+    padding: 25px;
+  }
+}
+.healing-beyond-borders {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  flex-direction: column;
+}
+
+.healing-beyond-borders img {
+  width: 80%;
+  padding-top: 50px;
+
+}
+.healing-beyond-borders h6{
+   color: #313131;
+  font-size: 18px;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 10%;
+  padding-top: 20px;
+}
+.healing-beyond-borders h4{
+   color: #313131;
+  font-size: 28px;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 10%;
+}
+.healing-beyond-borders p{
+   color: #313131;
+  font-size: 18px;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 10%;
+  width: 91%;
+}
+
