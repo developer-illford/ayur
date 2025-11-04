@@ -1420,6 +1420,14 @@ img:hover {
     justify-content: space-between;
 }
 
+.home-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
 .home-hero-content h2 {
     font-family: "Raleway", sans-serif;
     margin-right: 400px !important;
