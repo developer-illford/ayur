@@ -182,7 +182,7 @@ img:hover {
     width: 555px;
     height: 30px;
     /* increase to see clearly */
-    background: url("../images/Destinations/divider.png") no-repeat center;
+    background: url("images/Destinations/divider.png") no-repeat center;
     background-size: contain;
     /* ensures full image is visible */
     background-repeat: no-repeat;
