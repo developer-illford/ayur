@@ -1707,8 +1707,8 @@ img:hover {
 .cta-button {
     padding: 12px 80px;
     /* background-color: transparent; */
-    color: #4b2e2b;
-    border: 1px solid #4b2e2b;
+    color: #815153;
+    border: 1px solid #815153;
     /* border-radius: 4px; */
     cursor: pointer;
     font-size: 1rem;
@@ -1718,7 +1718,7 @@ img:hover {
 }
 
 .cta-button:hover {
-    background-color: #4b2e2b;
+    background-color: #815153;
     color: #fff;
 }
 
@@ -2645,7 +2645,7 @@ img:hover {
 }
 .healing-beyond-borders h6{
    color: #313131;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   align-self: flex-start;
   padding-left: 10%;
@@ -2667,3 +2667,218 @@ img:hover {
   width: 91%;
 }
 
+/* ---------- AYURVEDA GALLERY STYLING ---------- */
+/* ===== AE Gallery Styling ===== */
+.ae-gallery-section {
+  max-width: 1200px;   /* Keeps equal margin left and right */
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
+/* image sizing */
+.ae-img-left,
+.ae-img-right {
+  height: 480px;
+  object-fit: cover;
+
+}
+
+/* text style */
+.ae-card h6 {
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #313131;
+  font-size: 16px;
+}
+
+
+.ae-card h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #313131;
+}
+.ae-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #313131;
+}
+/* make the right image look portrait/vertical */
+.ae-img-right {
+  width: 70% !important;               /* adjust between 60%–75% to get the perfect narrow look */
+  margin: 0 auto;           /* centers the narrower image inside its column */
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+.right-img {
+  width: 90%;           /* reduces width to make it more vertical */
+  height: 440px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .right-img {
+    width: 100%;        /* full width on small screens */
+  }
+}
+
+/* responsive fix */
+@media (max-width: 992px) {
+  .ae-img-left,
+  .ae-img-right {
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ae-img-left,
+  .ae-img-right {
+    height: auto;
+    object-fit: contain;
+  }
+}
+.facilities-description{
+    font-size: 17px;
+}
+/* ------------------------------
+   Exclusive Ayurveda Offers (Bootstrap)
+----------------------------------- */
+.exclusive-offers {
+  background-color: #fbf6ef;
+  color: #3e2f1c;
+  font-family: "Marcellus", serif;
+}
+
+/* Header */
+.exclusive-offers h2 {
+  color: #815153;
+  font-size: 2rem;
+}
+
+.exclusive-offers .offers-subtitle {
+  font-size: 18px;
+  color: #313131;
+
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 4px;
+}
+
+/* Offer text */
+.exclusive-offers h5 {
+  color: #4b2d1a;
+  font-size: 1.1rem;
+}
+
+.exclusive-offers ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.exclusive-offers p {
+  line-height: 1.7;
+}
+
+.exclusive-offers .small {
+  font-size: 0.9rem;
+  color: #6b4f3a !important;
+}
+
+/* Image Styling */
+.offer-image img {
+  /* border-radius: 10px; */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.offer-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.offer-text h5{
+    color:#815153 ;
+    font-size: 25px;
+    text-align: left;
+    width: 90%;
+}
+.offer-text p{
+    color: #313131;
+    font-size: 18px;
+    text-align: left;
+    width: 80%;
+}
+.offer-text ul{
+    text-align: left;
+    font-size: 18px;
+}
+.offer-image h6{
+    color: #313131;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+.offer-image h4{
+    color: #313131;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.highlight-offer{
+    color: #815153;
+    font-weight: 400;
+}
+.offer3{
+    color:#815153 !important;
+}
+/* Hero Section */
+.exclusive-offers-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/exclusive offer/exclusive-offer-banner.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Overlay for darker readability */
+.exclusive-offers-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  width: 300px;
+  height: 540px;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover animations */
+.image-card.down:hover {
+  transform: translateY(45px);
+}
+
+.image-card.up:hover {
+  transform: translateY(-45px);
+}
