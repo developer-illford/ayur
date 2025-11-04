@@ -1904,6 +1904,7 @@ img:hover {
     background: rgba(0, 0, 0, 0.45);
     z-index: 0;
 }
+
 /* make sure your content stays above the overlay */
 .about-hero-section>* {
     position: relative;
@@ -2538,9 +2539,11 @@ img:hover {
     align-items: center;
     justify-content: space-between;
 }
-.yoga-healing-row img{
+
+.yoga-healing-row img {
     padding-top: 50px;
 }
+
 .yoga-hero-section:after {
     content: "";
     position: absolute;
@@ -2548,7 +2551,8 @@ img:hover {
     background: rgba(0, 0, 0, 0.2);
     z-index: 0;
 }
-.ayurveda-experiences-hero-section{
+
+.ayurveda-experiences-hero-section {
     position: relative;
     height: 100vh;
     background: url('images/ayurveda-experiences/ayurveda-experiences-banner.png') center/cover no-repeat;
@@ -2556,6 +2560,7 @@ img:hover {
     flex-direction: column;
     justify-content: space-between
 }
+
 .ayurveda-experiences-hero-section::after {
     content: "";
     position: absolute;
@@ -2566,280 +2571,311 @@ img:hover {
 
 
 .ayur-exp {
-  background: #ffffff;
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px 60px;
-  /* border-radius: 8px; */
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    background: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 60px;
+    /* border-radius: 8px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .ayur-exp ul {
-  list-style-type: disc;
-  text-align: left;
-  color: #333;
-  font-size: 17px;
-  line-height: 1.8;
-  columns: 3;              /* creates 3 columns */
-  column-gap: 60px;        /* space between columns */
-  padding-left: 30px;
-  margin: 0;
+    list-style-type: disc;
+    text-align: left;
+    color: #333;
+    font-size: 17px;
+    line-height: 1.8;
+    columns: 3;
+    /* creates 3 columns */
+    column-gap: 60px;
+    /* space between columns */
+    padding-left: 30px;
+    margin: 0;
 }
 
 .ayur-exp li {
-  break-inside: avoid;     /* prevents items from splitting */
-  margin-bottom: 20px;
+    break-inside: avoid;
+    /* prevents items from splitting */
+    margin-bottom: 20px;
 }
 
 .ayur-exp strong {
-  font-weight: 600;
-  color: #1f1f1f;
+    font-weight: 600;
+    color: #1f1f1f;
 }
+
 .ae-heading-wrapper h2 {
-  position: relative;
-  font-size: 35px;
-  font-weight: 400;
-  color: #815153;
-  text-align: center;
-  padding-top: 50px; /* gives space for the leaf above */
-  margin-bottom: 40px;
+    position: relative;
+    font-size: 35px;
+    font-weight: 400;
+    color: #815153;
+    text-align: center;
+    padding-top: 50px;
+    /* gives space for the leaf above */
+    margin-bottom: 40px;
 }
 
 
 .ae-heading-wrapper p {
-  width: 70%;
-  margin: 40px auto 0;
-  color: #444;
-  font-size: 17px; 
+    width: 70%;
+    margin: 40px auto 0;
+    color: #444;
+    font-size: 17px;
 }
-.ae-heading-wrapper h2 img {
-   position: absolute;
-  bottom: 30%;
-  right: 59%;
-  /* transform: translate(-150%, -60%); */
 
-  height: auto;
+.ae-heading-wrapper h2 img {
+    position: absolute;
+    bottom: 30%;
+    right: 59%;
+    /* transform: translate(-150%, -60%); */
+
+    height: auto;
 }
 
 @media (max-width: 992px) {
-  .ayur-exp ul {
-    columns: 2;
-  }
-  .ae-heading-wrapper p {
-    width: 85%;
-  }
+    .ayur-exp ul {
+        columns: 2;
+    }
+
+    .ae-heading-wrapper p {
+        width: 85%;
+    }
 }
 
 @media (max-width: 576px) {
-  .ayur-exp ul {
-    columns: 1;
-  }
-  .ayur-exp {
-    width: 90%;
-    padding: 25px;
-  }
+    .ayur-exp ul {
+        columns: 1;
+    }
+
+    .ayur-exp {
+        width: 90%;
+        padding: 25px;
+    }
 }
+
 .healing-beyond-borders {
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .healing-beyond-borders img {
-  width: 80%;
-  padding-top: 50px;
+    width: 80%;
+    padding-top: 50px;
 
 }
-.healing-beyond-borders h6{
-   color: #313131;
-  font-size: 16px;
-  text-align: left;
-  align-self: flex-start;
-  padding-left: 10%;
-  padding-top: 20px;
+
+.healing-beyond-borders h6 {
+    color: #313131;
+    font-size: 16px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-top: 20px;
 }
-.healing-beyond-borders h4{
-   color: #313131;
-  font-size: 28px;
-  text-align: left;
-  align-self: flex-start;
-  padding-left: 10%;
+
+.healing-beyond-borders h4 {
+    color: #313131;
+    font-size: 28px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 10%;
 }
-.healing-beyond-borders p{
-   color: #313131;
-  font-size: 18px;
-  text-align: left;
-  align-self: flex-start;
-  padding-left: 10%;
-  width: 91%;
+
+.healing-beyond-borders p {
+    color: #313131;
+    font-size: 18px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 10%;
+    width: 91%;
 }
 
 /* ---------- AYURVEDA GALLERY STYLING ---------- */
 /* ===== AE Gallery Styling ===== */
 .ae-gallery-section {
-  max-width: 1200px;   /* Keeps equal margin left and right */
-  margin: 0 auto;
-  padding: 0 30px;
+    max-width: 1200px;
+    /* Keeps equal margin left and right */
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 
 /* image sizing */
 .ae-img-left,
 .ae-img-right {
-  height: 480px;
-  object-fit: cover;
+    height: 480px;
+    object-fit: cover;
 
 }
 
 /* text style */
 .ae-card h6 {
-  letter-spacing: 2px;
-  font-weight: 400;
-  color: #313131;
-  font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #313131;
+    font-size: 16px;
 }
 
 
 .ae-card h4 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #313131;
+    font-size: 24px;
+    font-weight: 400;
+    color: #313131;
 }
+
 .ae-card p {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #313131;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #313131;
 }
+
 /* make the right image look portrait/vertical */
 .ae-img-right {
-  width: 70% !important;               /* adjust between 60%–75% to get the perfect narrow look */
-  margin: 0 auto;           /* centers the narrower image inside its column */
-  height: 480px;
-  object-fit: cover;
-  display: block;
+    width: 70% !important;
+    /* adjust between 60%–75% to get the perfect narrow look */
+    margin: 0 auto;
+    /* centers the narrower image inside its column */
+    height: 480px;
+    object-fit: cover;
+    display: block;
 }
+
 .right-img {
-  width: 90%;           /* reduces width to make it more vertical */
-  height: 440px;
-  object-fit: cover;
+    width: 90%;
+    /* reduces width to make it more vertical */
+    height: 440px;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
-  .right-img {
-    width: 100%;        /* full width on small screens */
-  }
+    .right-img {
+        width: 100%;
+        /* full width on small screens */
+    }
 }
 
 /* responsive fix */
 @media (max-width: 992px) {
-  .ae-img-left,
-  .ae-img-right {
-    height: 360px;
-  }
+
+    .ae-img-left,
+    .ae-img-right {
+        height: 360px;
+    }
 }
 
 @media (max-width: 576px) {
-  .ae-img-left,
-  .ae-img-right {
-    height: auto;
-    object-fit: contain;
-  }
+
+    .ae-img-left,
+    .ae-img-right {
+        height: auto;
+        object-fit: contain;
+    }
 }
-.facilities-description{
+
+.facilities-description {
     font-size: 17px;
 }
+
 /* ------------------------------
    Exclusive Ayurveda Offers (Bootstrap)
 ----------------------------------- */
 .exclusive-offers {
-  background-color: #fbf6ef;
-  color: #3e2f1c;
-  font-family: "Marcellus", serif;
+    background-color: #fbf6ef;
+    color: #3e2f1c;
+    font-family: "Marcellus", serif;
 }
 
 /* Header */
 .exclusive-offers h2 {
-  color: #815153;
-  font-size: 2rem;
+    color: #815153;
+    font-size: 2rem;
 }
 
 .exclusive-offers .offers-subtitle {
-  font-size: 18px;
-  color: #313131;
+    font-size: 18px;
+    color: #313131;
 
-  display: inline-block;
-  padding-bottom: 4px;
-  margin-top: 4px;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-top: 4px;
 }
 
 /* Offer text */
 .exclusive-offers h5 {
-  color: #4b2d1a;
-  font-size: 1.1rem;
+    color: #4b2d1a;
+    font-size: 1.1rem;
 }
 
 .exclusive-offers ul li {
-  margin-bottom: 6px;
-  font-size: 0.95rem;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
 }
 
 .exclusive-offers p {
-  line-height: 1.7;
+    line-height: 1.7;
 }
 
 .exclusive-offers .small {
-  font-size: 0.9rem;
-  color: #6b4f3a !important;
+    font-size: 0.9rem;
+    color: #6b4f3a !important;
 }
 
 /* Image Styling */
 .offer-image img {
-  /* border-radius: 10px; */
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+    /* border-radius: 10px; */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .offer-image img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.offer-text h5{
-    color:#815153 ;
+.offer-text h5 {
+    color: #815153;
     font-size: 25px;
     text-align: left;
     width: 90%;
 }
-.offer-text p{
+
+.offer-text p {
     color: #313131;
     font-size: 18px;
     text-align: left;
     width: 80%;
 }
-.offer-text ul{
+
+.offer-text ul {
     text-align: left;
     font-size: 18px;
 }
-.offer-image h6{
+
+.offer-image h6 {
     color: #313131;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 2px;
     padding-top: 20px;
 }
-.offer-image h4{
+
+.offer-image h4 {
     color: #313131;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 400;
 }
-.highlight-offer{
+
+.highlight-offer {
     color: #815153;
     font-weight: 400;
 }
-.offer3{
-    color:#815153 !important;
+
+.offer3 {
+    color: #815153 !important;
 }
+
 /* Hero Section */
 .exclusive-offers-hero-section {
     position: relative;
@@ -2860,33 +2896,314 @@ img:hover {
 }
 
 .image-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .image-card {
-  width: 300px;
-  height: 540px;
-  overflow: hidden;
-  transition: transform 0.6s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 540px;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .image-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Hover animations */
 .image-card.down:hover {
-  transform: translateY(45px);
+    transform: translateY(45px);
 }
 
 .image-card.up:hover {
-  transform: translateY(-45px);
+    transform: translateY(-45px);
+}
+
+.contact-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/contact/contact-hero-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* ensures overlay doesn’t overflow */
+}
+
+.contact-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+/* make sure your content stays above the overlay */
+.contact-hero-section>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.footer-link a {
+    color: #585858;
+    text-decoration: none;
+}
+
+.contact-footer-icons {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+/* Remove Bootstrap column spacing effect */
+.contact-footer-icons .col-md-3 {
+    display: inline-block;
+    /* make all icons sit next to each other */
+    width: auto;
+    /* shrink width to image size */
+    margin: 0 45px;
+    /* control spacing between icons */
+    float: none;
+    /* prevent bootstrap float issues */
+}
+
+.contact-footer-icons img {
+    width: 70px;
+    /* size of icons */
+}
+
+.contact-heading-wrapper h2 {
+    color: #815153;
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+.contact-heading-wrapper p {
+    color: #313131;
+    font-size: 18px;
+}
+
+/* ----- CONTACT SECTION ----- */
+.contact-section {
+    text-align: center;
+    padding: 10px 5%;
+
+}
+
+.contact-section h2 {
+    color: #815153;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.contact-box {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    /* background-color: #fefbf8; */
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.7;
+    /* box-shadow: 0 0 2px #ddd; */
+}
+
+.phone-icon {
+    width: 21px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+.location-icon {
+    width: 60px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+.email-icon {
+    width: 25px;
+    height: 26px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----- FORM ----- */
+.contact-form {
+    flex: 2;
+    min-width: 320px;
+    padding: 80px 20px 20px;
+
+    min-height: 500px !important;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background-color: #f8f5ef;
+    font-size: 14px;
+
+}
+
+textarea {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background-color: #f8f5ef;
+    height: 150px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: #313131;
+    font-size: 16px;
+}
+
+textarea::placeholder {
+    color: #313131;
+    font-size: 16px;
+}
+
+button {
+    background-color: #815153;
+    color: white;
+    border: none;
+    padding: 8px 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    /* keeps it only as wide as its text */
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #815153;
+}
+
+.contact-form form {
+    text-align: left;
+    /* align button to the left */
+}
+
+
+/* ----- RESORT FOOTER ----- */
+.resort-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;        /* makes all boxes equal height */
+    flex-wrap: wrap;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.resort-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    position: relative;          /* needed for custom divider */
+}
+
+/* vertical divider between boxes */
+.resort-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15%;                    /* adjust vertical start */
+    right: 0;
+    width: 1px;                  /* thin like hr */
+    height: 100%;                
+    background-color: #a5a5a5;   /* color of line */
+    opacity: 0.8;
+}
+
+.resort-item h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #313131;
+    letter-spacing: 0.5px;
+}
+
+.resort-item p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 900px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box,
+    .contact-form {
+        width: 100%;
+    }
+
+    .resort-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* ----- SOCIAL CONNECT ----- */
+.social-connect {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.connect-title {
+  font-size: 19px;
+  color: #815153;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.social-connect-icons a {
+  color: #815153;
+  font-size: 25px;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
+}
+
+.social-connect-icons a:hover {
+  color: #9e6d6d;
+  transform: scale(1.1);
 }
