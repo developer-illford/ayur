@@ -122,28 +122,45 @@ img:hover {
 
 /* --- SECOND ROW: Nav Links --- */
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 0;
-    padding: 25px 0 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 15px 25px;
+  margin: 0;
+  padding: 25px 0 0 0;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    /* letter-spacing: 0.5px; */
-    transition: color 0.3s ease;
-    font-family: "Raleway", sans-serif;
+/* ✅ Only move Ayurveda and Cottages down */
+.nav-links li:nth-child(8) {
+  grid-column: 4; /* Ayurveda under Yoga */
+  grid-row: 2;
 }
+
+
+.nav-links li:nth-child(9) {
+  grid-column: 5; /* Cottages under Ayurveda Experiences */
+  grid-row: 2;
+}
+
+/* Style the links */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  font-family: "Raleway", sans-serif;
+}
+
+
 
 .nav-links li:not(:last-child)::after {
     content: "|";
     margin-left: 15px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .nav-links a:hover {
@@ -1184,46 +1201,38 @@ img:hover {
     font-size: 17px;
 }
 
-.ayurveda-retreats {
-    background-color: #815153;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 50px 10px 80px 0px;
-
+.home-arc-section {
+    position: relative;
+    display: inline-block;
 }
 
-.ayurveda-retreats p {
-    color: #FFFFFF;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    text-align: center;
-    width: 50%;
-}
-
-.ayurveda-retreats img {
-    width: 157px;
-    height: 168px;
-}
-
-.ayurveda-retreats-background {
-    background: url(images/home/Vector.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.home-arc-section img {
     width: 100%;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 40px;
+    height: auto;
+    display: block;
 }
 
+.home-arc-section p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+    font-weight: 400;
+}
+.ayurveda-retreats-background {
+    position: relative;
+    margin-top: -280px; /* moves upward — adjust as needed */
+    z-index: 2; /* ensures it stays above the curved image section */
+}
 .ayurveda-retreats-card-col {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 90px 100px;
+    padding: 0px 100px;
 }
 
 .ayurveda-retreats-card {
@@ -1235,7 +1244,7 @@ img:hover {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 0px 20px 20px;
     box-shadow: 0px 0px 20px 0px #00000061;
 }
 
@@ -1820,7 +1829,7 @@ img:hover {
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
@@ -1867,8 +1876,8 @@ img:hover {
 .ayurveda-heading img {
     position: absolute;
     width: 80px;
-    left: 850px;
-    bottom: -15px;
+    left: 770px;
+    bottom: -5px;
 }
 
 .what-is-ayurveda {
@@ -3206,4 +3215,135 @@ button:hover {
 .social-connect-icons a:hover {
   color: #9e6d6d;
   transform: scale(1.1);
+}
+.ayurvedam-sreenilayam-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/ayurvedam-sreenilayam/ayurvedam-sreenilayam-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* ensures overlay doesn’t overflow */
+}
+
+.ayurvedam-sreenilayam-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+.text-center p{
+    font-size: 19px;
+    padding-top: 30px;
+    width: 70%;
+    color: #313131;
+    margin: 0 auto;
+
+}
+.ayurvedam-sreenilayam-service-img {
+  width: 100%;       /* makes the image fill its column */
+  height: 250px;     /* set fixed height */
+  object-fit: cover; /* crop nicely instead of stretching */
+  border-radius: 10px; /* optional: rounded corners */
+}
+.why-choose-us-content{
+    color: #313131;
+    font-size: 17px;
+    width: 65%;
+    text-align: center;
+}
+
+.why-choose-us-para{
+    color: #313131;
+    font-size: 17px;
+    text-align: center;
+    width: 90%;
+    margin-top: -60px;
+}
+.why-choose-us-para2{
+    color: #313131;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: -90px;
+}
+
+/* Smooth zoom animation */
+/* Base image styles */
+img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for enlarged (zoomed) image */
+.img-zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: auto !important;
+  height: auto !important;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 9999;
+  cursor: zoom-out;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+  transition: none; /* stop hover transition flicker */
+  pointer-events: auto;
+}
+
+#zoom-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+#zoom-container img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+/* Optional: dark background overlay when zoomed */
+/* #zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+  display: none;
+} */
+/* Disable hover effect while zoomed */
+.img-zoomed:hover {
+  transform: translate(-50%, -50%) scale(1);
+}
+/* Close button */
+
+#zoom-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #000;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+#zoom-close:hover {
+  background: #ff6961;
 }
