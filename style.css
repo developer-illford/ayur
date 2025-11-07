@@ -122,37 +122,39 @@ img:hover {
 
 /* --- SECOND ROW: Nav Links --- */
 .nav-links {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-  grid-template-rows: auto auto;
-  justify-content: center;
-  align-items: center;
-  gap: 15px 25px;
-  margin: 0;
-  padding: 25px 0 0 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 25px;
+    margin: 0;
+    padding: 25px 0 0 0;
 }
 
 /* ✅ Only move Ayurveda and Cottages down */
 .nav-links li:nth-child(8) {
-  grid-column: 4; /* Ayurveda under Yoga */
-  grid-row: 2;
+    grid-column: 4;
+    /* Ayurveda under Yoga */
+    grid-row: 2;
 }
 
 
 .nav-links li:nth-child(9) {
-  grid-column: 5; /* Cottages under Ayurveda Experiences */
-  grid-row: 2;
+    grid-column: 5;
+    /* Cottages under Ayurveda Experiences */
+    grid-row: 2;
 }
 
 /* Style the links */
 .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  transition: color 0.3s ease;
-  font-family: "Raleway", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: "Raleway", sans-serif;
 }
 
 
@@ -1223,11 +1225,15 @@ img:hover {
     text-align: center;
     font-weight: 400;
 }
+
 .ayurveda-retreats-background {
     position: relative;
-    margin-top: -280px; /* moves upward — adjust as needed */
-    z-index: 2; /* ensures it stays above the curved image section */
+    margin-top: -280px;
+    /* moves upward — adjust as needed */
+    z-index: 2;
+    /* ensures it stays above the curved image section */
 }
+
 .ayurveda-retreats-card-col {
     display: flex;
     align-items: center;
@@ -3131,7 +3137,8 @@ button:hover {
 .resort-info {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;        /* makes all boxes equal height */
+    align-items: stretch;
+    /* makes all boxes equal height */
     flex-wrap: wrap;
     padding: 40px 5%;
     text-align: center;
@@ -3141,18 +3148,22 @@ button:hover {
     flex: 1;
     min-width: 250px;
     padding: 20px;
-    position: relative;          /* needed for custom divider */
+    position: relative;
+    /* needed for custom divider */
 }
 
 /* vertical divider between boxes */
 .resort-item:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 15%;                    /* adjust vertical start */
+    top: 15%;
+    /* adjust vertical start */
     right: 0;
-    width: 1px;                  /* thin like hr */
-    height: 100%;                
-    background-color: #a5a5a5;   /* color of line */
+    width: 1px;
+    /* thin like hr */
+    height: 100%;
+    background-color: #a5a5a5;
+    /* color of line */
     opacity: 0.8;
 }
 
@@ -3187,35 +3198,37 @@ button:hover {
         text-align: center;
     }
 }
+
 /* ----- SOCIAL CONNECT ----- */
 .social-connect {
-  text-align: center;
-  padding: 30px 0 10px;
+    text-align: center;
+    padding: 30px 0 10px;
 }
 
 .connect-title {
-  font-size: 19px;
-  color: #815153;
-  margin-bottom: 10px;
-  font-weight: 500;
+    font-size: 19px;
+    color: #815153;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .social-connect-icons a {
-  color: #815153;
-  font-size: 25px;
-  margin: 0 12px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0;
+    color: #815153;
+    font-size: 25px;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
 }
 
 .social-connect-icons a:hover {
-  color: #9e6d6d;
-  transform: scale(1.1);
+    color: #9e6d6d;
+    transform: scale(1.1);
 }
+
 .ayurvedam-sreenilayam-hero-section {
     position: relative;
     height: 100vh;
@@ -3234,7 +3247,8 @@ button:hover {
     background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
-.text-center p{
+
+.text-center p {
     font-size: 19px;
     padding-top: 30px;
     width: 70%;
@@ -3242,78 +3256,73 @@ button:hover {
     margin: 0 auto;
 
 }
+
 .ayurvedam-sreenilayam-service-img {
-  width: 100%;       /* makes the image fill its column */
-  height: 250px;     /* set fixed height */
-  object-fit: cover; /* crop nicely instead of stretching */
-  border-radius: 10px; /* optional: rounded corners */
+    width: 100%;
+    /* makes the image fill its column */
+    height: 250px;
+    /* set fixed height */
+    object-fit: cover;
+    /* crop nicely instead of stretching */
+    border-radius: 10px;
+    /* optional: rounded corners */
 }
-.why-choose-us-content{
+
+.why-choose-us-content {
     color: #313131;
     font-size: 17px;
     width: 65%;
     text-align: center;
 }
 
-.why-choose-us-para{
-    color: #313131;
-    font-size: 17px;
-    text-align: center;
-    width: 90%;
-    margin-top: -60px;
-}
-.why-choose-us-para2{
-    color: #313131;
-    font-size: 17px;
-    text-align: center;
-    width: 80%;
-    margin-top: -90px;
-}
 
 /* Smooth zoom animation */
 /* Base image styles */
 img {
-  transition: transform 0.3s ease;
-  cursor: zoom-in;
-  max-width: 100%;
-  height: auto;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Style for enlarged (zoomed) image */
 .img-zoomed {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: auto !important;
-  height: auto !important;
-  max-width: 90vw;
-  max-height: 90vh;
-  z-index: 9999;
-  cursor: zoom-out;
-  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
-  transition: none; /* stop hover transition flicker */
-  pointer-events: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: auto !important;
+    height: auto !important;
+    max-width: 90vw;
+    max-height: 90vh;
+    z-index: 9999;
+    cursor: zoom-out;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+    transition: none;
+    /* stop hover transition flicker */
+    pointer-events: auto;
 }
 
 #zoom-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
 }
+
 #zoom-container img {
-  max-width: 90vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  cursor: default;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: default;
 }
+
 /* Optional: dark background overlay when zoomed */
 /* #zoom-overlay {
   position: fixed;
@@ -3324,26 +3333,81 @@ img {
 } */
 /* Disable hover effect while zoomed */
 .img-zoomed:hover {
-  transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
+
 /* Close button */
 
 #zoom-close {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  background: #000;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.2s ease;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #000;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+
 #zoom-close:hover {
-  background: #ff6961;
+    background: #ff6961;
+}
+
+.authentic-ayurveda-centres-heading {
+    color: #815153;
+    font-size: 23px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.authentic-ayurveda-centres-para {
+    color: #313131;
+    font-size: 17px;
+    text-align: center;
+}
+
+.wcu-image-overlay-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.wcu-image-overlay-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.wcu-overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.wcu-overlay-text h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.wcu-overlay-text p {
+    font-size: 17px;
+
 }
