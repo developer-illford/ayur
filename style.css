@@ -2676,7 +2676,7 @@ img:hover {
 }
 
 .healing-beyond-borders img {
-    width: 80%;
+    width: 70%;
     padding-top: 50px;
 
 }
@@ -3410,4 +3410,293 @@ img {
 .wcu-overlay-text p {
     font-size: 17px;
 
+}
+
+.our-services h6 {
+    color: #313131;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.our-services h2 {
+    color: #815153;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.our-services .col-md-4 {
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.our-services .col-md-4 h4 {
+    padding-top: 20px;
+    color: #313131;
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.our-services .col-md-4 p {
+    color: #313131;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Smooth animation for all images */
+.our-services-img {
+    transition: transform 0.4s ease;
+}
+
+/* 1st image → move DOWN on hover */
+.our-services .col-md-4:nth-child(1) .our-services-img:hover {
+    transform: translateY(20px);
+}
+
+/* 2nd image → move UP on hover */
+.our-services .col-md-4:nth-child(2) .our-services-img:hover {
+    transform: translateY(-20px);
+}
+
+/* 3rd image → move DOWN on hover */
+.our-services .col-md-4:nth-child(3) .our-services-img:hover {
+    transform: translateY(20px);
+}
+
+.prakriti-recharge-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prakriti-recharge-counter img {
+    width: 70%;
+    margin-top: 90px;
+
+}
+
+.prakriti-recharge-counter h6 {
+    color: #313131;
+    font-size: 16px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 15%;
+    padding-top: 25px;
+    letter-spacing: 2px;
+}
+
+.prakriti-recharge-counter h4 {
+    color: #313131;
+    font-size: 30px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 15%;
+    padding-top: 10px;
+}
+
+.prakriti-recharge-counter p {
+    color: #313131;
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.home-of-authentic-ayurveda h6 {
+    color: #313131;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 60px;
+    letter-spacing: 2px;
+}
+
+.home-of-authentic-ayurveda h2 {
+    color: #815153;
+    font-size: 30px;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+
+.about-mali {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-mali img {
+    width: 944px;
+    height: 588px;
+    margin-top: 20px;
+}
+
+.about-mali h6 {
+    color: #313131;
+    font-size: 18px;
+    margin-top: 20px !important;
+}
+
+.about-mali h4 {
+    color: #313131;
+    font-size: 28px;
+}
+
+.about-mali p {
+    color: #313131;
+    font-size: 18px;
+    text-align: center;
+    width: 98%;
+}
+
+.areas-of-specialization {
+    background-color: #ffffff;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    list-style-position: inside;
+}
+
+.areas-of-specialization h4 {
+    color: #313131 !important;
+    font-size: 20px !important;
+    padding-left: 13% !important;
+    padding-top: 30px !important;
+}
+
+.areas-of-specialization li {
+    color: #313131;
+    font-size: 18px;
+    padding-left: 11%;
+}
+
+.areas-of-specialization p {
+    color: #313131;
+    font-size: 18px;
+    width: 74%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.about-namitha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-namitha h6 {
+    color: #313131;
+    font-size: 18px;
+    margin-top: 20px !important;
+}
+
+.about-namitha h4 {
+    color: #313131;
+    font-size: 28px;
+}
+
+.about-namitha p {
+    color: #313131;
+    font-size: 18px;
+    text-align: center;
+    width: 98%;
+}
+
+.about-namitha img {
+    margin-top: 80px;
+}
+
+.amenities {
+    background-color: #c5afac;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    list-style-position: inside;
+    margin-top: 30px;
+
+}
+
+.amenities img {
+    float: right;
+    width: 500px;
+    height: auto;
+    margin-right: 80px;
+    margin-top: 20px;
+
+}
+
+.amenities h4 {
+    color: #313131;
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+.amenities p {
+    color: #313131;
+    font-size: 20px;
+    padding-left: 10%;
+    width: 60%;
+}
+
+.amenities li {
+    list-style-type: none;
+    padding-left: 8%;
+    color: #585858;
+    font-size: 18px;
+}
+
+.yoga-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 550px;
+    background-color: #ede6dd; /* Background similar to reference */
+}
+
+/* LEFT IMAGE */
+.yoga-image{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.yoga-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures perfect fill */
+}
+
+/* RIGHT CONTENT */
+.yoga-content{
+    width: 415px;
+    height: 216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.content-box{
+    background: white url('flower-pattern.png') no-repeat center/contain; /* decorative background */
+    padding: 50px 80px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.05);
+}
+
+.content-box h2{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #6a3d33; /* similar brown tone */
+}
+
+.content-box p{
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4f3a33;
 }
