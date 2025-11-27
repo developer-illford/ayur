@@ -475,39 +475,7 @@ img:hover {
     padding-top: 50px;
 }
 
-.gallery-background {
-    background-image: url(images/gallery-background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-.gallery-info {
-
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.gallery-col {
-    margin: 0;
-    padding: 0;
-}
-
-.gallery-col img {
-    width: 100%;
-}
-
-.gallery {
-    padding-top: 90px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
 
 .offer-tab {
     width: 100%;
@@ -3649,54 +3617,171 @@ img {
     font-size: 18px;
 }
 
-.yoga-section{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 550px;
-    background-color: #ede6dd; /* Background similar to reference */
+.sreenilayam-features-section {
+    margin-top: 100px;
 }
 
-/* LEFT IMAGE */
-.yoga-image{
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
+/* Ensure each img-box allows space for the card */
+.img-box {
+    position: relative;
+    padding-bottom: 80px;
 }
 
-.yoga-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ensures perfect fill */
+/* Info card sits safely on top */
+.left-info-card {
+    position: absolute;
+    top: 120px;
+    right: -5%;
+    width: 350px;
+    background: white;
+    padding: 25px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    /* ensures card stays above images */
+    height: auto;
 }
 
-/* RIGHT CONTENT */
-.yoga-content{
-    width: 415px;
-    height: 216px;
+.right-info-card {
+    position: absolute;
+    top: 120px;
+    right: -15%;
+    width: 350px;
+    background: white;
+    padding: 25px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    /* ensures card stays above images */
+    height: auto;
+}
+
+/* Move only even-number-image containers to the right */
+.image-card-row .col-md-6:nth-child(odd) img {
+    transform: translateX(-80px);
+    /* Increase / decrease as required */
+}
+
+/* Move only even-number-image containers to the right */
+.image-card-row .col-md-6:nth-child(even) img {
+    transform: translateX(20px);
+    /* Increase / decrease as required */
+}
+
+.left-info-card h4 {
+    color: #815153;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.left-info-card p {
+    color: #815153;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.right-info-card h4 {
+    color: #815153;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.right-info-card p {
+    color: #815153;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* Responsive fix */
+@media(max-width: 768px) {
+    .info-card {
+        top: 10%;
+        right: 10%;
+        width: 200px;
+    }
+
+    .img-box {
+        padding-bottom: 120px;
+    }
+}
+
+.gallery-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    flex-direction: row;
+    padding: 0px 50px;
+   
+
 }
 
-.content-box{
-    background: white url('flower-pattern.png') no-repeat center/contain; /* decorative background */
-    padding: 50px 80px;
+.gallery-imgs {
+    width: 311px;
+    height: auto;
+}
+
+
+.main-gallery {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/ayurvedam-sreenilayam/gallery-img-5.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-gallery h2 {
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.main-gallery p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    width: 80%;
     text-align: center;
-    box-shadow: 0 0 30px rgba(0,0,0,0.05);
+
 }
 
-.content-box h2{
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    color: #6a3d33; /* similar brown tone */
+.gallery-section .col-md-4,
+.gallery-section .col-md-6 {
+    padding:0 !important;
 }
 
-.content-box p{
-    font-size: 17px;
-    line-height: 1.8;
-    color: #4f3a33;
+
+.blog-section {
+    margin-top: 50px;
+}
+
+.blog-section .col-md-4 {
+    padding-top: 20px;
+}
+
+.blog-section h6 {
+    color: #313131;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.blog-section h2 {
+    color: #815153;
+    font-size: 30px;
+    text-align: center;
+}
+
+.blog-content h3 {
+    color: #313131;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.blog-content p {
+    color: #313131;
+    font-size: 20px;
 }
