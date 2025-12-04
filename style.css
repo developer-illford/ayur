@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #f5f1eb;
+    background-color: #fbf6ef;
 }
 
 .row {
@@ -133,7 +133,7 @@ img:hover {
     padding: 25px 0 0 0;
 }
 
-/* ✅ Only move Ayurveda and Cottages down */
+/*  Only move Ayurveda and Cottages down */
 .nav-links li:nth-child(8) {
     grid-column: 4;
     /* Ayurveda under Yoga */
@@ -479,7 +479,7 @@ img:hover {
 
 .offer-tab {
     width: 100%;
-    padding: 5% 15%;
+    padding: 5% 10%;
 }
 
 .cta-section {
@@ -488,6 +488,9 @@ img:hover {
     align-items: center;
     flex-direction: column;
     padding: 50px 150px;
+    background: #fbf6ef;
+
+
 }
 
 .cta-heading {
@@ -506,7 +509,7 @@ img:hover {
 }
 
 .why-choose-us-background {
-    /* background-image: url(images/why-choose-us.png); */
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -517,6 +520,7 @@ img:hover {
     border-radius: 25px;
     width: 100%;
     padding: 0px 60px;
+
 
 }
 
@@ -3709,7 +3713,7 @@ img {
     align-items: center;
     flex-direction: row;
     padding: 0px 50px;
-   
+
 
 }
 
@@ -3750,7 +3754,7 @@ img {
 
 .gallery-section .col-md-4,
 .gallery-section .col-md-6 {
-    padding:0 !important;
+    padding: 0 !important;
 }
 
 
@@ -3784,4 +3788,182 @@ img {
 .blog-content p {
     color: #313131;
     font-size: 20px;
+}
+
+.marari-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/marari/marari-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.marari-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.marari-intro h6 {
+    color: #313131;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.marari-intro h2 {
+    color: #815153;
+    font-size: 35px;
+    text-align: center;
+}
+
+.marari-intro p {
+    font-size: 18px;
+    color: #313131;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.property-cottages h6 {
+    color: #313131;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.property-cottages h2 {
+    color: #815153;
+    font-size: 35px;
+    text-align: left;
+}
+
+.marari-offer-tab {
+    width: 100%;
+    padding: 5% 30%;
+}
+
+.sreenilayam-ayurveda-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/sreenilayam-ayurveda/sreenilayam-ayurveda-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.sreenilayam-ayurveda-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.sreenilayam-gallery-section .row {
+    justify-content: center;
+    /* centers both columns */
+}
+
+.gallery-vertical-first {
+    height: 592px;
+    width: 532px;
+    /* transform: scale(0.9); */
+    /* 90% of original */
+    margin-top: -80px;
+
+}
+
+.gallery-vertical-second {
+    height: 592px;
+    width: 532px;
+    /* transform: scale(0.9); */
+    /* 90% of original */
+    margin-top: 30px;
+
+
+}
+
+.gallery-horizontal-first {
+    height: 388px;
+    width: 694px;
+    /* 90% of original */
+    margin-top: -80px;
+
+}
+
+.gallery-horizontal-second {
+    height: 388px;
+    width: 694px;
+    margin-top: 20px;
+    /* 90% of original */
+}
+
+.gallery-horizontal-third {
+    height: 388px;
+    width: 694px;
+    /* transform: scale(0.9); */
+    /* 90% of original */
+    margin-top: 20px;
+}
+
+
+.sreenilayam-gallery-section .col-md-6 {
+    width: 50%;
+    padding: 0 !important;
+
+}
+
+.sreenilayam-gallery-section .col-md-6:last-child {
+    margin-left: -60px;
+    /* reduce center gap from the other side */
+}
+
+.sreenilayam-offer-text h5 {
+    color: #313131;
+    font-size: 22px;
+
+}
+
+.sreenilayam-offer-text p {
+    color: #313131;
+    font-size: 17px;
+    width: 70%;
+
+}
+
+.sreenilayam-offer-text ul li {
+    color: #313131;
+    font-size: 17px;
+
+}
+
+.sreenilayam-offer-text h6 {
+    color: #313131;
+    font-size: 19px;
+
+}
+
+.nasyam-img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+    padding-top: 80px;
+ 
+   
+}
+
+.yoga-offer-text h5 {
+    color: #313131;
+    font-size: 22px;
+}
+.yoga-offer-text p {
+    color: #313131;
+    font-size: 17px;
+
 }
