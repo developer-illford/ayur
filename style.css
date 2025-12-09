@@ -3954,16 +3954,252 @@ img {
     height: auto;
     display: block;
     padding-top: 80px;
- 
-   
 }
 
 .yoga-offer-text h5 {
     color: #313131;
     font-size: 22px;
 }
+
 .yoga-offer-text p {
     color: #313131;
     font-size: 17px;
 
 }
+
+.sreenilayam-accommodation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sreenilayam-accommodation h3 {
+    color: #313131;
+    font-size: 32px;
+}
+
+.sreenilayam-accommodation p {
+    color: #313131;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.first-accommodation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-accommodation img {
+    width: 90%;
+    margin-top: 50px;
+
+}
+
+.first-accommodation h6 {
+    width: 90%;
+    text-align: left;
+    margin-top: 15px;
+
+
+}
+
+.accommodations .row .col-md-6 img {
+    margin-top: 50px;
+
+
+}
+
+.accommodations .row .col-md-6:first-child p {
+    color: #313131;
+    font-size: 18px;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+    transform: translateX(85px);
+    margin-left: 110px;
+}
+
+.accommodations .row .col-md-6:last-child p {
+    color: #313131;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 210px;
+}
+
+.accommodations .row .col-md-6:first-child img {
+    margin: 30px auto 0px 200px;
+    width: 60%
+}
+
+.accommodations .row .col-md-6:last-child img {
+    margin: 0 auto;
+    width: 90%
+}
+
+
+
+.rooms h3 {
+    color: #313131;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.rooms p {
+    color: #313131;
+    font-size: 18px;
+    width: 95%;
+}
+
+.rooms h6 {
+    color: #313131;
+}
+
+.sreenilayam-inside-section h3 {
+    text-align: center;
+    color: #313131;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.inside-intro {
+    text-align: center;
+    color: #313131;
+    font-size: 18px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.inside-content {
+    margin-top: 40px;
+}
+
+.inside-content h6 {
+    padding-top: 20px;
+    color: #313131;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.inside-content h4 {
+    color: #313131;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.inside-content p {
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.sreenilayam-cottage-healing-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sreenilayam-cottage-healing-row img {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.sreenilayam-cottage-healing-journey {
+
+    color: #815153;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700 !important;
+    margin-left: 10px;
+    padding-top: 50px;
+}
+
+.sreenilayam-cottage-cta-button {
+    padding: 12px 80px;
+    /* background-color: transparent; */
+    color: #815153;
+    border: 1px solid #815153;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
+    margin-left: 16%;
+}
+
+.sreenilayam-cottage-cta-button:hover {
+    background-color: #815153;
+    color: #fff;
+}
+
+.ayurvedam-sreenilayam-cottage-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/sreenilayam-cottages/sreenilayam-cottage-banner.jpeg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* ensures overlay doesn’t overflow */
+}
+
+.ayurvedam-sreenilayam-cottage-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.slide img {
+    width: 230px;
+    height: 350px;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+.slide:nth-child(odd):hover img {
+    transform: translateY(-10px);
+}
+.slide:nth-child(even):hover img {
+    transform: translateY(10px);
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.4);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9;
+}
+.slider-prev { left: 20px; }
+.slider-next { right: 20px; }

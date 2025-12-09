@@ -157,10 +157,10 @@ const closeBtn = modal.querySelector(".close");
 
 // Apply to all images (or restrict to certain class)
 document.querySelectorAll("img").forEach(img => {
-    img.addEventListener("click", function () {
-        modal.style.display = "flex"; // use flex to center
-        modalImg.src = this.src;       // show clicked image
-    });
+  img.addEventListener("click", function () {
+    modal.style.display = "flex"; // use flex to center
+    modalImg.src = this.src;       // show clicked image
+  });
 });
 
 // Close modal
@@ -168,8 +168,53 @@ closeBtn.onclick = () => modal.style.display = "none";
 
 // Close when clicking outside image
 modal.onclick = (e) => {
-    if(e.target === modal){
-        modal.style.display = "none";
-    }
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector('.slider-track');
+  const slides = Array.from(track.children);
+
+  // Duplicate the entire row twice
+  slides.forEach(slide => track.appendChild(slide.cloneNode(true)));
+
+  // Buttons – pause animation when clicked
+  document.querySelector(".slider-next").onclick = () => {
+    track.style.animationPlayState = "paused";
+    track.style.transform = "translateX(-300px)";
+    setTimeout(() => track.style.animationPlayState = "running", 300);
+  };
+
+  document.querySelector(".slider-prev").onclick = () => {
+    track.style.animationPlayState = "paused";
+    track.style.transform = "translateX(300px)";
+    setTimeout(() => track.style.animationPlayState = "running", 300);
+  };
+
+  // Swipe support
+  let startX = 0;
+  let dragging = false;
+
+  track.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+    dragging = true;
+    track.style.animationPlayState = "paused";
+  });
+
+  track.addEventListener("touchmove", e => {
+    if (!dragging) return;
+    const diff = e.touches[0].clientX - startX;
+    track.style.transform = `translateX(${diff}px)`;
+  });
+
+  track.addEventListener("touchend", () => {
+    dragging = false;
+    track.style.transform = "translateX(0)";
+    track.style.animationPlayState = "running";
+  });
+});
+
 
