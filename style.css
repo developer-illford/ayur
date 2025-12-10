@@ -733,6 +733,7 @@ img:hover {
     .cta-button {
         padding: 15px 40px;
         font-size: 14px;
+        font-family: "Raleway", sans-serif;
     }
 }
 
@@ -763,6 +764,7 @@ img:hover {
     .cta-button {
         padding: 12px 30px;
         font-size: 13px;
+        font-family: "Raleway", sans-serif;
     }
 }
 
@@ -1710,6 +1712,7 @@ img:hover {
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
     margin-right: 20px;
+    font-family: "Raleway", sans-serif;
 }
 
 .cta-button:hover {
@@ -1732,6 +1735,7 @@ img:hover {
     outline: none;
     background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
     margin-top: 30px;
+    font-family: "Raleway", sans-serif;
 }
 
 .cta-overlay-content {
@@ -3790,62 +3794,7 @@ img {
     font-size: 20px;
 }
 
-.marari-hero-section {
-    position: relative;
-    height: 100vh;
-    background: url('images/marari/marari-banner.png') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-}
 
-.marari-hero-section:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 0;
-}
-
-.marari-intro h6 {
-    color: #313131;
-    font-size: 16px;
-    text-align: center;
-    padding-top: 40px;
-}
-
-.marari-intro h2 {
-    color: #815153;
-    font-size: 35px;
-    text-align: center;
-}
-
-.marari-intro p {
-    font-size: 18px;
-    color: #313131;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.property-cottages h6 {
-    color: #313131;
-    font-size: 16px;
-    text-align: left;
-
-}
-
-.property-cottages h2 {
-    color: #815153;
-    font-size: 35px;
-    text-align: left;
-}
-
-.marari-offer-tab {
-    width: 100%;
-    padding: 5% 30%;
-}
 
 .sreenilayam-ayurveda-hero-section {
     position: relative;
@@ -4129,6 +4078,7 @@ img {
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
     margin-left: 16%;
+    font-family: "Raleway", sans-serif;
 }
 
 .sreenilayam-cottage-cta-button:hover {
@@ -4179,13 +4129,19 @@ img {
 .slide:nth-child(odd):hover img {
     transform: translateY(-10px);
 }
+
 .slide:nth-child(even):hover img {
     transform: translateY(10px);
 }
 
 @keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Buttons */
@@ -4193,7 +4149,7 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     border: none;
     color: white;
     padding: 8px 12px;
@@ -4201,5 +4157,306 @@ img {
     cursor: pointer;
     z-index: 9;
 }
-.slider-prev { left: 20px; }
-.slider-next { right: 20px; }
+
+.slider-prev {
+    left: 20px;
+}
+
+.slider-next {
+    right: 20px;
+}
+
+.marari-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/marari/marari-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.marari-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.marari-intro h6 {
+    color: #313131;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.marari-intro h2 {
+    color: #815153;
+    font-size: 30px;
+    text-align: center;
+}
+
+.marari-intro p {
+    font-size: 18px;
+    color: #313131;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.property-cottages h6 {
+    color: #313131;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.property-cottages h2 {
+    color: #815153;
+    font-size: 30px;
+    text-align: left;
+}
+
+.marari-offer-tab {
+    width: 100%;
+    padding: 5% 30%;
+}
+
+.discover-packages-section {
+    margin-top: 40px;
+}
+
+
+.discover-packages-section h4 {
+    text-transform: uppercase;
+    color: #815153;
+    font-size: 30px;
+    text-align: center;
+}
+
+.discover-packages-leaf {
+    margin-left: 46%;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.package-content h4 {
+    color: #313131;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.package-content p {
+    color: #313131;
+    font-size: 18px;
+
+}
+
+.exp-top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between image & text */
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.exp-icon {
+    width: 79px;
+    height: auto;
+}
+
+.exp-top-row p {
+    color: #815153;
+    font-size: 20px;
+    width: 70%;
+}
+
+.sreenilayam-cottage-gallery-horizontal-first {
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+.sreenilayam-cottage-gallery-horizontal-second {
+    margin-top: 40px;
+    margin-right: 80px;
+
+}
+
+.sreenilayam-cottage-gallery-vertical-first {
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 80%;
+}
+
+.facilities-section {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.facilities-section h4 {
+    color: #815153;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.facilities-section p {
+    color: #313131;
+    font-size: 18px;
+    width: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.facilities-section .col-md-4 {
+    text-align: center;
+}
+
+.facilities-section img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 10px auto 15px;
+}
+
+.middle-img {
+    padding-top: 90px;
+}
+
+.facilities-content p {
+    text-align: center;
+    width: 80%;
+    color: #313131;
+}
+
+.marari-resort-section {
+    margin-top: 30px;
+}
+
+.marari-resort-section h6 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #313131;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.marari-resort-section h3 {
+    color: #313131;
+    font-size: 25px;
+
+}
+
+.marari-resort-section p {
+    color: #313131;
+    font-size: 18px;
+}
+
+.experiencing-marari-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.experiencing-marari-section h3 {
+    text-transform: uppercase;
+    color: #815153;
+    font-size: 30px;
+    letter-spacing: 0.98px;
+
+}
+
+.experiencing-marari-section .col-md-4 {
+    margin-top: 20px;
+}
+
+.exp-marari-first-img {
+    padding-top: 60px;
+}
+
+.exp-marari-last-img {
+    padding-top: 10%;
+}
+
+.experiencing-marari-content h4 {
+    color: #313131;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.experiencing-marari-content p {
+    color: #313131;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.marari-healing-journey {
+    color: #815153;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700 !important;
+
+    padding-top: 50px;
+}
+.marari-property-cottages{
+    margin-top: 50px;
+    
+
+    
+}
+.marari-property-cottages h4{
+    font-size: 30px;
+    color: #815153;
+    margin-left: 10px;
+}
+.marari-property-cottages h6{
+    font-size: 15px;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+.property-wrapper {
+    height: 500px;          /* Same height for both images */
+    overflow: hidden;       /* Keeps layout clean */
+}
+
+.first-property,
+.second-property {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;     /* Shows full image without cropping */
+
+}
+.marari-property-cottages .row {
+    margin-left: 0;
+    margin-right: 0;
+    /* justify-content: center !important; */
+}
+
+.marari-property-cottages [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.marari-property-cottages {
+
+    padding-right: 50px;  /* adjust as needed */
+}
+
+.image-gap {
+    margin-left: 0px;    /* space between the two images */
+}
+.marari-property-cottages img{
+      display: block;
+    margin: 0 auto;
+}
