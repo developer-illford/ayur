@@ -4408,36 +4408,44 @@ img {
 
     padding-top: 50px;
 }
-.marari-property-cottages{
-    margin-top: 50px;
-    
 
-    
+.marari-property-cottages {
+    margin-top: 50px;
+
+
+
 }
-.marari-property-cottages h4{
+
+.marari-property-cottages h4 {
     font-size: 30px;
     color: #815153;
     margin-left: 10px;
 }
-.marari-property-cottages h6{
+
+.marari-property-cottages h6 {
     font-size: 15px;
     color: #313131;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 10px;
 }
+
 .property-wrapper {
-    height: 500px;          /* Same height for both images */
-    overflow: hidden;       /* Keeps layout clean */
+    height: 500px;
+    /* Same height for both images */
+    overflow: hidden;
+    /* Keeps layout clean */
 }
 
 .first-property,
 .second-property {
     width: 100%;
     height: 100%;
-    object-fit: contain;     /* Shows full image without cropping */
+    object-fit: contain;
+    /* Shows full image without cropping */
 
 }
+
 .marari-property-cottages .row {
     margin-left: 0;
     margin-right: 0;
@@ -4448,15 +4456,261 @@ img {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
 .marari-property-cottages {
 
-    padding-right: 50px;  /* adjust as needed */
+    padding-right: 50px;
+    /* adjust as needed */
 }
 
 .image-gap {
-    margin-left: 0px;    /* space between the two images */
+    margin-left: 0px;
+    /* space between the two images */
 }
-.marari-property-cottages img{
-      display: block;
+
+.marari-property-cottages img {
+    display: block;
     margin: 0 auto;
+}
+
+.marari-ayurveda-intro {
+    text-align: center;
+}
+
+.marari-ayurveda-intro h2 {
+    color: #815153;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.marari-ayurveda-intro p {
+    color: #313131;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.marari-ayurveda-intro a {
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    /* increase as needed */
+}
+
+.marari-ayurveda-package {
+    margin-top: 50px;
+}
+
+.marari-ayurveda-package h4 {
+    color: #313131;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.marari-ayurveda-package p {
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.marari-ayurveda-package .col-md-4:nth-child(n+4) {
+    margin-top: 40px;
+    /* adjust the value as you like */
+}
+
+.doctor-section {
+    margin-top: 40px auto 0;
+    text-align: center;
+}
+
+.doctor-section h2 {
+    color: #815153;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+.doctor-section p {
+    color: #313131;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.doctors-content {
+    margin-top: 90px;
+}
+
+.doctors-content h6 {
+    color: #313131;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.doctors-content h4 {
+    color: #313131;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.doctors-content p {
+    color: #313131;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.doctors-content li {
+    color: #313131;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-left: 0px;
+}
+
+.ayurveda-section {
+    margin-top: 50px auto 0;
+}
+
+/* Top icon + headings layout */
+.ayurveda-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* spacing between icon and text */
+
+}
+
+
+/* text block */
+.title-text h6 {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #313131;
+
+}
+
+.title-text h3 {
+    padding-top: 0;
+    font-size: 30px;
+    color: #815153;
+    padding-top: 20px;
+}
+
+/* Right image */
+.ayurvedic-cure {
+    width: 100%;
+    height: auto;
+}
+
+.ayurveda-left-content {
+    width: 85%;
+    font-size: 18px;
+    margin-left: 20px;
+
+}
+
+.ayurveda-medicine {
+    margin-top: 70px;
+}
+
+.ayurveda-medicine h4 {
+    color: #815153;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.ayurveda-medicine p {
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    width: 96%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.why-ayurveda-treatment {
+    margin-top: 50px;
+    text-align: center;
+    color: #313131;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.ayurveda-why-section h2 {
+    font-size: 28px;
+    color: #313131;
+    margin-bottom: 40px;
+}
+
+.why-card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    /* space between cards */
+    flex-wrap: wrap;
+    margin-top: 50px;
+    /* makes it responsive */
+}
+
+.why-card {
+    width: 260px;
+    /* fixed card width similar to your image */
+    background: rgba(129, 81, 83, 0.5);
+    /* soft dusty pink shade like screenshot */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    height: 250px;
+    /* keeps same height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* pushes text up and icon down */
+}
+
+.why-card p {
+    font-size: 17px;
+    color: #313131;
+    font-weight: 400;
+    width: 100%;           /* FIX: full width */
+    margin: 0 auto;        /* FIX: center text block */
+    line-height: 1.5;      /* makes spacing consistent */
+    text-align: center;    /* FIX */
+}
+
+.why-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto ;
+}
+.marari-ayurveda-hero-section{
+      position: relative;
+    height: 100vh;
+    background: url('images/marari-ayurveda/marari-ayurveda-banner.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.marari-ayurveda-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
 }
