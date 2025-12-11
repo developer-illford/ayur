@@ -37,6 +37,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Raleway", sans-serif;
 }
 
 /* Overlay for darker readability */
@@ -1102,6 +1103,7 @@ img:hover {
     width: 100%;
     height: max-content;
     position: relative;
+    font-family: "Raleway", sans-serif;
 }
 
 .sreenilayam-hero-section {
@@ -1112,6 +1114,7 @@ img:hover {
     width: 100%;
     height: max-content;
     position: relative;
+    font-family: "Raleway", sans-serif;
 }
 
 .sreenilayam-content {
@@ -1407,6 +1410,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Raleway", sans-serif;
 }
 
 .home-hero-section:after {
@@ -1885,6 +1889,7 @@ img:hover {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
     /* ensures overlay doesn’t overflow */
 }
 
@@ -2163,6 +2168,7 @@ img:hover {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
 
 }
 
@@ -2549,7 +2555,8 @@ img:hover {
     background: url('images/ayurveda-experiences/ayurveda-experiences-banner.png') center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
 }
 
 .ayurveda-experiences-hero-section::after {
@@ -2875,6 +2882,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Raleway", sans-serif;
 }
 
 /* Overlay for darker readability */
@@ -2926,6 +2934,7 @@ img:hover {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
     /* ensures overlay doesn’t overflow */
 }
 
@@ -3213,6 +3222,7 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
     /* ensures overlay doesn’t overflow */
 }
 
@@ -3804,6 +3814,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
 }
 
 .sreenilayam-ayurveda-hero-section:after {
@@ -4094,6 +4105,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
     /* ensures overlay doesn’t overflow */
 }
 
@@ -4109,7 +4121,7 @@ img {
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 20px 0;
+    padding: 60px 0;
 }
 
 .slider-track {
@@ -4127,11 +4139,11 @@ img {
 }
 
 .slide:nth-child(odd):hover img {
-    transform: translateY(-10px);
+    transform: translateY(-30px);
 }
 
 .slide:nth-child(even):hover img {
-    transform: translateY(10px);
+    transform: translateY(30px);
 }
 
 @keyframes scroll {
@@ -4174,6 +4186,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
 }
 
 .marari-hero-section:after {
@@ -4687,30 +4700,137 @@ img {
     font-size: 17px;
     color: #313131;
     font-weight: 400;
-    width: 100%;           /* FIX: full width */
-    margin: 0 auto;        /* FIX: center text block */
-    line-height: 1.5;      /* makes spacing consistent */
-    text-align: center;    /* FIX */
+    width: 100%;
+    /* FIX: full width */
+    margin: 0 auto;
+    /* FIX: center text block */
+    line-height: 1.5;
+    /* makes spacing consistent */
+    text-align: center;
+    /* FIX */
 }
 
 .why-icon {
     width: 32px;
     height: 32px;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
-.marari-ayurveda-hero-section{
-      position: relative;
+
+.marari-ayurveda-hero-section {
+    position: relative;
     height: 100vh;
     background: url('images/marari-ayurveda/marari-ayurveda-banner.png') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    font-family: "Raleway", sans-serif;
 }
+
 .marari-ayurveda-hero-section:after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.1);
     z-index: 0;
+}
+
+.marari-cottages-hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/marari-cottages/marari-cottage-banner.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: "Raleway", sans-serif;
+}
+
+.marari-cottages-hero-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.marari-cottages-intro {
+    margin-top: 20px;
+
+}
+
+.marari-cottages-intro h2 {
+    color: rgba(49, 49, 49, 1);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.marari-cottages-intro p {
+    color: rgba(49, 49, 49, 1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.villa-section {
+    margin-top: 50px;
+}
+
+.villa-section h6 {
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: rgba(49, 49, 49, 1);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.villa-section h4 {
+    color: rgba(49, 49, 49, 1);
+    font-size: 25px;
+
+}
+
+.villa-section p {
+    color: rgba(49, 49, 49, 1);
+    font-size: 18px;
+}
+
+.relax-section {
+    margin-top: 40px;
+}
+
+.relax-section h4 {
+    color: rgba(49, 49, 49, 1);
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.relax-section h3 {
+    color: rgba(49, 49, 49, 1);
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.relax-section p {
+    color: rgba(49, 49, 49, 1);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.relax-section .col-md-4 {
+    padding-top: 30px;
+}
+
+.marari-cottage-offer-tab {
+    width: 100%;
+    padding:0 30%;
 }
