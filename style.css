@@ -272,8 +272,8 @@ img:hover {
 
 
 .card {
-    background-color: #f9f6f2;
-    border: 1px solid #e0ddd8;
+    background-color: #fbf6ef;
+    border: 1px solid #8151532e;
     border-radius: 20px;
     /* rounded corners */
     margin: 10px;
@@ -304,8 +304,8 @@ img:hover {
 
 
 .card p {
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    color: #815153;
     font-weight: 500;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -1730,14 +1730,13 @@ img:hover {
 }
 
 .testimonials-section {
-    background-color: #f5f1eb;
-    padding-top: 60px;
-    padding-bottom: 80px;
+    margin-top: -120px;
+    padding-top: 0 !important;
+    position: relative;
+    z-index: 5;
 }
 
-.mission-section {
-    background-color: #f5f1eb;
-}
+
 
 .mission-item {
     text-align: center;
@@ -1753,12 +1752,13 @@ img:hover {
 }
 
 .about-mission-description {
-    font-size: 17px;
+    font-size: 18px !important;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.5px;
-    width: 100%;
+    width: 90% !important;
+    margin: 0 auto !important;
     padding-top: 15%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .mission-img {
@@ -1770,8 +1770,8 @@ img:hover {
     width: 448.14px;
     height: 590.17px;
     background-color: #ccc;
-    border-radius: 10px;
-    margin-top: 80px;
+    /* border-radius: 10px; */
+    margin-top: 20px;
     display: inline-block;
     /* key line — centers inside text-center */
 }
@@ -1784,13 +1784,14 @@ img:hover {
 }
 
 .placeholder-img-description {
-    font-size: 14px;
+    font-size: 18px !important;
     text-align: center;
     color: #333;
     line-height: 1.4;
     max-width: 90%;
     margin: 5px auto 0 auto;
     display: block;
+    padding-top: 0 !important;
 }
 
 .ayur-destination-story {
@@ -1821,14 +1822,26 @@ img:hover {
     margin-top: 5px;
     text-align: center;
     color: #815153;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .section-title-para {
     font-size: 18px;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
     line-height: 1.6;
+    padding-top: 0 !important;
+}
+
+.section-title-para-bold-first {
+    padding-top: 10px !important;
+}
+
+.section-title-para-bold-second {
+    width: 65% !important;
+    margin: 0 auto !important;
 }
 
 .about-icons-wrapper {
@@ -1852,6 +1865,7 @@ img:hover {
     margin-top: 15px;
     font-size: 16px;
     line-height: 1.4;
+    color: #815153;
 }
 
 .about-arc-section {
@@ -1862,7 +1876,7 @@ img:hover {
 .about-arc-section img {
     width: 100%;
     height: auto;
-    display: block;
+    /* display: block; */
 }
 
 .about-arc-section p {
@@ -1937,7 +1951,7 @@ img:hover {
     color: #815153;
     padding-bottom: 20px;
     position: relative;
-    padding-top: 25px;
+    padding-top: 25px !important;
     display: inline-block;
 }
 
@@ -1946,6 +1960,7 @@ img:hover {
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    padding-top: 0 !important;
 }
 
 .ad-mentoring img {
@@ -2054,57 +2069,7 @@ img:hover {
 }
 
 
-.yoga-meditation-section {
-    position: relative;
-    background: url("images/Yoga/yoga-meditation.png") center center / cover no-repeat;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    overflow: hidden;
-}
 
-.yoga-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.1);
-    /* optional subtle dark overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.yoga-content {
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2px);
-    border-radius: 15px;
-    padding: 25px 25px;
-    text-align: center;
-    max-width: 500px;
-    transform: translateY(90px);
-}
-
-.yoga-and-meditation img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.yoga-content h2 {
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.yoga-desc p {
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
 
 .yoga-section {
     margin-top: 60px;
@@ -2341,8 +2306,8 @@ img:hover {
 
 .ae-heading-wrapper h2 img {
     position: absolute;
-    bottom: 30%;
-    right: 59%;
+    bottom: 10%;
+    left: 60%;
     /* transform: translate(-150%, -60%); */
 
     height: auto;
@@ -2358,7 +2323,7 @@ img:hover {
 }
 
 .healing-beyond-borders img {
-    width: 70%;
+    width: 80%;
     padding-top: 50px;
 
 }
@@ -2468,7 +2433,7 @@ img:hover {
 .exclusive-offers .offers-subtitle {
     font-size: 18px;
     color: #313131;
-    display:block;
+    display: block;
     padding-bottom: 4px;
 
     text-align: center;
@@ -2659,23 +2624,25 @@ img:hover {
 
 
 .contact-form {
-     max-width: 720px;
+    max-width: 720px;
     width: 100%;
-    background-color: #F3EEE5;  
+    background-color: #F3EEE5;
     padding: 60px 50px;
     text-align: center;
-    border-radius: 0;        
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    
+    border-radius: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
 }
+
 .contact-form-wrapper {
-    background-color: #81515387;   
+    background-color: #81515387;
     width: 75%;
     margin: 0 auto;
     padding: 80px 60px;
     display: flex;
     justify-content: center;
 }
+
 .contact-form h3 {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
@@ -2688,8 +2655,9 @@ img:hover {
     font-size: 18px;
     color: #313131;
     margin-bottom: 35px;
-     font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 .form-row {
     display: flex;
     gap: 20px;
@@ -2704,7 +2672,8 @@ img:hover {
     background-color: #fbfaf8;
     font-size: 14px;
     outline: none;
-    border-radius: 0;   /* square */
+    border-radius: 0;
+    /* square */
 }
 
 .contact-form textarea {
@@ -2718,8 +2687,9 @@ img:hover {
     color: #313131;
     font-size: 18px;
     font-weight: 400;
-    font-family:'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif
 }
+
 .contact-form button {
     background-color: #815153;
     color: #FFFFFF;
@@ -2728,17 +2698,18 @@ img:hover {
     font-size: 18px;
     letter-spacing: 1px;
     cursor: pointer;
-    border-radius: 0; /* square */
+    border-radius: 0;
+    /* square */
     transition: background 0.3s ease;
-     font-family:'Times New Roman', Times, serif;
-     display: block;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
     margin-left: 0;
     margin-right: auto;
 }
 
 .contact-form button:hover {
     background-color: #FFFFFF;
-    color:#815153 ;
+    color: #815153;
 }
 
 .contact-locations {
@@ -2754,6 +2725,7 @@ img:hover {
     margin: 20px auto 10px;
     display: block;
 }
+
 .contact-divider {
     width: 70%;
     height: 7px;
@@ -2761,21 +2733,26 @@ img:hover {
     opacity: 1;
     margin: 25px auto;
 }
-.contact-reserve-retreat{
+
+.contact-reserve-retreat {
     text-align: center;
 }
-.contact-reserve-retreat p{
+
+.contact-reserve-retreat p {
     color: #313131;
     font-size: 18px;
 }
-.contact-reserve-retreat button{
+
+.contact-reserve-retreat button {
     background-color: #815153;
     color: #FFFFFF;
     border: none;
-     padding: 12px 50px;
+    padding: 12px 50px;
     font-size: 14px;
-    font-family:"Raleway", sans-serif; ;
+    font-family: "Raleway", sans-serif;
+    ;
 }
+
 /* ----- RESORT FOOTER ----- */
 .resort-info {
     display: flex;
@@ -3873,7 +3850,7 @@ img {
 
 
 .discover-packages-section h4 {
-    
+
     color: #815153;
     font-size: 32px;
     text-align: center;
@@ -3884,6 +3861,7 @@ img {
     margin-bottom: 30px;
     margin-top: -10px;
 }
+
 .image-overlay-wrap {
     position: relative;
     overflow: hidden;
@@ -3902,7 +3880,8 @@ img {
     padding: 12px 25px;
     text-align: right;
 
-    background: rgba(0, 0, 0, 0.45); /* dark transparent strip */
+    background: rgba(0, 0, 0, 0.45);
+    /* dark transparent strip */
     color: #fff;
     font-size: 14px;
     letter-spacing: 2px;
@@ -5402,4 +5381,60 @@ img {
     margin-top: -20px;
     /* move heading UP */
 
+}
+
+.yoga-meditation-section {
+    position: relative;
+    background: url("images/Yoga/yoga-meditation.png") center center / cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+/* content card */
+.yoga-content {
+    margin-top: 40px;
+    max-width: 500px;
+    padding: 30px 25px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.yoga-content p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.yoga-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* icon + title block */
+.yoga-header {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.yoga-header img {
+    /* width: 55px; */
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.yoga-header h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
 }
