@@ -16,6 +16,15 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="top-row">
+                    <!-- Hamburger (mobile only) -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+
+
                     <div class="logo">
                         <img src="images/ayur-logo.png" alt="Ayur Destination Logo" class="logo-icon" />
                         <span class="logo-text">AYUR DESTINATION</span>
@@ -34,6 +43,46 @@
                 </ul>
             </div>
         </nav>
+
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+
+                <span class="mobile-logo">AYUR DESTINATION</span>
+                <button class="close-menu" id="closeMenu">✕</button>
+            </div>
+            <a href="contact.html" class="mobile-reserve-btn">
+                Reserve Your Retreat
+            </a>
+
+
+            <div class="mobile-menu-content">
+                <!-- LEFT MENU -->
+                <ul class="mobile-nav-links">
+                    <li>Destinations</li>
+                    <li>Hotels & Resorts</li>
+                    <li>Experiences</li>
+                    <li>Exclusive Offers</li>
+                    <li>Villas</li>
+                    <li>Residences</li>
+                    <li>About Us</li>
+                    <li>Gift Card</li>
+                    <li>Aman at Sea</li>
+                    <li>Aman Shop</li>
+                    <li>Aman Interiors</li>
+                </ul>
+
+                <!-- RIGHT MENU -->
+                <div class="mobile-menu-right">
+                    <p class="discover-title">Discover Ayur Destination in...</p>
+
+                    <a href="#" class="region-box">India & Sri Lanka</a>
+                    <a href="#" class="region-box">Asia</a>
+                    <a href="#" class="region-box">Europe & Middle East</a>
+                </div>
+            </div>
+        </div>
 
         <div class="hero-content">
             <h1>Our Ayurvedic Journey</h1>
@@ -384,6 +433,28 @@
     </div>
 
     <script src="zoom.js"></script>
+
+    <!-- Hamburger -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+
+            hamburger.addEventListener("click", () => {
+                mobileMenu.classList.add("active");
+                hamburger.classList.add("active");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    </script>
+
+
+
 
 </body>
 

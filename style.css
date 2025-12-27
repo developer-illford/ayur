@@ -460,7 +460,7 @@ img:hover {
     color: #815153;
     font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
-    ;
+
 }
 
 .cta-content {
@@ -5437,4 +5437,355 @@ img {
     color: #fff;
     font-size: 30px;
     font-weight: 600;
+}
+
+/* Responsiveness */
+.hamburger {
+    display: none;
+}
+
+/* Disable mobile menu completely on desktop */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .top-row .btn {
+        display: none;
+    }
+
+    /* Hide desktop menu */
+    .nav-links {
+        display: none;
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        position: fixed;
+        right: 20px;
+        top: 22px;
+        z-index: 10001;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 2px;
+        background: #000;
+    }
+
+    /* Fullscreen menu */
+    .mobile-menu {
+        position: fixed;
+        inset: 0;
+        background: #fbf7f2;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 60px;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        z-index: 9999;
+    }
+
+    .mobile-menu.active {
+        transform: translateX(0);
+    }
+
+    /* Header */
+    .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .mobile-logo {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .close-menu {
+        font-size: 22px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Menu links */
+    .mobile-nav-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-nav-links li {
+        font-size: 26px;
+        margin-bottom: 22px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .mobile-nav-links a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .mobile-menu-content {
+        display: flex;
+        gap: 60px;
+    }
+
+    /* LEFT */
+    .mobile-nav-links {
+        flex: 1;
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-nav-links li {
+        font-size: 22px;
+        margin-bottom: 18px;
+        cursor: pointer;
+    }
+
+    /* RIGHT */
+    .mobile-menu-right {
+        flex: 1;
+    }
+
+    .discover-title {
+        font-size: 14px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .region-box {
+        display: block;
+        border: 1px solid #000;
+        padding: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+    }
+
+    .hamburger.active {
+        display: none;
+    }
+
+    .mobile-reserve-btn {
+        display: inline-block;
+        margin-bottom: 40px;
+        padding: 14px 28px;
+        border: 2px solid #fff;
+        text-decoration: none;
+        background: #815153;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        width: fit-content;
+    }
+
+    .mobile-menu-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mobile-menu-right {
+        margin-top: 20px;
+    }
+
+    .logo-text {
+        white-space: wrap;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+        /* font-weight: 500; */
+        margin-bottom: 15px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .divider span {
+        display: block;
+        width: 300px;
+        height: 30px;
+        /* increase to see clearly */
+        background: url("images/Destinations/divider.png") no-repeat center;
+        background-size: contain;
+        /* ensures full image is visible */
+        background-repeat: no-repeat;
+    }
+
+    .mission-wrapper {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .about-mission-description {
+        padding-top: 0;
+        width: 100% !important;
+    }
+
+    .about-icons {
+        width: 30%;
+    }
+
+    .section-title-desc {
+        font-size: 25px;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .about-arc-section p {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        width: 60%;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+}
+
+@media(min-width : 1026px) and (max-width:1399px) {
+    .mission-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .mission-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-mission-description {
+        padding-top: 0;
+        width: 100% !important;
+    }
+
+    .about-icons {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title-desc {
+        font-size: 25px;
+        width: 90%;
+    }
+
+    .mission-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .mission-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-mission-description {
+        padding-top: 0;
+        width: 100% !important;
+    }
+
+    .about-icons {
+        width: 30%;
+    }
+
+    .about-arc-section p {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 10px;
+        width: 60%;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .tes-section-title {
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 80px;
+        text-align: center;
+        color: #815153;
+        margin-bottom: 0 !important;
+    }
+
+    .cta-heading {
+        padding-top: 0px;
+        color: #815153;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+
+    }
+
+    
+   .cta-section {
+        padding: 30px 20px;
+    }
+    
+
+    .cta-content {
+      text-align: center;
+        font-size: 18px;
+      
+    }
+    @media (max-width: 768px) {
+
+    .healing-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-healing-journey {
+        font-size: 22px;
+        margin-left: 0;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .about-footer {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+
+}
+
+
+
+@media (max-width: 480px) {
+    .hamburger {
+        top: 18px;
+        right: 16px;
+    }
+
+    .hamburger span {
+        width: 24px;
+    }
 }
