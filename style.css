@@ -1449,7 +1449,7 @@ img:hover {
 .text {
     font-size: 1rem;
     color: #3c2d23;
-      position: relative;
+    position: relative;
     z-index: 2;
 }
 
@@ -1479,7 +1479,7 @@ img:hover {
 } */
 
 .number {
-     position: absolute;
+    position: absolute;
     left: -20px;
     top: 75%;
     transform: translateY(-50%);
@@ -1489,7 +1489,7 @@ img:hover {
     line-height: 1;
     z-index: 0;
     pointer-events: none;
-    
+
 }
 
 .exclusive-service {
@@ -2670,6 +2670,7 @@ img:hover {
     position: relative;
     z-index: 2;
 }
+
 .footer-brand {
     display: flex;
     align-items: center;
@@ -2677,23 +2678,26 @@ img:hover {
     gap: 10px;
     /* space between logo & text */
 }
+
 .footer-logo {
     width: 50px;
     /* adjust size as needed */
     height: auto;
     padding-bottom: 20px;
 }
+
 .footer-brand h4 {
-    margin:0;
+    margin: 0;
     color: rgba(49, 49, 49, 1);
     font-size: 20px;
     font-weight: 400;
     font-family: "Times New Roman", serif;
     letter-spacing: 2px;
     line-height: 1;
-    transform: translate(-6px, 8px); /* ← left | ↓ down */
+    transform: translate(-6px, 8px);
+    /* ← left | ↓ down */
     padding-bottom: 20px;
-    
+
 }
 
 .footer-link a {
@@ -5546,6 +5550,10 @@ img {
     font-weight: 600;
 }
 
+.ayur-destination-story span {
+    color: rgba(49, 49, 49, 1);
+}
+
 /* Responsiveness */
 .hamburger {
     display: none;
@@ -5581,7 +5589,7 @@ img {
     .hamburger span {
         width: 28px;
         height: 2px;
-        background: #000;
+        background: #ffffff;
     }
 
     /* Fullscreen menu */
@@ -5659,6 +5667,8 @@ img {
     /* RIGHT */
     .mobile-menu-right {
         flex: 1;
+
+ 
     }
 
     .discover-title {
@@ -5695,14 +5705,9 @@ img {
         width: fit-content;
     }
 
-    .mobile-menu-content {
-        flex-direction: column;
-        gap: 40px;
-    }
+   
 
-    .mobile-menu-right {
-        margin-top: 20px;
-    }
+   
 
     .logo-text {
         white-space: wrap;
@@ -5764,13 +5769,68 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 30px;
+        font-size: 15px;
         width: 60%;
         text-align: center;
         font-weight: 400;
     }
+     .tes-section-title {
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 80px;
+        text-align: center;
+        color: #815153;
+        margin-bottom: 0 !important;
+    }
+
+    .cta-heading {
+        padding-top: 0px;
+        color: #815153;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+
+    }
 
 
+    .cta-section {
+        padding: 30px 20px;
+    }
+
+
+    .cta-content {
+        text-align: center;
+        font-size: 18px;
+
+    }
+
+    .healing-row {
+        display: flex;
+        flex-direction: row;
+        /* text + image side by side */
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-healing-journey {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
+
+    .about-footer {
+        max-width: 60px;
+        /* flower size */
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .cta-button {
+        padding: 10px 70px;
+    }
 }
 
 @media(min-width : 1026px) and (max-width:1399px) {
@@ -5792,6 +5852,55 @@ img {
 
     .about-icons {
         width: 30%;
+    }
+
+    .cta-heading {
+        padding-top: 0px;
+        color: #815153;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+
+    }
+
+
+    .cta-section {
+        padding: 30px 20px;
+    }
+
+
+    .cta-content {
+        text-align: center;
+        font-size: 18px;
+
+    }
+
+    .healing-row {
+        display: flex;
+        flex-direction: row;
+        /* text + image side by side */
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-healing-journey {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
+
+    .about-footer {
+        max-width: 60px;
+        /* flower size */
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .cta-button {
+        padding: 10px 70px;
     }
 }
 
@@ -5862,28 +5971,56 @@ img {
 
     }
 
-    @media (max-width: 768px) {
-
-        .healing-row {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .about-healing-journey {
-            font-size: 22px;
-            margin-left: 0;
-            margin-bottom: 15px;
-            padding: 0 10px;
-        }
-
-        .about-footer {
-            width: 100%;
-            max-width: 280px;
-        }
+    .healing-row {
+        display: flex;
+        flex-direction: row;
+        /* text + image side by side */
+        align-items: center;
+        justify-content: center;
+        text-align: left;
     }
 
+    .about-healing-journey {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
+
+    .about-footer {
+        max-width: 60px;
+        /* flower size */
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .cta-button {
+        padding: 10px 70px;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* Full screen */
+        overflow-y: auto;
+        /* ENABLE SCROLL */
+        -webkit-overflow-scrolling: touch;
+        background: #fff;
+        z-index: 9999;
+    }
+     .mobile-menu-content {
+        flex-direction: column;
+        gap: 40px;
+    }
 
 }
+
+
 
 
 
@@ -5895,5 +6032,23 @@ img {
 
     .hamburger span {
         width: 24px;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* Full screen */
+        overflow-y: auto;
+        /* ENABLE SCROLL */
+        -webkit-overflow-scrolling: touch;
+        background: #fff;
+        z-index: 9999;
+    }
+     .mobile-menu-content {
+        flex-direction: column;
+        gap: 40px;
     }
 }
