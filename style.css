@@ -5822,7 +5822,6 @@ img {
         color: #815153;
         font-family: 'Times New Roman', Times, serif;
         font-size: 15px;
-
     }
 
 
@@ -5835,6 +5834,11 @@ img {
         text-align: center;
         font-size: 18px;
 
+    }
+
+    .somatheeram-cta-content {
+        text-align: center;
+        font-size: 18px;
     }
 
     .healing-row {
@@ -5927,6 +5931,46 @@ img {
         margin-top: 0;
     }
 
+    .yoga-cta-section {
+        padding: 40px 40px;
+    }
+
+    .yoga-healing-row {
+
+        gap: 30px;
+        text-align: center;
+    }
+
+
+    .yoga-healing-row img {
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        transform: translate(20px, -20px);
+
+    }
+
+    .marari-healing-journey {
+        font-size: 25px !important;
+        margin: 0;
+        padding-right: 80px;
+        flex: 1;
+        text-wrap: nowrap;
+    }
+
+    .thumbs {
+        gap: 6px;
+        /* reduce spacing */
+        flex-wrap: wrap;
+        /* allow wrap if needed */
+    }
+
+    .thumbs img {
+        width: 44px;
+        /* smaller thumbs */
+        height: 44px;
+    }
 
 }
 
@@ -5997,13 +6041,7 @@ img {
         text-wrap: nowrap;
     }
 
-    .marari-healing-journey {
-        font-size: 25px !important;
-        margin: 0;
-        padding: 0;
-        flex: 1;
-        text-wrap: nowrap;
-    }
+
 
     .about-footer {
         max-width: 60px;
@@ -6055,6 +6093,33 @@ img {
         gap: 10px;
     }
 
+    .yoga-cta-section {
+        padding: 40px 40px;
+    }
+
+    .yoga-healing-row {
+
+        gap: 30px;
+        text-align: center;
+    }
+
+
+    .yoga-healing-row img {
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        transform: translateX(20px);
+
+    }
+
+    .marari-healing-journey {
+        font-size: 25px !important;
+        margin: 0;
+        padding-right: 80px;
+        flex: 1;
+        text-wrap: nowrap;
+    }
 
 
 }
@@ -6213,12 +6278,47 @@ img {
         border-radius: 6px;
     }
 
+
+
+    .yoga-cta-section {
+        padding: 30px 20px;
+    }
+
+    .yoga-healing-row {
+
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .yoga-healing-row img {
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        transform: translate(20px, -20px);
+
+    }
+
     .marari-healing-journey {
-        font-size: 18px !important;
+        font-size: 25px !important;
         margin: 0;
-        padding: 0;
+        padding-right: 80px;
         flex: 1;
         text-wrap: nowrap;
+    }
+
+    .thumbs {
+        gap: 6px;
+        /* reduce spacing */
+        flex-wrap: wrap;
+        /* allow wrap if needed */
+    }
+
+    .thumbs img {
+        width: 44px;
+        /* smaller thumbs */
+        height: 44px;
     }
 }
 
@@ -6264,5 +6364,48 @@ img {
 
     .somatheeram-ayurveda-gallery img {
         border-radius: 6px;
+    }
+
+    .yoga-cta-section {
+        padding: 30px 20px;
+    }
+
+    .yoga-healing-row {
+
+        gap: 20px;
+        text-align: center;
+    }
+
+    .yoga-healing-row img {
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        transform: translate(20px, -20px);
+        /* tweak value */
+    }
+
+     .marari-healing-journey {
+
+        font-size: 18px !important;
+        margin: 0;
+        padding-right: 70px;
+        flex: 1;
+        text-wrap: nowrap;
+        min-width: 0;     
+        
+    }
+
+    .thumbs {
+        gap: 6px;
+        /* reduce spacing */
+        flex-wrap: wrap;
+        /* allow wrap if needed */
+    }
+
+    .thumbs img {
+        width: 44px;
+        /* smaller thumbs */
+        height: 44px;
     }
 }
