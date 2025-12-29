@@ -5856,6 +5856,7 @@ img {
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .about-footer {
@@ -5878,6 +5879,7 @@ img {
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .marari-healing-journey {
@@ -5957,6 +5959,7 @@ img {
         padding-right: 80px;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .thumbs {
@@ -6030,6 +6033,7 @@ img {
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .healing-journey {
@@ -6039,6 +6043,7 @@ img {
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
 
@@ -6119,6 +6124,7 @@ img {
         padding-right: 80px;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
 
@@ -6206,6 +6212,7 @@ img {
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .healing-journey {
@@ -6215,6 +6222,7 @@ img {
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .about-footer {
@@ -6306,6 +6314,7 @@ img {
         padding-right: 80px;
         flex: 1;
         text-wrap: nowrap;
+        min-width: 0;
     }
 
     .thumbs {
