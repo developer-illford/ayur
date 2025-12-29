@@ -1034,14 +1034,11 @@ img:hover {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
+    text-transform: uppercase;
+
 
 }
 
-.ayurveda-retreats-card h5 {
-    color: #313131;
-    font-size: 20PX;
-    font-family: 'Times New Roman', Times, serif;
-}
 
 .ayurveda-retreats-card P {
     color: #313131;
