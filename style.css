@@ -2645,6 +2645,35 @@ img:hover {
     transform: translateY(-45px);
 }
 
+/* SLIDER ADDITION */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-slider .image-grid {
+    flex-wrap: nowrap;
+    /* override wrap */
+    width: max-content;
+    animation: slide 20s linear infinite;
+}
+
+.image-slider .image-card {
+    flex-shrink: 0;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 .contact-hero-section {
     position: relative;
     height: 100vh;
@@ -5179,6 +5208,8 @@ img {
 
 .somatheeram-ayurveda-gallery {
     margin-top: 10%;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .somatheeram-ayurveda-gallery .row {
@@ -5564,6 +5595,8 @@ img {
     display: none;
 }
 
+
+
 @media (max-width: 1024px) {
     .top-row .btn {
         display: none;
@@ -5668,7 +5701,7 @@ img {
     .mobile-menu-right {
         flex: 1;
 
- 
+
     }
 
     .discover-title {
@@ -5705,9 +5738,9 @@ img {
         width: fit-content;
     }
 
-   
 
-   
+
+
 
     .logo-text {
         white-space: wrap;
@@ -5774,7 +5807,8 @@ img {
         text-align: center;
         font-weight: 400;
     }
-     .tes-section-title {
+
+    .tes-section-title {
         font-size: 25px;
         font-family: 'Times New Roman', Times, serif;
         margin-top: 80px;
@@ -5832,14 +5866,68 @@ img {
         padding: 10px 70px;
         margin-top: 20px;
     }
-    .healing-journey{
-    
+
+    .healing-journey {
+
         font-size: 25px !important;
         margin: 0;
         padding: 0;
         flex: 1;
         text-wrap: nowrap;
     }
+
+    .marari-healing-journey {
+        font-size: 25px !important;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
+
+    .healing-power-ayurveda h4 {
+        font-size: 28px;
+    }
+
+    .healing-power-ayurveda p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .pill-container {
+        grid-template-columns: repeat(2, auto);
+        gap: 12px 16px;
+        padding-top: 30px;
+    }
+
+    .pill {
+        padding: 5px 30px;
+        font-size: 13px;
+    }
+
+    .somatheeram-ayurveda-gallery {
+        margin-top: 60px;
+    }
+
+    .somatheeram-ayurveda-gallery .row {
+        gap: 30px;
+    }
+
+    .somatheeram-ayurveda-gallery .col-md-6 {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .gallery-vertical-first,
+    .gallery-vertical-second,
+    .gallery-horizontal-first,
+    .gallery-horizontal-second,
+    .gallery-horizontal-third {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+
 }
 
 @media(min-width : 1026px) and (max-width:1399px) {
@@ -5899,8 +5987,17 @@ img {
         flex: 1;
         text-wrap: nowrap;
     }
-      .healing-journey{
-    
+
+    .healing-journey {
+
+        font-size: 25px !important;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
+
+    .marari-healing-journey {
         font-size: 25px !important;
         margin: 0;
         padding: 0;
@@ -5920,6 +6017,46 @@ img {
         padding: 10px 70px;
         margin-top: 20px;
     }
+
+    .gallery-vertical-first {
+        width: 460px;
+        height: 520px;
+        margin-top: -80px;
+    }
+
+    .gallery-vertical-second {
+        width: 460px;
+        height: 520px;
+        margin-top: 30px;
+    }
+
+    .gallery-horizontal-first,
+    .gallery-horizontal-second,
+    .gallery-horizontal-third {
+        width: 600px;
+        height: 340px;
+    }
+
+    .somatheeram-ayurveda-gallery .col-md-6:last-child {
+        margin-left: 0;
+    }
+
+    .somatheeram-ayurveda-gallery .col-md-6:first-child {
+        padding-right: 20px;
+    }
+
+    .somatheeram-ayurveda-gallery .col-md-6:last-child {
+        padding-left: 20px;
+    }
+
+    .somatheeram-ayurveda-gallery .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -6005,8 +6142,9 @@ img {
         flex: 1;
         text-wrap: nowrap;
     }
-      .healing-journey{
-    
+
+    .healing-journey {
+
         font-size: 18px !important;
         margin: 0;
         padding: 0;
@@ -6023,8 +6161,9 @@ img {
     }
 
     .cta-button {
-        padding: 10px 70px;
+        padding: 10px 80px;
         margin-top: 20px;
+        text-wrap: nowrap;
     }
 
     .mobile-menu {
@@ -6040,12 +6179,51 @@ img {
         background: #fff;
         z-index: 9999;
     }
-     .mobile-menu-content {
+
+    .mobile-menu-content {
         flex-direction: column;
         gap: 40px;
     }
 
+    .healing-power-ayurveda h4 {
+        font-size: 28px;
+    }
+
+    .healing-power-ayurveda p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .pill-container {
+        grid-template-columns: repeat(2, auto);
+        gap: 12px 16px;
+        padding-top: 30px;
+    }
+
+    .pill {
+        padding: 5px 30px;
+        font-size: 13px;
+    }
+
+    .somatheeram-ayurveda-gallery {
+        margin-top: 40px;
+    }
+
+    .somatheeram-ayurveda-gallery img {
+        border-radius: 6px;
+    }
+
+    .marari-healing-journey {
+        font-size: 18px !important;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
 }
+
+
+
 
 
 
@@ -6074,8 +6252,17 @@ img {
         background: #fff;
         z-index: 9999;
     }
-     .mobile-menu-content {
+
+    .mobile-menu-content {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .somatheeram-ayurveda-gallery {
+        margin-top: 40px;
+    }
+
+    .somatheeram-ayurveda-gallery img {
+        border-radius: 6px;
     }
 }
