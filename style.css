@@ -5830,6 +5830,15 @@ img {
 
     .cta-button {
         padding: 10px 70px;
+        margin-top: 20px;
+    }
+    .healing-journey{
+    
+        font-size: 25px !important;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
     }
 }
 
@@ -5890,6 +5899,14 @@ img {
         flex: 1;
         text-wrap: nowrap;
     }
+      .healing-journey{
+    
+        font-size: 25px !important;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
 
     .about-footer {
         max-width: 60px;
@@ -5901,6 +5918,7 @@ img {
 
     .cta-button {
         padding: 10px 70px;
+        margin-top: 20px;
     }
 }
 
@@ -5987,6 +6005,14 @@ img {
         flex: 1;
         text-wrap: nowrap;
     }
+      .healing-journey{
+    
+        font-size: 18px !important;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: nowrap;
+    }
 
     .about-footer {
         max-width: 60px;
@@ -5998,6 +6024,7 @@ img {
 
     .cta-button {
         padding: 10px 70px;
+        margin-top: 20px;
     }
 
     .mobile-menu {
