@@ -4589,10 +4589,10 @@ img {
 
 .villa-slider .slider-nav {
     position: absolute;
-    right: -60px;
-    bottom: -45px;
-    /* sits just below image */
+    right: 15px;
+    bottom: -30px;
     display: flex;
+    gap: 10px;
 
 }
 
@@ -4641,6 +4641,12 @@ img {
 .marari-cottage-offer-tab {
     width: 100%;
     padding: 0 30%;
+}
+.marari-cottage-offer-tab img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .somatheeram-hero-section {
@@ -6045,7 +6051,19 @@ img {
         font-size: 22px;
         width: 90%;
     }
+    .marari-cottage-offer-tab {
+        padding: 0 10%;
+    }
 
+    .marari-cottage-offer-tab .row {
+        justify-content: center;
+    }
+
+    .marari-cottage-offer-tab .col-md-3 {
+        display: flex;
+        justify-content: center;
+    }
+ 
 }
 
 @media(min-width : 1026px) and (max-width:1399px) {
@@ -6235,6 +6253,9 @@ img {
 
     .property-wrapper {
         height: 380px;
+    }
+    .marari-cottage-offer-tab {
+        padding: 0 20%;
     }
 
 }
@@ -6540,12 +6561,25 @@ img {
     .marari-resort-section .row .col-md-6:first-child img {
         margin-top: 50px;
     }
+
     .doctor-section p {
-    
-    width: 90%;
-    font-size: 20px;
- 
-}
+
+        width: 90%;
+        font-size: 20px;
+
+    }
+    .marari-cottage-offer-tab {
+        padding: 0 5%;
+    }
+
+    .marari-cottage-offer-tab .col-md-3 {
+        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
 
 }
 
@@ -6659,5 +6693,20 @@ img {
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .villa-slider {
+        position: relative;
+    }
+
+    .villa-slider .slider-nav {
+        right: -10px;      /* pull arrows inward */
+        bottom: -20px;     /* closer to image/text */
+        gap: 8px;
+    }
+
+    .villa-slider .nav {
+        font-size: 16px; /* optional: slightly smaller arrows */
     }
 }
