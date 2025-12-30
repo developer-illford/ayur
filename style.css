@@ -5585,6 +5585,15 @@ img {
     color: rgba(49, 49, 49, 1);
 }
 
+.intro-divider {
+    /* padding-top: 25px;
+    padding-left: 43%; */
+    display: block;
+    margin: 25px auto 0;
+    max-width: 80%;
+    height: auto;
+}
+
 /* Responsiveness */
 .hamburger {
     display: none;
@@ -5939,7 +5948,7 @@ img {
 
     .yoga-healing-row {
 
-        gap: 30px;
+
         text-align: center;
     }
 
@@ -5949,7 +5958,7 @@ img {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        transform: translate(20px, -20px);
+        transform: translate(-10px, -25px);
 
     }
 
@@ -5973,6 +5982,68 @@ img {
         width: 44px;
         /* smaller thumbs */
         height: 44px;
+    }
+
+    .facilities-section p {
+        width: 90%;
+        font-size: 25px;
+
+    }
+
+    .exp-top-row {
+        margin: 30px 0 20px 0;
+        padding: 0 20px;
+    }
+
+    .exp-top-row p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .exp-icon {
+        width: 65px;
+    }
+
+    .sreenilayam-cottage-gallery-vertical-first {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .sreenilayam-cottage-gallery-horizontal-first,
+    .sreenilayam-cottage-gallery-horizontal-second {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .marari-offer-tab {
+        padding: 40px 10%;
+    }
+
+    .marari-offer-tab .row {
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .marari-offer-tab .col-md-3 {
+        text-align: center;
+    }
+
+    .marari-offer-tab img {
+        max-width: 90px;
+        height: auto;
+    }
+
+    .marari-property-cottages {
+        padding-right: 20px;
+    }
+
+    .property-wrapper {
+        height: 380px;
+    }
+
+    .marari-intro p {
+        font-size: 22px;
+        width: 90%;
     }
 
 }
@@ -6104,22 +6175,22 @@ img {
 
     .yoga-healing-row {
 
-        gap: 30px;
+
         text-align: center;
     }
 
 
     .yoga-healing-row img {
-        max-width: 60px;
+        max-width: 70px;
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        transform: translateX(20px);
+        transform: translate(-10px, 2px);
 
     }
 
     .marari-healing-journey {
-        font-size: 25px !important;
+        font-size: 30px !important;
         margin: 0;
         padding-right: 80px;
         flex: 1;
@@ -6127,6 +6198,44 @@ img {
         min-width: 0;
     }
 
+    .facilities-section p {
+        width: 90%;
+        font-size: 25px;
+
+    }
+
+    .exp-top-row {
+        margin: 30px 0 20px 0;
+        padding: 0 20px;
+    }
+
+    .exp-top-row p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .exp-icon {
+        width: 65px;
+    }
+
+    .sreenilayam-cottage-gallery-vertical-first {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .sreenilayam-cottage-gallery-horizontal-first,
+    .sreenilayam-cottage-gallery-horizontal-second {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .marari-property-cottages {
+        padding-right: 10px;
+    }
+
+    .property-wrapper {
+        height: 380px;
+    }
 
 }
 
@@ -6211,7 +6320,7 @@ img {
         margin: 0;
         padding: 0;
         flex: 1;
-        text-wrap: nowrap;
+        text-wrap: wrap;
         min-width: 0;
     }
 
@@ -6221,7 +6330,7 @@ img {
         margin: 0;
         padding: 0;
         flex: 1;
-        text-wrap: nowrap;
+        text-wrap: wrap;
         min-width: 0;
     }
 
@@ -6286,16 +6395,17 @@ img {
         border-radius: 6px;
     }
 
-
-
     .yoga-cta-section {
         padding: 30px 20px;
     }
 
     .yoga-healing-row {
-
-        gap: 20px;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* move whole row left */
+        gap: 10px;
+        text-align: left;
     }
 
 
@@ -6304,17 +6414,18 @@ img {
         width: 100%;
         height: auto;
         flex-shrink: 0;
-        transform: translate(20px, -20px);
+        transform: translate(-10px, -20px);
 
     }
 
     .marari-healing-journey {
-        font-size: 25px !important;
+        font-size: 17px !important;
         margin: 0;
-        padding-right: 80px;
+        padding: 0px;
         flex: 1;
-        text-wrap: nowrap;
+        text-wrap: wrap;
         min-width: 0;
+        transform: translateX(-15px);
     }
 
     .thumbs {
@@ -6329,6 +6440,107 @@ img {
         /* smaller thumbs */
         height: 44px;
     }
+
+    .facilities-section p {
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .exp-top-row {
+        margin: 20px 0 15px 0;
+        justify-content: center;
+        text-align: left;
+        padding: 0 15px;
+    }
+
+    .exp-top-row p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .exp-icon {
+        width: 55px;
+    }
+
+    .sreenilayam-cottage-gallery-vertical-first {
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+
+    .sreenilayam-cottage-gallery-horizontal-first,
+    .sreenilayam-cottage-gallery-horizontal-second {
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+
+    .marari-offer-tab {
+        padding: 30px 20px;
+    }
+
+    .marari-offer-tab .row {
+        justify-content: center;
+        row-gap: 25px;
+    }
+
+    .marari-offer-tab .col-md-3 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .marari-offer-tab img {
+        max-width: 70px;
+        width: 100%;
+        height: auto;
+    }
+
+    .discover-packages-section .image-overlay-wrap {
+        margin-bottom: 20px;
+    }
+
+    .marari-property-cottages {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .marari-property-cottages h4,
+    .marari-property-cottages h6 {
+        margin-left: 15px;
+    }
+
+    .property-wrapper {
+        height: auto;
+    }
+
+    .first-property,
+    .second-property {
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* spacing when images stack */
+    .marari-property-cottages .property-wrapper {
+        margin-bottom: 20px;
+    }
+
+    /* remove gap after last image */
+    .marari-property-cottages .col-md-4 .property-wrapper {
+        margin-bottom: 0;
+    }
+
+    .marari-intro p {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .middle-img {
+        padding-top: 0px;
+    }
+
+    .marari-resort-section .row .col-md-6:first-child img {
+        margin-top: 50px;
+    }
+
 }
 
 
@@ -6379,31 +6591,13 @@ img {
         padding: 30px 20px;
     }
 
-    .yoga-healing-row {
-
-        gap: 20px;
-        text-align: center;
-    }
-
-    .yoga-healing-row img {
+    /* .yoga-healing-row img {
         max-width: 60px;
         width: 100%;
         height: auto;
         flex-shrink: 0;
         transform: translate(20px, -20px);
-        /* tweak value */
-    }
-
-     .marari-healing-journey {
-
-        font-size: 18px !important;
-        margin: 0;
-        padding-right: 70px;
-        flex: 1;
-        text-wrap: nowrap;
-        min-width: 0;     
-        
-    }
+    } */
 
     .thumbs {
         gap: 6px;
@@ -6416,5 +6610,48 @@ img {
         width: 44px;
         /* smaller thumbs */
         height: 44px;
+    }
+}
+
+/* FIX: extra space below second horizontal image (768px–991px only) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .sreenilayam-cottage-gallery-section .row {
+        align-items: stretch;
+    }
+
+    .sreenilayam-cottage-gallery-section .col-md-6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sreenilayam-cottage-gallery-horizontal-second {
+        margin-bottom: 0;
+    }
+}
+
+/* FIX marari-property-cottages layout (768px–1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .marari-property-cottages .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .marari-property-cottages .col-md-8,
+    .marari-property-cottages .col-md-4 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .marari-property-cottages .property-wrapper {
+        height: auto;
+        /* IMPORTANT */
+    }
+
+    .marari-property-cottages img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
