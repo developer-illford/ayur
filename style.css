@@ -6063,6 +6063,21 @@ img {
         display: flex;
         justify-content: center;
     }
+     .sreenilayam-gallery-section .col-md-6 {
+        width: 50%;
+        padding: 10px !important;
+    }
+
+    .sreenilayam-gallery-section .col-md-6:last-child {
+        margin-left: 0; 
+    }
+
+    .sreenilayam-gallery-section img {
+        margin-bottom: 15px;
+    }
+    .sreenilayam-gallery-section .col-md-6:last-child {
+        margin-top: 80px; /* adjust value as needed */
+    }
  
 }
 
@@ -6256,6 +6271,18 @@ img {
     }
     .marari-cottage-offer-tab {
         padding: 0 20%;
+    }
+    .sreenilayam-gallery-section .col-md-6 {
+        width: 50%;
+        padding: 10px !important;
+    }
+
+    .sreenilayam-gallery-section .col-md-6:last-child {
+        margin-left: 0; /* remove overlap */
+    }
+
+    .sreenilayam-gallery-section img {
+        margin-bottom: 15px;
     }
 
 }
@@ -6580,13 +6607,66 @@ img {
         display: flex;
         justify-content: center;
     }
+     .sreenilayam-gallery-section .row {
+        flex-direction: column;
+    }
+
+    .sreenilayam-gallery-section .col-md-6 {
+        width: 100%;
+        padding: 10px !important;
+    }
+
+    .sreenilayam-gallery-section .col-md-6:last-child {
+        margin-left: 0; /* remove desktop overlap */
+    }
+
+    .sreenilayam-gallery-section img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+     .exclusive-offers .row:last-child {
+        margin-bottom: 0 !important;
+    }
+
+
+    .exclusive-offers .offers-subtitle {
+       text-align: center;
+    }
+    .shirodhara-heading{
+         margin-top: 25px;
+    }
+     .abhyangam-icon {
+        transform: translateY(-30px);
+    }
+
+    .shirodhara-icon {
+        transform: translateY(-20px);
+    }
+    .yoga-icon{
+      margin-top: 10px;
+    }
+    /* Abhyangam HR */
+    .exclusive-offers > .container > .row:nth-of-type(1)
+    .sreenilayam-offer-text hr {
+        transform: translateY(-30px);
+    }
+
+    /* Shirodhara HR */
+    .exclusive-offers > .container > .row:nth-of-type(2)
+    .sreenilayam-offer-text hr {
+        transform: translateY(-20px);
+    }
+    .yoga-exlusive-img{
+        margin-top: 20px;
+    }
+    .nasyam-img{
+        padding-top: 0px;
+    }
+    
+
+
 
 }
-
-
-
-
-
 
 
 

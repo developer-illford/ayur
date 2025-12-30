@@ -16,6 +16,12 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="top-row">
+                    <!-- Hamburger (mobile only) -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="logo">
                         <img src="images/ayur-logo.png" alt="Ayur Destination Logo" class="logo-icon">
                         <span class="logo-text">AYUR DESTINATION</span>
@@ -36,6 +42,40 @@
                 </ul>
             </div>
         </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+
+                <span class="mobile-logo">AYUR DESTINATION</span>
+                <button class="close-menu" id="closeMenu">✕</button>
+            </div>
+            <a href="contact.html" class="mobile-reserve-btn">
+                Reserve Your Retreat
+            </a>
+
+
+            <div class="mobile-menu-content">
+                <!-- LEFT MENU -->
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="ayurveda-experiences.html">Ayurveda Experiences</a></li>
+                    <li><a href="exclusive-offers.html">Exclusive Offers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <!-- RIGHT MENU -->
+                <div class="mobile-menu-right">
+                    <p class="discover-title">Discover Ayur Destination in...</p>
+
+                    <a href="#" class="region-box">Somatheeram Ayurveda Health Resort </a>
+                    <a href="#" class="region-box">Marari Beach Ayurveda Resort</a>
+                    <a href="#" class="region-box">Ayurvedam Sreenilayam</a>
+                </div>
+            </div>
+        </div>
 
         <div class="hero-content">
 
@@ -79,7 +119,7 @@
                         <li>Calms the nervous system and promotes deep relaxation</li>
                     </ul>
 
-                    <img src="images/sreenilayam-ayurveda/abhyangam-icon.png" alt=""
+                    <img src="images/sreenilayam-ayurveda/abhyangam-icon.png" alt="" class=" abhyangam-icon"
                         style="float: left; padding-top: 90px;">
                     <hr style="clear: both;">
 
@@ -112,7 +152,7 @@
                 </div>
                 <!-- Text -->
                 <div class="col-lg-6 mb-4 mb-lg-0 sreenilayam-offer-text">
-                    <h5 class="mb-3">Shirodhara</h5>
+                    <h5 class="mb-3 shirodhara-heading">Shirodhara</h5>
                     <p>
                         About Shirodhara:
                     </p>
@@ -127,7 +167,7 @@
                         <li>Balances the nervous system</li>
                         <li>Promotes deep relaxation and emotional well-being</li>
                     </ul>
-                    <img src="images/sreenilayam-ayurveda/shirodhara-icon.png" alt=""
+                    <img src="images/sreenilayam-ayurveda/shirodhara-icon.png" alt="" class="shirodhara-icon"
                         style="float: left; padding-top: 50px;">
                     <hr style="clear: both;">
 
@@ -191,7 +231,7 @@
                             </div>
                             <div class="col-md-6">
                                 <img src="images/sreenilayam-ayurveda/yoga.png" alt="Ayurveda Massage"
-                                    class="img-fluid">
+                                    class="img-fluid yoga-exlusive-img">
                             </div>
                         </div>
                         <div class="offer-image">
@@ -202,7 +242,7 @@
                     <!-- Text -->
                     <div class="col-lg-6 mb-4 mb-lg-0 yoga-offer-text">
                         <div class="heading-with-icon mb-3">
-                            <img src="images/sreenilayam-ayurveda/yoga-icon.png" alt="Yoga icon">
+                            <img src="images/sreenilayam-ayurveda/yoga-icon.png" alt="Yoga icon" class="yoga-icon">
 
                         </div>
                         <h5 class="mb-3">
@@ -228,7 +268,7 @@
                             help you rediscover balance and well-being a place to revive, rejuvenate, and restore in the
                             heart of authentic Ayurveda.</p>
 
-                       
+
                         <hr style="clear: both;">
 
                     </div>
@@ -380,6 +420,24 @@
     </div>
 
     <script src="zoom.js"></script>
+    <!-- Hamburger -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+
+            hamburger.addEventListener("click", () => {
+                mobileMenu.classList.add("active");
+                hamburger.classList.add("active");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    </script>
 
 </body>
 
