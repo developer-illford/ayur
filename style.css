@@ -791,12 +791,7 @@ img:hover {
     padding: 0px 10%;
 }
 
-.ayurvedic-cures-wrapper {
-    display: flex;
-    align-items: flex-start;
 
-    padding-top: 30px;
-}
 
 .ayurvedic-cures-text {
     flex: 1;
@@ -2886,7 +2881,7 @@ img:hover {
     padding: 12px 50px;
     font-size: 14px;
     font-family: "Raleway", sans-serif;
-    
+
 }
 
 /* ----- RESORT FOOTER ----- */
@@ -6217,6 +6212,7 @@ img {
         padding-left: 5%;
         font-size: 17px;
     }
+
     .gallery-section {
         padding: 0 30px;
     }
@@ -6243,6 +6239,7 @@ img {
         font-size: 18px;
         width: 90%;
     }
+
     .contact-form-wrapper {
         width: 90%;
         padding: 60px 40px;
@@ -6263,8 +6260,10 @@ img {
     .form-row {
         gap: 16px;
     }
+
     .contact-locations {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row */
         gap: 35px;
         padding: 70px 5%;
     }
@@ -6277,6 +6276,7 @@ img {
     .contact-divider {
         width: 75%;
     }
+
     .resort-info {
         justify-content: space-between;
         padding: 40px 4%;
@@ -6299,14 +6299,120 @@ img {
         top: 10%;
         height: 80%;
     }
-     .contact-footer-icons .col-md-3 {
-        margin: 0 30px; /* balanced spacing */
+
+    .contact-footer-icons .col-md-3 {
+        margin: 0 30px;
+        /* balanced spacing */
     }
 
     .contact-footer-icons img {
         width: 60px;
     }
 
+    .home-hero-content {
+        padding: 0 40px;
+    }
+
+    .home-hero-content h2 {
+        margin-right: 0 !important;
+        /* neutralize desktop offset */
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .home-hero-content p {
+        font-size: 18px;
+        max-width: 720px;
+    }
+
+    .what-is-ayurveda {
+        padding: 0 6%;
+    }
+
+    /* Fix heading leaf position */
+    .ayurveda-heading img {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 50px;
+    }
+
+    .ayurvedic-cures-wrapper {
+        gap: 30px;
+    }
+
+    .about-ayurveda-description {
+        width: 100%;
+        font-size: 16.5px;
+    }
+
+    .arc-content {
+        top: 30%;
+        /* adjust arc content position */
+        width: 90%;
+        /* make it slightly wider */
+        gap: 15px;
+        /* spacing between cards */
+        flex-direction: row;
+        /* stack vertically if needed */
+        align-items: center;
+    }
+
+    .ayurveda-retreats-background {
+        margin-top: -120px;
+        /* less negative to prevent overlap */
+    }
+
+    .ayurveda-retreats-card-col {
+        padding: 0 20px;
+        /* reduce side padding */
+    }
+
+    .arc-content p {
+        font-size: 18px;
+        /* smaller text for medium screens */
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .arc-flower {
+        width: 40px;
+        /* smaller flower */
+    }
+
+    .treatment-sample h6 {
+        padding-left: 20px;
+    }
+
+    .treatment-sample h3 {
+        padding-left: 20px;
+    }
+
+    .treatment-sample p {
+        padding-left: 20px;
+        padding-bottom: 0;
+    }
+
+    .home-cta-section h3 {
+        font-size: 28px;
+    }
+
+    .home-cta-section .row {
+        margin-top: 60px;
+    }
+
+    .authentic-ayurveda-centres-heading {
+        font-size: 22px;
+    }
+
+    .authentic-ayurveda-centres-para {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .wcu-overlay-text p {
+        font-size: 16px;
+    }
 
 }
 
@@ -6564,6 +6670,7 @@ img {
         /* reduce negative margin */
         margin-right: -10px;
     }
+
     .gallery-section {
         padding: 0 40px;
     }
@@ -6584,6 +6691,74 @@ img {
     .main-gallery p {
         font-size: 18px;
         width: 85%;
+    }
+
+    .what-is-ayurveda {
+        padding: 0 6%;
+    }
+
+    /* Fix heading leaf position */
+    .ayurveda-heading img {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 70px;
+    }
+
+    .ayurvedic-cures-wrapper {
+        gap: 30px;
+    }
+
+    .about-ayurveda-description {
+        width: 100%;
+        font-size: 16.5px;
+    }
+
+    .arc-content {
+        top: 30%;
+        /* adjust arc content position */
+        width: 90%;
+        /* make it slightly wider */
+        gap: 15px;
+        /* spacing between cards */
+        flex-direction: row;
+        /* stack vertically if needed */
+        align-items: center;
+    }
+
+    .ayurveda-retreats-background {
+        margin-top: -120px;
+        /* less negative to prevent overlap */
+    }
+
+    .ayurveda-retreats-card-col {
+        padding: 0 20px;
+        /* reduce side padding */
+    }
+
+    .arc-content p {
+        font-size: 18px;
+        /* smaller text for medium screens */
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .arc-flower {
+        width: 40px;
+        /* smaller flower */
+    }
+
+    .treatment-sample h6 {
+        padding-left: 20px;
+    }
+
+    .treatment-sample h3 {
+        padding-left: 20px;
+    }
+
+    .treatment-sample p {
+        padding-left: 20px;
+        padding-bottom: 0;
     }
 
 }
@@ -6835,6 +7010,7 @@ img {
     .marari-offer-tab .col-md-3 {
         width: 50%;
         text-align: center;
+
     }
 
     .marari-offer-tab img {
@@ -7104,9 +7280,9 @@ img {
     }
 
     .offer-tab .row .col-md-3 {
-        flex: 0 0 100%;
+        flex: 0 0 100% !important;
         /* 1 per row */
-        max-width: 100%;
+        max-width: 100% !important;
         margin-bottom: 20px;
     }
 
@@ -7122,7 +7298,7 @@ img {
         font-size: 14px;
     }
 
- 
+
 
     .image-card-row {
         display: flex;
@@ -7208,10 +7384,12 @@ img {
         text-align: left;
         margin-left: 10%;
     }
+
     .text-center p {
         font-size: 20px;
         width: 80%;
     }
+
     .gallery-section {
         padding: 0 15px;
         flex-direction: column;
@@ -7251,6 +7429,7 @@ img {
         font-size: 16px;
         width: 100%;
     }
+
     .contact-form-wrapper {
         width: 100%;
         padding: 40px 20px;
@@ -7279,11 +7458,13 @@ img {
     }
 
     .contact-form button {
-        margin: 0 auto; /* center button only in mobile */
+        margin: 0 auto;
+        /* center button only in mobile */
     }
 
-     .contact-locations {
-        grid-template-columns: 1fr; /* 1 per row */
+    .contact-locations {
+        grid-template-columns: 1fr;
+        /* 1 per row */
         gap: 30px;
         padding: 50px 20px;
     }
@@ -7303,6 +7484,7 @@ img {
         height: 5px;
         margin: 20px auto;
     }
+
     .contact-reserve-retreat p {
         width: 90%;
         margin: 0 auto;
@@ -7310,6 +7492,7 @@ img {
         padding-bottom: 20px;
 
     }
+
     .resort-info {
         flex-direction: column;
         padding: 30px 20px;
@@ -7338,7 +7521,8 @@ img {
     .resort-item p {
         font-size: 16px;
     }
-     .contact-footer-icons {
+
+    .contact-footer-icons {
         padding-bottom: 40px;
     }
 
@@ -7347,15 +7531,201 @@ img {
     }
 
     .contact-footer-icons .col-md-3 {
-        margin: 10px 10px; /* reduce spacing */
+        margin: 10px 10px;
+        /* reduce spacing */
     }
 
     .contact-footer-icons img {
-        width: 50px; /* scale icons down */
+        width: 50px;
+        /* scale icons down */
     }
+
+    .home-hero-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .home-hero-content h2 {
+        margin-right: 0 !important;
+        /* remove forced offset */
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .home-hero-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .book-now-button {
+        margin-top: 15px;
+    }
+
+    .what-is-ayurveda {
+        padding: 0 20px;
+    }
+
+    /* Heading */
+    .ayurveda-heading {
+        text-align: center;
+    }
+
+    .ayurveda-heading img {
+        position: static;
+        /* remove absolute positioning */
+        display: block;
+        margin: 15px auto 0;
+        width: 60px;
+    }
+
+    /* Intro paragraph */
+    .what-is-ayurveda>p {
+        font-size: 16px !important;
+        padding-top: 20px !important;
+    }
+
+    /* Stack image & text */
+    .ayurvedic-cures-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .ayurvedic-cure {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-ayurveda-description {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about-ayurveda-text {
+        text-align: center;
+    }
+
+    .about-ayurveda-text img {
+        padding-top: 30px !important;
+    }
+
+    .hero-about {
+        width: 90%;
+    }
+
+    .discover-more {
+        padding-bottom: 0;
+    }
+
+    .home-arc-section {
+        display: block;
+        width: 100%;
+    }
+
+    .arc-content {
+        top: 50%;
+        width: 90%;
+        flex-direction: row;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .arc-flower {
+        width: 40px;
+        transform: translate(30px, -30px);
+    }
+
+
+    .arc-content p {
+        font-size: 15px;
+        margin-top: -25px;
+
+
+    }
+
+    /* Push cards BELOW the arc */
+    .ayurveda-retreats-background {
+        margin-top: 0;
+        padding-top: 0px;
+    }
+
+    .ayurveda-retreats-card-col {
+        padding: 10px 16px;
+    }
+
+    .ayurveda-retreats-card {
+        margin-bottom: 20px;
+    }
+
+    .ayurvedic-cures-description {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .treatment-sample h6 {
+        padding-left: 20px;
+    }
+
+    .treatment-sample h3 {
+        padding-left: 20px;
+    }
+
+    .treatment-sample p {
+        padding-left: 20px;
+        padding-bottom: 0;
+    }
+
+    .property-cottages-heading {
+        font-size: 28px;
+    }
+
+    .property-cottages-description {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .trusted-text {
+        font-size: 15px !important;
+        width: 90% !important;
+    }
+
+    .home-cta-section {
+        padding: 40px 40px;
+    }
+
+    .home-cta-section>p {
+        width: 100%;
+    }
+
+    .home-cta-section .col-md-4 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .home-cta-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .authentic-ayurveda-centres-heading {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .authentic-ayurveda-centres-para {
+        font-size: 15px;
+
+    }
+
+    .wcu-overlay-text {
+        font-size: 15px;
+    }
+
 }
 
-    
+
 
 
 
@@ -7528,6 +7898,7 @@ img {
         margin-right: -10px;
     }
 }
+
 /* ===== FIX FOR 769px – 815px ONLY ===== */
 @media (min-width: 769px) and (max-width: 815px) {
 
@@ -7577,5 +7948,57 @@ img {
         height: 1px;
         background-color: #a5a5a5;
         opacity: 0.8;
+    }
+
+}
+
+@media(min-width:769px) and (max-width:1159px) {
+    .what-is-ayurveda {
+        padding: 0 20px;
+    }
+
+    /* Heading */
+    .ayurveda-heading {
+        text-align: center;
+    }
+
+    .ayurveda-heading img {
+        position: static;
+        /* remove absolute positioning */
+        display: block;
+        margin: 15px auto 0;
+        width: 60px;
+    }
+
+    /* Intro paragraph */
+    .what-is-ayurveda>p {
+        font-size: 16px !important;
+        padding-top: 20px !important;
+    }
+
+    /* Stack image & text */
+    .ayurvedic-cures-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .ayurvedic-cure {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-ayurveda-description {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about-ayurveda-text {
+        text-align: center;
+    }
+
+    .about-ayurveda-text img {
+        padding-top: 30px !important;
     }
 }
