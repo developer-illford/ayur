@@ -3274,9 +3274,13 @@ img {
 }
 
 .about-mali img {
-    width: 944px;
-    height: 588px;
+    width: 100%;
+    max-width: 944px;
+    /* keeps desktop size */
+    height: auto;
+    /* maintains landscape ratio */
     margin-top: 20px;
+    display: block;
 }
 
 .about-mali h6 {
@@ -6142,20 +6146,101 @@ img {
         bottom: 5%;
         max-width: 60px;
     }
+
     .offer-tab {
-        padding: 5% 5%; /* reduce padding */
+        padding: 5% 5%;
+        /* reduce padding */
     }
 
     .offer-tab .row .col-md-3 {
-        flex: 50 0 50%; /* 2 per row */
+        flex: 50 0 50%;
+        /* 2 per row */
         max-width: 50%;
         margin-bottom: 20px;
     }
-     .offer-tab .row {
-        margin-left: -20px;  /* reduce negative margin */
-        margin-right:  -20px;
+
+    .offer-tab .row {
+        margin-left: -20px;
+        /* reduce negative margin */
+        margin-right: -20px;
     }
-    .essence-para{
+
+    .essence-para {
+        width: 90%;
+    }
+
+    .image-card-row .col-md-6 img {
+        transform: translateX(0);
+        /* reset horizontal image shift */
+        width: 100%;
+        /* make images full width of the column */
+    }
+
+    .left-info-card,
+    .right-info-card {
+        position: relative;
+        /* stack cards below images */
+        top: -70px;
+        right: 0;
+        width: auto;
+        /* let the card occupy full column width */
+        margin: 15px auto 0;
+        /* center the card */
+        padding: 20px;
+    }
+
+    .img-box {
+        padding-bottom: 20px;
+        /* less spacing between stacked content */
+    }
+
+    .amenities img {
+        float: none;
+        width: 70%;
+        max-width: 400px;
+        margin: 0 auto 25px;
+        display: block;
+    }
+
+    .amenities h4 {
+        padding-left: 5%;
+        font-size: 19px;
+    }
+
+    .amenities p {
+        padding-left: 5%;
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .amenities li {
+        padding-left: 5%;
+        font-size: 17px;
+    }
+    .gallery-section {
+        padding: 0 30px;
+    }
+
+    .gallery-imgs {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-section .col-md-6 {
+        width: 50%;
+    }
+
+    .main-gallery {
+        background-size: cover;
+        padding: 30px 20px;
+    }
+
+    .main-gallery h2 {
+        font-size: 30px;
+    }
+
+    .main-gallery p {
+        font-size: 18px;
         width: 90%;
     }
 
@@ -6397,18 +6482,44 @@ img {
     .ae-heading-wrapper p {
         width: 75%;
     }
-     .offer-tab {
-        padding: 5% 5%; /* reduce padding */
+
+    .offer-tab {
+        padding: 5% 5%;
+        /* reduce padding */
     }
 
     .offer-tab .row .col-md-3 {
-        flex: 40% 0 40%; /* 2 per row */
+        flex: 40% 0 40%;
+        /* 2 per row */
         max-width: 50%;
         margin-bottom: 20px;
     }
-     .offer-tab .row {
-        margin-left: -20px;  /* reduce negative margin */
-        margin-right:  -10px;
+
+    .offer-tab .row {
+        margin-left: -20px;
+        /* reduce negative margin */
+        margin-right: -10px;
+    }
+    .gallery-section {
+        padding: 0 40px;
+    }
+
+    .gallery-imgs {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-gallery {
+        background-size: contain;
+    }
+
+    .main-gallery h2 {
+        font-size: 32px;
+    }
+
+    .main-gallery p {
+        font-size: 18px;
+        width: 85%;
     }
 
 }
@@ -6917,22 +7028,27 @@ img {
     .essence-heading {
         text-align: center;
     }
-    .essence-para{
+
+    .essence-para {
         width: 100%;
         font-size: 18px;
     }
+
     .offer-tab {
-        padding: 5% 3%; /* further reduce padding */
+        padding: 5% 3%;
+        /* further reduce padding */
     }
 
     .offer-tab .row .col-md-3 {
-        flex: 0 0 100%; /* 1 per row */
+        flex: 0 0 100%;
+        /* 1 per row */
         max-width: 100%;
         margin-bottom: 20px;
     }
 
     .offer-tab .card img {
-        max-width: 80%; /* make images smaller on mobile */
+        max-width: 80%;
+        /* make images smaller on mobile */
         margin: 0 auto;
         display: block;
     }
@@ -6940,6 +7056,136 @@ img {
     .offer-tab .card p {
         text-align: center;
         font-size: 14px;
+    }
+
+ 
+
+    .image-card-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* space between stacked items */
+    }
+
+    .image-card-row .col-md-6 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image-card-row .col-md-6 img {
+        transform: translateX(0);
+        /* reset shifts */
+        width: 100%;
+        height: auto;
+        /* maintain aspect ratio */
+    }
+
+    .left-info-card,
+    .right-info-card {
+        position: relative;
+        /* stack cards under images */
+        top: -90px;
+        right: 0;
+        width: 90%;
+        /* slight margin on mobile */
+        margin: 10px auto 0;
+        padding: 15px;
+    }
+
+    .img-box {
+        padding-bottom: 20px;
+        /* reduce spacing */
+    }
+
+    .left-info-card h4,
+    .right-info-card h4 {
+        font-size: 18px;
+        /* slightly smaller headings */
+    }
+
+    .left-info-card p,
+    .right-info-card p {
+        font-size: 14px;
+        /* slightly smaller text */
+    }
+
+    .amenities {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .amenities img {
+        float: none;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .amenities h4 {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .amenities p {
+        padding-left: 0;
+        width: 100%;
+        font-size: 16px;
+        margin: 0 auto 20px;
+    }
+
+    .amenities ul {
+        padding-left: 0;
+    }
+
+    .amenities li {
+        padding-left: 0;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 10%;
+    }
+    .text-center p {
+        font-size: 20px;
+        width: 80%;
+    }
+    .gallery-section {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .gallery-section .row {
+        margin: 0;
+    }
+
+    .gallery-section .col-md-4 {
+        width: 100%;
+        /* margin-bottom: 20px; */
+    }
+
+    /* 2 images per row on mobile */
+    .gallery-section .col-md-6 {
+        width: 50%;
+    }
+
+    .gallery-imgs {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-gallery {
+        min-height: 280px;
+        background-size: cover;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-gallery h2 {
+        font-size: 26px;
+    }
+
+    .main-gallery p {
+        font-size: 16px;
+        width: 100%;
     }
 }
 
@@ -7093,18 +7339,23 @@ img {
         text-align: center;
     }
 }
-@media(max-width:1025px){
-      .offer-tab {
-        padding: 5% 5%; /* reduce padding */
+
+@media(max-width:1025px) {
+    .offer-tab {
+        padding: 5% 5%;
+        /* reduce padding */
     }
 
     .offer-tab .row .col-md-3 {
-        flex: 40% 0 40%; /* 2 per row */
+        flex: 40% 0 40%;
+        /* 2 per row */
         max-width: 50%;
         margin-bottom: 20px;
     }
-     .offer-tab .row {
-        margin-left: -20px;  /* reduce negative margin */
-        margin-right:  -10px;
+
+    .offer-tab .row {
+        margin-left: -20px;
+        /* reduce negative margin */
+        margin-right: -10px;
     }
 }
