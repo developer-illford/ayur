@@ -16,6 +16,12 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="top-row">
+                    <!-- Hamburger (mobile only) -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="logo">
                         <img src="images/ayur-logo.png" alt="Ayur Destination Logo" class="logo-icon">
                         <span class="logo-text">AYUR DESTINATION</span>
@@ -34,6 +40,40 @@
                 </ul>
             </div>
         </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+
+                <span class="mobile-logo">AYUR DESTINATION</span>
+                <button class="close-menu" id="closeMenu">✕</button>
+            </div>
+            <a href="contact.html" class="mobile-reserve-btn">
+                Reserve Your Retreat
+            </a>
+
+
+            <div class="mobile-menu-content">
+                <!-- LEFT MENU -->
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="ayurveda-experiences.html">Ayurveda Experiences</a></li>
+                    <li><a href="exclusive-offers.html">Exclusive Offers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <!-- RIGHT MENU -->
+                <div class="mobile-menu-right">
+                    <p class="discover-title">Discover Ayur Destination in...</p>
+
+                    <a href="#" class="region-box">Somatheeram Ayurveda Health Resort </a>
+                    <a href="#" class="region-box">Marari Beach Ayurveda Resort</a>
+                    <a href="#" class="region-box">Ayurvedam Sreenilayam</a>
+                </div>
+            </div>
+        </div>
 
         <div class="hero-content">
             <h1>Timeless Ayurvedic Journeys</h1>
@@ -113,9 +153,9 @@
 
     <!-- slider section start -->
     <div class="deluxe-container">
-        <h6 class="text-uppercase" style="padding-bottom: 20px; padding-top: 40px;">Experience the Essence of Kerala
+        <h6 class="text-uppercase essence-heading">Experience the Essence of Kerala
             Ayurveda</h6>
-        <p style="width: 50%; text-align: center; font-size: 16px;"><strong><em> Expertise in authentic Ayurvedic
+        <p class="essence-para"><strong><em> Expertise in authentic Ayurvedic
                     tourism, we invite you to explore
                     Kerala through healing journeys that span the length of the state. From serene seaside retreats in
                     the south
@@ -535,6 +575,24 @@
     </div>
 
     <script src="zoom.js"></script>
+    <!-- Hamburger -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+
+            hamburger.addEventListener("click", () => {
+                mobileMenu.classList.add("active");
+                hamburger.classList.add("active");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    </script>
 
 </body>
 
