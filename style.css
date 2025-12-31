@@ -2886,7 +2886,7 @@ img:hover {
     padding: 12px 50px;
     font-size: 14px;
     font-family: "Raleway", sans-serif;
-    ;
+    
 }
 
 /* ----- RESORT FOOTER ----- */
@@ -6243,6 +6243,70 @@ img {
         font-size: 18px;
         width: 90%;
     }
+    .contact-form-wrapper {
+        width: 90%;
+        padding: 60px 40px;
+    }
+
+    .contact-form {
+        padding: 50px 40px;
+    }
+
+    .contact-form h3 {
+        font-size: 30px;
+    }
+
+    .contact-form p {
+        font-size: 17px;
+    }
+
+    .form-row {
+        gap: 16px;
+    }
+    .contact-locations {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+        gap: 35px;
+        padding: 70px 5%;
+    }
+
+    .location-box p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .contact-divider {
+        width: 75%;
+    }
+    .resort-info {
+        justify-content: space-between;
+        padding: 40px 4%;
+    }
+
+    .resort-item {
+        padding: 20px 15px;
+    }
+
+    .resort-item h4 {
+        font-size: 17px;
+    }
+
+    .resort-item p {
+        font-size: 16.5px;
+    }
+
+    /* Reduce divider height slightly */
+    .resort-item:not(:last-child)::after {
+        top: 10%;
+        height: 80%;
+    }
+     .contact-footer-icons .col-md-3 {
+        margin: 0 30px; /* balanced spacing */
+    }
+
+    .contact-footer-icons img {
+        width: 60px;
+    }
+
 
 }
 
@@ -7187,7 +7251,112 @@ img {
         font-size: 16px;
         width: 100%;
     }
+    .contact-form-wrapper {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .contact-form {
+        padding: 35px 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 26px;
+    }
+
+    .contact-form p {
+        font-size: 16px;
+    }
+
+    /* Stack inputs vertically */
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form textarea {
+        height: 110px;
+    }
+
+    .contact-form button {
+        margin: 0 auto; /* center button only in mobile */
+    }
+
+     .contact-locations {
+        grid-template-columns: 1fr; /* 1 per row */
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .location-box img {
+        margin: 15px auto 8px;
+        max-width: 40px;
+    }
+
+    .location-box p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .contact-divider {
+        width: 85%;
+        height: 5px;
+        margin: 20px auto;
+    }
+    .contact-reserve-retreat p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        padding-bottom: 20px;
+
+    }
+    .resort-info {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .resort-item {
+        padding: 25px 10px;
+    }
+
+    /* Remove vertical divider on mobile */
+    .resort-item::after {
+        display: none;
+    }
+
+    /* Add horizontal divider instead */
+    .resort-item:not(:last-child) {
+        border-bottom: 1px solid #a5a5a5;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+    }
+
+    .resort-item h4 {
+        font-size: 16px;
+    }
+
+    .resort-item p {
+        font-size: 16px;
+    }
+     .contact-footer-icons {
+        padding-bottom: 40px;
+    }
+
+    .contact-footer-icons .row {
+        flex-wrap: nowrap;
+    }
+
+    .contact-footer-icons .col-md-3 {
+        margin: 10px 10px; /* reduce spacing */
+    }
+
+    .contact-footer-icons img {
+        width: 50px; /* scale icons down */
+    }
 }
+
+    
+
 
 
 
@@ -7357,5 +7526,56 @@ img {
         margin-left: -20px;
         /* reduce negative margin */
         margin-right: -10px;
+    }
+}
+/* ===== FIX FOR 769px – 815px ONLY ===== */
+@media (min-width: 769px) and (max-width: 815px) {
+
+    .resort-info {
+        justify-content: center;
+    }
+
+    .resort-item {
+        flex: 0 0 48%;
+        max-width: 48%;
+        position: relative;
+    }
+
+    /* Third item full width */
+    .resort-item:nth-child(3) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+
+    /* ===== VERTICAL LINE BETWEEN ITEM 1 & 2 ===== */
+    .resort-item:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 1px;
+        height: 70%;
+        background-color: #a5a5a5;
+        opacity: 0.8;
+    }
+
+    /* Disable divider on item 2 & 3 */
+    .resort-item:nth-child(2)::after,
+    .resort-item:nth-child(3)::after {
+        display: none;
+    }
+
+    /* ===== HORIZONTAL LINE ABOVE ITEM 3 ===== */
+    .resort-item:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        height: 1px;
+        background-color: #a5a5a5;
+        opacity: 0.8;
     }
 }
