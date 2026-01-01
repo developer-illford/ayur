@@ -2210,7 +2210,7 @@ img:hover {
 
 .yoga-gallery {
     position: relative;
-    background-color: #f4efe9;
+
     /* beige base */
     padding: 2rem 0;
 }
@@ -2219,6 +2219,7 @@ img:hover {
     position: relative;
     width: 100%;
     margin: 0 auto;
+      overflow: hidden;
 }
 
 /* Brown bar (partially behind last image) */
@@ -2229,7 +2230,7 @@ img:hover {
     /* must have 'px' */
     right: 0;
     width: 70%;
-    height: 55%;
+    height: 75%;
     background-color: #815153;
     z-index: 0;
     /* behind the images */
@@ -2245,7 +2246,7 @@ img:hover {
     position: relative;
     z-index: 1;
     /* above brown bar */
-    margin-left: -370px;
+    /* margin-left: -370px; */
 }
 
 .gallery img {
@@ -3147,10 +3148,7 @@ img {
 
 }
 
-.wcu-overlay-text p {
-    font-size: 17px;
 
-}
 
 .our-services h6 {
     color: #313131;
@@ -6393,27 +6391,27 @@ img {
         padding-bottom: 0;
     }
 
-    .home-cta-section h3 {
-        font-size: 28px;
+
+    .gallery {
+        gap: 8px;
     }
 
-    .home-cta-section .row {
-        margin-top: 60px;
+    .gallery img {
+        max-width: 220px;
     }
 
-    .authentic-ayurveda-centres-heading {
-        font-size: 22px;
+    .gallery-wrapper::after {
+        width: 80%;
+        height: 75%;
+        bottom: -70px;
     }
+.left-img{
+    display: none;
+}
+.right-img{
+    display: none;
 
-    .authentic-ayurveda-centres-para {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    .wcu-overlay-text p {
-        font-size: 16px;
-    }
-
+}
 }
 
 @media(min-width : 1026px) and (max-width:1399px) {
@@ -6760,6 +6758,20 @@ img {
         padding-left: 20px;
         padding-bottom: 0;
     }
+      .gallery {
+        gap: 8px;
+    }
+
+    .gallery img {
+        max-width: 220px;
+    }
+
+    .gallery-wrapper::after {
+        width: 80%;
+        height: 75%;
+        bottom: -70px;
+    }
+ 
 
 }
 
@@ -7690,38 +7702,62 @@ img {
         font-size: 15px !important;
         width: 90% !important;
     }
-
-    .home-cta-section {
-        padding: 40px 40px;
+    .offer-icon{
+        position: absolute;
+    left:0px;
+    /* shift image left of text */
+    top: -65px;
+    /* raise slightly above h3 */
+    width: 80px;
+    /* adjust to match badge size */
+    height: auto;
+    }
+    .left-img{
+        display: none;
+    }
+     .right-img{
+        display: none;
+    }
+    .yoga-flex{
+        width: 80%;
+    }
+    .who-we-serve p{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .who-we-serve li{
+        font-size: 18px;
     }
 
-    .home-cta-section>p {
+   .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .gallery img {
+        max-width: 45%;
+    }
+
+    .gallery-wrapper::after {
+        width: 100%;
+        height: 30%;
+        bottom: -40px;
+    }
+    .yoga-cta-content{
         width: 100%;
     }
-
-    .home-cta-section .col-md-4 {
-        text-align: center;
-        margin-bottom: 30px;
+    .yoga-healing-journey{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        text-wrap: wrap;
+        min-width: 0;
     }
+  
 
-    .home-cta-section img {
-        width: 100%;
-        height: auto;
-    }
-
-    .authentic-ayurveda-centres-heading {
-        font-size: 20px;
-        margin-top: 15px;
-    }
-
-    .authentic-ayurveda-centres-para {
-        font-size: 15px;
-
-    }
-
-    .wcu-overlay-text {
-        font-size: 15px;
-    }
 
 }
 
@@ -8000,5 +8036,22 @@ img {
 
     .about-ayurveda-text img {
         padding-top: 30px !important;
+    }
+}
+@media(min-width:769px) and (max-width:1170px){
+      .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .gallery img {
+        max-width: 45%;
+    }
+
+    .gallery-wrapper::after {
+        width: 100%;
+        height: 30%;
+        bottom: -40px;
     }
 }
