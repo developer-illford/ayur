@@ -6466,6 +6466,9 @@ img {
     .somatheeram-yoga-healing-row h6:last-child {
         padding-bottom: 0px;
     }
+    
+    
+
 }
 
 @media(min-width : 1026px) and (max-width:1399px) {
@@ -7902,8 +7905,98 @@ img {
     .somatheeram-yoga-healing-row h6:last-child {
         padding-bottom: 0px;
     }
+      .home-healing-journey {
+        margin-top: 40%;
+        font-size: 20px;
+        text-align: center;
 }
+ /* Section spacing */
+    .home-cta-section {
+        padding: 40px 15px;
+    }
 
+    .home-cta-section h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-cta-section p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    /* Stack cards */
+    .why-choose-us-row > .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    /* Uniform image size */
+    .why-choose-us-row img {
+        width: 100%;
+        /* height: 420px; */
+        object-fit: cover;
+        /* border-radius: 12px; */
+        display: block;
+    }
+
+    /* Headings under images */
+    .authentic-ayurveda-centres-heading {
+        font-size: 20px;
+        padding-top: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraphs under images */
+    .authentic-ayurveda-centres-para {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    /* Overlay container */
+    .why-choose-us-row .wcu-image-overlay-container {
+        position: relative;
+        height: 420px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    /* Overlay image */
+    .why-choose-us-row .wcu-image-overlay-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Overlay text */
+    .why-choose-us-row .wcu-overlay-text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        /* background: rgba(0, 0, 0, 0.45); */
+        text-align: center;
+    }
+
+    .why-choose-us-row .wcu-overlay-text h4 {
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .why-choose-us-row .wcu-overlay-text p {
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+}
 
 
 
@@ -7970,6 +8063,40 @@ img {
         width: 44px;
         /* smaller thumbs */
         height: 44px;
+    }
+      /* Remove border radius on container with background image */
+    .service-imag {
+        border-radius: 0 !important; /* override if needed */
+        overflow: visible; /* ensure nothing gets clipped */
+        position: relative;
+        height: auto;
+    }
+
+    /* Image with no border-radius and natural height */
+    .service-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 0 !important;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Overlay content visible fully, flows naturally */
+    .overlay-content {
+        position: static; /* normal flow so container height grows */
+        /* background: rgba(0, 0, 0, 0.45);  */
+        padding: 16px 14px;
+        color: #fff;
+        text-align: left;
+        overflow: visible;
+    }
+
+    .service-steps {
+        max-width: 100%;
+        width: 100%;
+    }
+    .step{
+        padding: 20px 20px 20px 70px;
     }
 }
 
@@ -8197,5 +8324,90 @@ img {
         width: 100%;
         height: 30%;
         bottom: -40px;
+    }
+}
+@media (max-width: 1429px) {
+
+    .service-image {
+        position: relative;
+        height: auto;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: auto;
+        min-height: 520px; /* KEY FIX */
+        object-fit: cover;
+    }
+
+    .overlay-content {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-start; /* allow content to flow down */
+        padding: 24px 20px;
+    }
+
+    .service-steps {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media(max-width:1500px){
+    .why-choose-us-row > .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /* Overlay card height control */
+    .why-choose-us-row .wcu-image-overlay-container {
+        position: relative;
+        min-height: 420px;
+    }
+
+    .why-choose-us-row .wcu-image-overlay-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Overlay text stays inside image */
+    .why-choose-us-row .wcu-overlay-text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px 20px;
+        /* background: rgba(0, 0, 0, 0.45); */
+        text-align: center;
+       
+    }
+
+    .why-choose-us-row .wcu-overlay-text h4 {
+        font-size: 30px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .why-choose-us-row .wcu-overlay-text p {
+        font-size: 25px;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+
+    /* Text spacing for other cards */
+    .why-choose-us-row .authentic-ayurveda-centres-para {
+        padding: 0 12px;
+        font-size: 15.5px;
+        line-height: 1.6;
+    }
+      /* Make all images uniform */
+    .why-choose-us-row img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
     }
 }
