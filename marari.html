@@ -32,7 +32,7 @@
 
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                     <li class="has-submenu">
+                    <li class="has-submenu">
                         <a href="#">
                             Destinations <span class="arrow">▾</span>
                         </a>
@@ -101,7 +101,7 @@
                 <!-- LEFT MENU -->
                 <ul class="mobile-nav-links">
                     <li><a href="index.html">Home</a></li>
-                     <li class="has-submenu">
+                    <li class="has-submenu">
                         <a href="#">
                             Destinations <span class="arrow">▾</span>
                         </a>
@@ -187,8 +187,7 @@
                 while
                 our cuisine reflects the culinary subtleties of these people whose sensibilities and culture have been
                 influenced by the charms and challenges of the oceans.</p>
-            <img src="images/ayurvedam-sreenilayam/ayurvedam-sreenilayam-divider.png" alt="" class="intro-divider"
-               >
+            <img src="images/ayurvedam-sreenilayam/ayurvedam-sreenilayam-divider.png" alt="" class="intro-divider">
         </div>
 
         <section class="marari-property-cottages">
@@ -539,6 +538,16 @@
                 hamburger.classList.remove("active");
             });
         });
+    </script>
+    <!--dropdown for mobile-->
+    <script>
+        document.querySelectorAll('.mobile-nav-links .has-submenu > a')
+            .forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                });
+            });
     </script>
 </body>
 

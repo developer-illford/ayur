@@ -56,7 +56,7 @@
                 <!-- LEFT MENU -->
                 <ul class="mobile-nav-links">
                     <li><a href="index.html">Home</a></li>
-                     <li class="has-submenu">
+                    <li class="has-submenu">
                         <a href="#">
                             Destinations <span class="arrow">▾</span>
                         </a>
@@ -413,6 +413,16 @@
                 hamburger.classList.remove("active");
             });
         });
+    </script>
+    <!--dropdown for mobile-->
+    <script>
+        document.querySelectorAll('.mobile-nav-links .has-submenu > a')
+            .forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                });
+            });
     </script>
 
 </body>

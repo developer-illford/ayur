@@ -556,6 +556,16 @@
             });
         });
     </script>
+    <!--dropdown for mobile-->
+    <script>
+        document.querySelectorAll('.mobile-nav-links .has-submenu > a')
+            .forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                });
+            });
+    </script>
 </body>
 
 </html>
