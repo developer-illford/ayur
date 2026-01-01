@@ -2219,7 +2219,7 @@ img:hover {
     position: relative;
     width: 100%;
     margin: 0 auto;
-      overflow: hidden;
+    overflow: hidden;
 }
 
 /* Brown bar (partially behind last image) */
@@ -5068,11 +5068,16 @@ img {
     font-size: 18px;
 }
 
+
 .somatheeram-yoga-healing-row h6 {
     width: 60%;
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
+}
+
+.somatheeram-yoga-healing-row h6:last-child {
+    padding-bottom: 30px;
 }
 
 .somatheeram-yoga-healing-row h2 {
@@ -6405,13 +6410,62 @@ img {
         height: 75%;
         bottom: -70px;
     }
-.left-img{
-    display: none;
-}
-.right-img{
-    display: none;
 
-}
+    .left-img {
+        display: none;
+    }
+
+    .right-img {
+        display: none;
+
+    }
+
+    .somatheeram-intro h3 {
+        font-size: 25px;
+    }
+
+    .somatheeram-intro p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .somatheeram-gallery {
+        flex-wrap: wrap;
+        /* allow images to wrap */
+        justify-content: center;
+        margin-left: 0;
+        /* remove negative margin */
+        gap: 10px;
+    }
+
+    .somatheeram-gallery img {
+        max-width: 45%;
+        /* 2 images per row */
+    }
+
+    .somatheeram-gallery-wrapper::after {
+        width: 90%;
+        /* adjust brown bar */
+        bottom: -60px;
+        height: 50%;
+    }
+
+    .somatheeram-yoga-healing-row p,
+    .somatheeram-yoga-healing-row h6 {
+        width: 80%;
+        /* increase width for tablets */
+        font-size: 16px;
+        /* slightly smaller text */
+    }
+
+    .somatheeram-yoga-healing-row h2 {
+        font-size: 28px;
+        /* scale down heading */
+    }
+
+    .somatheeram-yoga-healing-row h6:last-child {
+        padding-bottom: 0px;
+    }
 }
 
 @media(min-width : 1026px) and (max-width:1399px) {
@@ -6758,7 +6812,8 @@ img {
         padding-left: 20px;
         padding-bottom: 0;
     }
-      .gallery {
+
+    .gallery {
         gap: 8px;
     }
 
@@ -6771,7 +6826,11 @@ img {
         height: 75%;
         bottom: -70px;
     }
- 
+
+    .somatheeram-yoga-healing-row h6:last-child {
+        padding-bottom: 0px;
+    }
+
 
 }
 
@@ -6882,6 +6941,7 @@ img {
         padding: 10px 80px;
         margin-top: 20px;
         text-wrap: nowrap;
+        margin-left: 30px;
     }
 
     .mobile-menu {
@@ -7702,35 +7762,41 @@ img {
         font-size: 15px !important;
         width: 90% !important;
     }
-    .offer-icon{
+
+    .offer-icon {
         position: absolute;
-    left:0px;
-    /* shift image left of text */
-    top: -65px;
-    /* raise slightly above h3 */
-    width: 80px;
-    /* adjust to match badge size */
-    height: auto;
+        left: 0px;
+        /* shift image left of text */
+        top: -65px;
+        /* raise slightly above h3 */
+        width: 80px;
+        /* adjust to match badge size */
+        height: auto;
     }
-    .left-img{
+
+    .left-img {
         display: none;
     }
-     .right-img{
+
+    .right-img {
         display: none;
     }
-    .yoga-flex{
+
+    .yoga-flex {
         width: 80%;
     }
-    .who-we-serve p{
+
+    .who-we-serve p {
         width: 100%;
         margin: 0 auto;
         padding-bottom: 20px;
     }
-    .who-we-serve li{
+
+    .who-we-serve li {
         font-size: 18px;
     }
 
-   .gallery {
+    .gallery {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
@@ -7745,10 +7811,12 @@ img {
         height: 30%;
         bottom: -40px;
     }
-    .yoga-cta-content{
+
+    .yoga-cta-content {
         width: 100%;
     }
-    .yoga-healing-journey{
+
+    .yoga-healing-journey {
         font-size: 18px;
         margin: 0;
         padding: 0;
@@ -7756,9 +7824,84 @@ img {
         text-wrap: wrap;
         min-width: 0;
     }
-  
 
+    .somatheeram-intro h3 {
+        font-size: 20px;
+    }
 
+    .somatheeram-intro p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .suites-section p {
+        width: 100%;
+    }
+
+    .somatheeram-ayurveda-packages p {
+        width: 100%;
+    }
+
+    .somatheeram-package-middle-image {
+        padding-top: 0;
+    }
+
+    .somatheeram-ayurveda-images-section .col-md-4 {
+        margin-bottom: 40px;
+        /* add spacing between stacked images */
+    }
+
+    .somatheeram-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        gap: 8px;
+    }
+
+    .somatheeram-gallery img {
+        max-width: 48%;
+        /* single image per row */
+    }
+
+    .somatheeram-gallery-wrapper::after {
+        width: 100%;
+        /* full width for small screens */
+        bottom: -40px;
+        height: 40%;
+    }
+
+    .somatheeram-left-img {
+        display: none;
+    }
+
+    .somatheeram-yoga-section h3 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .somatheeram-yoga-flex p {
+        font-size: 18px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .somatheeram-yoga-healing-row p,
+    .somatheeram-yoga-healing-row h6 {
+        width: 95%;
+        /* almost full width */
+        font-size: 15px;
+        /* smaller font for mobile */
+    }
+
+    .somatheeram-yoga-healing-row h2 {
+        font-size: 24px;
+        /* smaller heading */
+    }
+
+    .somatheeram-yoga-healing-row h6:last-child {
+        padding-bottom: 0px;
+    }
 }
 
 
@@ -8038,8 +8181,9 @@ img {
         padding-top: 30px !important;
     }
 }
-@media(min-width:769px) and (max-width:1170px){
-      .gallery {
+
+@media(min-width:769px) and (max-width:1170px) {
+    .gallery {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
