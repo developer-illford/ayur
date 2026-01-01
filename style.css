@@ -8411,3 +8411,66 @@ img {
         display: block;
     }
 }
+/* ===== COMMON ===== */
+.has-submenu {
+    position: relative;
+}
+
+.arrow {
+    font-size: 11px;
+    margin-left: 6px;
+    opacity: 0.7;
+}
+
+/* ===== DESKTOP MENU ===== */
+.nav-links .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 240px;
+    padding: 8px 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.nav-links .has-submenu:hover > .submenu {
+    display: block;
+}
+
+.nav-links .submenu li {
+    position: relative;
+}
+
+.nav-links .submenu li a {
+    padding: 10px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* SECOND LEVEL */
+.nav-links .submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-nav-links .submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+.mobile-nav-links .has-submenu > a {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* tap to open */
+.mobile-nav-links .has-submenu.open > .submenu {
+    display: block;
+}
