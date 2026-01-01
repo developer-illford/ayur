@@ -8417,7 +8417,7 @@ img {
 }
 
 .arrow {
-    font-size: 11px;
+    font-size: 20px;
     margin-left: 6px;
     opacity: 0.7;
 }
@@ -8473,4 +8473,7 @@ img {
 /* tap to open */
 .mobile-nav-links .has-submenu.open > .submenu {
     display: block;
+}
+.submenu li{
+    list-style-type: none;
 }
