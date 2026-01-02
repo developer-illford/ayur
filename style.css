@@ -513,17 +513,33 @@ img:hover {
 }
 
 .footer {
-    background-image: url(images/footer-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
 
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background-image: url("images/home/footer-left-bg.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    opacity: 1;
+    /* soft like screenshot */
+    pointer-events: none;
 }
 
 .ayurveda-footer {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: #585858;
+    white-space: nowrap;
 
 }
 
@@ -531,15 +547,17 @@ img:hover {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     color: #585858;
+    line-height: 1.6;
 
 }
 
 .sign-up-button {
     background-color: #815153;
-    padding: 10px 60px;
+    padding: 12px 55px;
     color: #FFFFFF;
     border: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
 }
 
 .about-ayurluxur h4 {
@@ -561,11 +579,28 @@ img:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.more-info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .more-info li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.more-info li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
     color: #585858;
-    font-size: 17px;
-    list-style-type: none;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+.more-info a {
+    text-decoration: none;
+    color: #585858;
 }
 
 .footer-destinations h4 {
@@ -605,28 +640,52 @@ img:hover {
     color: #585858;
 }
 
-.footer-items {
+/* .footer-items {
     padding-top: 50px;
     letter-spacing: 0.5px;
 
+} */
+.footer-items h4 {
+    font-size: 24px;
+    color: #313131;
+    margin-bottom: 15px;
+}
+
+.footer-items h5 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer-items p,
+.footer-items a,
+.footer-items li {
+    font-size: 16px;
+    color: #585858;
+    line-height: 1.7;
 }
 
 .footer-contents {
-    padding: 0px 150px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 80px 30px;
 }
 
 .footer-cta-col {
     padding-top: 40px;
 }
 
+.footer-cta {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .contact-us-button {
+    margin-top: 30px;
     font-size: 14px;
     color: #815153;
     border: 1px solid #815153;
-    padding: 8px 34px;
-    background: none;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 130px;
+    padding: 8px 32px;
+    background: transparent;
 }
 
 .follow-us-on {
@@ -634,33 +693,37 @@ img:hover {
 }
 
 .social-icons {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 13px;
+    margin-top: 40px;
+    font-size: 16px;
     color: #815153;
-    margin-bottom: 50px;
 }
 
 .social-icons a {
     width: 30px;
     height: 30px;
+    margin-left: 8px;
     border-radius: 50%;
     background-color: #815153;
-    color: white;
+    color: #fff;
     display: inline-flex;
-    /* makes it a flex container */
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
 }
 
 .footer-bottom {
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 0.5px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
     color: #585858;
+    text-align: center;
 }
 
+.footer-main {
+    padding-top: 50px;
 
+}
 
 
 
@@ -6466,8 +6529,31 @@ img {
     .somatheeram-yoga-healing-row h6:last-child {
         padding-bottom: 0px;
     }
-    
-    
+
+    .ayurveda-footer {
+        font-size: 18px;
+    }
+
+    .footer-description {
+        font-size: 15px;
+    }
+
+    .footer-items h4 {
+        font-size: 22px;
+    }
+
+    .footer-items p,
+    .footer-items a,
+    .footer-items li {
+        font-size: 15px;
+    }
+
+    .footer::after {
+        width: 45%;
+        opacity: 0.25;
+    }
+
+
 
 }
 
@@ -6832,6 +6918,19 @@ img {
 
     .somatheeram-yoga-healing-row h6:last-child {
         padding-bottom: 0px;
+    }
+
+    .footer-contents {
+        padding: 60px 50px 30px;
+    }
+
+    .sign-up-button {
+        padding: 12px 45px;
+    }
+
+    .footer::after {
+        width: 38%;
+        opacity: 0.35;
     }
 
 
@@ -7905,12 +8004,14 @@ img {
     .somatheeram-yoga-healing-row h6:last-child {
         padding-bottom: 0px;
     }
-      .home-healing-journey {
+
+    .home-healing-journey {
         margin-top: 40%;
         font-size: 20px;
         text-align: center;
-}
- /* Section spacing */
+    }
+
+    /* Section spacing */
     .home-cta-section {
         padding: 40px 15px;
     }
@@ -7927,7 +8028,7 @@ img {
     }
 
     /* Stack cards */
-    .why-choose-us-row > .col-md-4 {
+    .why-choose-us-row>.col-md-4 {
         max-width: 100%;
         flex: 0 0 100%;
         margin-bottom: 35px;
@@ -7996,6 +8097,83 @@ img {
         line-height: 1.6;
         color: #ffffff;
     }
+
+    .why-choose-us-row .wcu-overlay-text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px 20px;
+        /* background: rgba(0, 0, 0, 0.45); */
+        text-align: center;
+
+    }
+
+    .why-choose-us-row .wcu-overlay-text h4 {
+        font-size: 30px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .why-choose-us-row .wcu-overlay-text p {
+        font-size: 15px !important;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+
+    /* CTA row */
+    .footer-cta {
+        text-align: center;
+    }
+
+    .footer-cta .col-md-3,
+    .footer-cta .col-md-6 {
+        margin-bottom: 15px;
+    }
+
+    .ayurveda-footer {
+        white-space: normal;
+        font-size: 17px;
+    }
+
+    .sign-up-button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Main footer */
+    .footer-main>div {
+        margin-bottom: 35px;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .about-ayurluxur p {
+        text-align: center;
+    }
+
+    .contact-us-button {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    /* Social */
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons a {
+        margin: 0 6px;
+    }
+
+    /* Hide flower */
+    /* .footer::after {
+        display: none;
+    } */
 }
 
 
@@ -8064,10 +8242,13 @@ img {
         /* smaller thumbs */
         height: 44px;
     }
-      /* Remove border radius on container with background image */
+
+    /* Remove border radius on container with background image */
     .service-imag {
-        border-radius: 0 !important; /* override if needed */
-        overflow: visible; /* ensure nothing gets clipped */
+        border-radius: 0 !important;
+        /* override if needed */
+        overflow: visible;
+        /* ensure nothing gets clipped */
         position: relative;
         height: auto;
     }
@@ -8083,7 +8264,8 @@ img {
 
     /* Overlay content visible fully, flows naturally */
     .overlay-content {
-        position: static; /* normal flow so container height grows */
+        position: static;
+        /* normal flow so container height grows */
         /* background: rgba(0, 0, 0, 0.45);  */
         padding: 16px 14px;
         color: #fff;
@@ -8095,9 +8277,53 @@ img {
         max-width: 100%;
         width: 100%;
     }
-    .step{
+
+    .step {
         padding: 20px 20px 20px 70px;
     }
+
+
+    .why-choose-us-row .wcu-overlay-text {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px 20px;
+        /* background: rgba(0, 0, 0, 0.45); */
+        text-align: center;
+
+    }
+
+    .why-choose-us-row .wcu-overlay-text h4 {
+        font-size: 30px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .why-choose-us-row .wcu-overlay-text p {
+        font-size: 10px !important;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+
+    .footer-contents {
+        padding: 40px 20px 25px;
+    }
+
+    .footer-items h4 {
+        font-size: 20px;
+    }
+
+    .footer-items h5 {
+        font-size: 16px;
+    }
+
+    .footer-description {
+        font-size: 14px;
+    }
+
 }
 
 /* FIX: extra space below second horizontal image (768px–991px only) */
@@ -8326,6 +8552,7 @@ img {
         bottom: -40px;
     }
 }
+
 @media (max-width: 1429px) {
 
     .service-image {
@@ -8336,7 +8563,8 @@ img {
     .service-image img {
         width: 100%;
         height: auto;
-        min-height: 520px; /* KEY FIX */
+        min-height: 520px;
+        /* KEY FIX */
         object-fit: cover;
     }
 
@@ -8344,7 +8572,8 @@ img {
         position: absolute;
         inset: 0;
         display: flex;
-        align-items: flex-start; /* allow content to flow down */
+        align-items: flex-start;
+        /* allow content to flow down */
         padding: 24px 20px;
     }
 
@@ -8353,8 +8582,9 @@ img {
         width: 100%;
     }
 }
-@media(max-width:1500px){
-    .why-choose-us-row > .col-md-4 {
+
+@media(max-width:1500px) {
+    .why-choose-us-row>.col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 35px;
@@ -8383,7 +8613,7 @@ img {
         padding: 80px 20px 20px;
         /* background: rgba(0, 0, 0, 0.45); */
         text-align: center;
-       
+
     }
 
     .why-choose-us-row .wcu-overlay-text h4 {
@@ -8404,13 +8634,15 @@ img {
         font-size: 15.5px;
         line-height: 1.6;
     }
-      /* Make all images uniform */
+
+    /* Make all images uniform */
     .why-choose-us-row img {
         width: 100%;
         object-fit: cover;
         display: block;
     }
 }
+
 /* ===== COMMON ===== */
 .has-submenu {
     position: relative;
@@ -8431,11 +8663,11 @@ img {
     background: #fff;
     min-width: 240px;
     padding: 8px 0;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     z-index: 999;
 }
 
-.nav-links .has-submenu:hover > .submenu {
+.nav-links .has-submenu:hover>.submenu {
     display: block;
 }
 
@@ -8465,15 +8697,72 @@ img {
     padding-left: 15px;
 }
 
-.mobile-nav-links .has-submenu > a {
+.mobile-nav-links .has-submenu>a {
     display: flex;
     justify-content: space-between;
 }
 
 /* tap to open */
-.mobile-nav-links .has-submenu.open > .submenu {
+.mobile-nav-links .has-submenu.open>.submenu {
     display: block;
 }
-.submenu li{
+
+.submenu li {
     list-style-type: none;
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+   /* CTA row */
+    .footer-cta {
+        text-align: center;
+    }
+
+    .footer-cta .col-md-3,
+    .footer-cta .col-md-6 {
+        margin-bottom: 15px;
+    }
+
+    .ayurveda-footer {
+        white-space: normal;
+        font-size: 17px;
+    }
+
+    .sign-up-button {
+        display: inline-block;
+    white-space: nowrap;
+    padding: 12px 40px;
+    width: auto;
+    max-width: none;
+    }
+
+    /* Main footer */
+    .footer-main>div {
+        margin-bottom: 35px;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .about-ayurluxur p {
+        text-align: center;
+    }
+
+    .contact-us-button {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    /* Social */
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons a {
+        margin: 0 6px;
+    }
+
+    /* Hide flower */
+    /* .footer::after {
+        display: none;
+    } */
 }
