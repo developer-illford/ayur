@@ -102,7 +102,7 @@
                 <!-- LEFT MENU -->
                 <ul class="mobile-nav-links">
                     <li><a href="index.html">Home</a></li>
-                   <li class="has-submenu">
+                    <li class="has-submenu">
                         <a href="destinations.html">
                             Destinations <span class="arrow">▾</span>
                         </a>
@@ -309,11 +309,32 @@
                 <div class="col-md-4">
                     <div class="testimonial-card bg1">
                         <div class="profile-pic"></div>
+                     
                         <div class="testimonial-content">
+                            <h5 class="person-name">Stéphanie Gilbert</h5>
                             <div class="rating">★★★★★</div>
                             <p>
-                                "The Ayurvedic experience completely changed my energy and
-                                mindset!"
+                                "We had an absolutely exceptional experience thanks to Vincent and Anne, who organized a
+                                journey through India for us, followed by an unforgettable Ayurvedic retreat.
+                                Everything was perfectly arranged: a smooth itinerary, beautiful locations, high-quality
+                                accommodations, and a deep immersion into Indian culture.
+
+                                The Ayurvedic retreat took place in a wonderful center, offering highly professional,
+                                personalized treatments delivered by a caring and attentive team. The food was healthy,
+                                delicious, and perfectly adapted, greatly contributing to our well-being and to a true
+                                reconnection of body and mind.
+
+                                We would especially like to highlight the team’s professionalism, responsiveness, and
+                                availability. Always attentive, reassuring, and offering excellent advice, they
+                                supported us both before and throughout the entire stay. Every detail was thoughtfully
+                                considered.
+
+                                A heartfelt thank you for this impeccable organization and for such a deeply human,
+                                restorative, and transformative experience. We highly recommend this journey to anyone
+                                seeking an authentic, peaceful, and truly enriching travel experience." 
+
+                               
+                                
                             </p>
                             <div class="quote-mark">❞</div>
                         </div>
@@ -510,7 +531,7 @@
             </div>
 
         </div>
-    
+    </footer>
     <!-- Footer End -->
     <!-- Lightbox for image preview -->
     <div id="lightbox" class="lightbox">
@@ -563,6 +584,61 @@
                 });
             });
     </script>
+
+
+
+
+    <!--view more button via js-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.testimonial-content').forEach(card => {
+                const btn = document.createElement('span');
+                btn.className = 'view-more';
+                btn.textContent = 'View more';
+                card.appendChild(btn);
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('click', function (e) {
+
+            // Open modal
+            if (e.target.classList.contains('view-more')) {
+                const card = e.target.closest('.testimonial-card');
+                const text = card.querySelector('p').innerText;
+                const profile = card.querySelector('.profile-pic');
+                let bg = '';
+                if (profile) {
+                    bg = getComputedStyle(profile).backgroundImage; // now reads CSS background-image
+                }
+
+                const modal = document.getElementById('testimonialModal');
+                modal.querySelector('.modal-text').innerText = text;
+                modal.querySelector('.profile-pic').style.backgroundImage = bg;
+
+                modal.classList.add('active');
+            }
+
+            // Close modal
+            if (e.target.classList.contains('close-modal') || e.target.id === 'testimonialModal') {
+                document.getElementById('testimonialModal').classList.remove('active');
+            }
+
+        });
+    </script>
+
+    <div class="testimonial-modal" id="testimonialModal">
+        <div class="modal-content">
+            <div class="profile-pic"></div>
+            <div class="content">
+                <div class="rating">★★★★★</div> <!-- optional -->
+                <p class="modal-text"></p>
+            </div>
+            <span class="close-modal">&times;</span>
+        </div>
+    </div>
+
 
 </body>
 
