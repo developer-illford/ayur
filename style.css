@@ -1903,12 +1903,13 @@ img:hover {
 .testimonial-modal {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.6); /* optional overlay */
+    background: rgba(0, 0, 0, 0.6);
+    /* optional overlay */
     display: none;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     z-index: 9999;
-    
+
 }
 
 
@@ -1932,7 +1933,7 @@ img:hover {
     width: 90%;
     gap: 20px;
     position: relative;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Profile pic */
@@ -1976,6 +1977,7 @@ img:hover {
     cursor: pointer;
     color: #815153;
 }
+
 .person-name {
     margin-top: 10px;
     margin-bottom: 6px;
@@ -1987,12 +1989,13 @@ img:hover {
 }
 
 /* Responsive */
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .modal-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .modal-content .profile-pic {
         margin-bottom: 15px;
     }
@@ -2696,7 +2699,9 @@ img:hover {
     font-size: 18px;
     color: #313131;
 
-    display: inline-block;
+    display: block;
+    margin: 4px auto 0;
+    text-align: center;
     padding-bottom: 4px;
     margin-top: 4px;
 
@@ -8488,6 +8493,7 @@ img {
     .footer-description {
         font-size: 14px;
     }
+
     .arc-content {
         top: 50%;
         width: 90%;
