@@ -32,7 +32,7 @@
 
                 <ul class="nav-links">
                     <li><a href="somatheeram.html">Home</a></li>
-                   <li class="has-submenu">
+                    <li class="has-submenu">
                         <a href="destinations.html">
                             Destinations <span class="arrow">▾</span>
                         </a>
@@ -101,7 +101,7 @@
                 <!-- LEFT MENU -->
                 <ul class="mobile-nav-links">
                     <li><a href="index.html">Home</a></li>
-                   <li class="has-submenu">
+                    <li class="has-submenu">
                         <a href="destinations.html">
                             Destinations <span class="arrow">▾</span>
                         </a>
@@ -388,7 +388,7 @@
                 </div>
 
                 <!-- DESTINATIONS -->
-                 <div class="col-md-3 footer-items footer-destinations">
+                <div class="col-md-3 footer-items footer-destinations">
                     <h4>Destinations</h4>
                     <h5>Heart Of Kerala’s Villages</h5>
                     <p>South Kerala, India</p>
@@ -399,7 +399,7 @@
                     <p>Somatheeram Ayurveda Health Resort, South of Kovalam Trivandrum</p>
                     <p>Marari Beach Ayurveda Resort, Mararikulam Alleppey</p>
                     <p>Ayurvedam Sreenilayam, Calicut</p>
-                    
+
                 </div>
 
                 <!-- CONTACT -->
@@ -441,78 +441,81 @@
             </div>
 
         </div>
-    
-    <!-- Footer End -->
-    <!-- Lightbox for image preview -->
-     <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" alt="">
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="lightbox.js"></script>
-    <script src="marquee.js"></script>
-    
-
-    <script src="zoom.js"></script>
-    <script src="motion.js"></script>
+        <!-- Footer End -->
 
 
-    <!--thumbnail gallery for somatheeram accommodations -->
-    <script>
-        document.querySelectorAll(".card-gallery").forEach(gallery => {
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="lightbox.js"></script>
+        <script src="marquee.js"></script>
 
-            const mainImage = gallery.querySelector(".main-img");
-            const thumbnails = gallery.querySelectorAll(".thumbs img");
 
-            thumbnails.forEach((thumb, index) => {
+        <script src="zoom.js"></script>
+        <script src="motion.js"></script>
 
-                thumb.addEventListener("click", (e) => {
-                    e.stopPropagation(); // 🚫 STOP MODAL OPENING
 
-                    mainImage.src = thumb.src;
+        <!--thumbnail gallery for somatheeram accommodations -->
+        <script>
+            document.querySelectorAll(".card-gallery").forEach(gallery => {
 
-                    thumbnails.forEach(t => t.classList.remove("active"));
-                    thumb.classList.add("active");
+                const mainImage = gallery.querySelector(".main-img");
+                const thumbnails = gallery.querySelectorAll(".thumbs img");
+
+                thumbnails.forEach((thumb, index) => {
+
+                    thumb.addEventListener("click", (e) => {
+                        e.stopPropagation(); // 🚫 STOP MODAL OPENING
+
+                        mainImage.src = thumb.src;
+
+                        thumbnails.forEach(t => t.classList.remove("active"));
+                        thumb.classList.add("active");
+                    });
+
+                    if (index === 0) thumb.classList.add("active");
                 });
 
-                if (index === 0) thumb.classList.add("active");
             });
 
-        });
+        </script>
+        <!-- Hamburger -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const hamburger = document.getElementById("hamburger");
+                const mobileMenu = document.getElementById("mobileMenu");
+                const closeMenu = document.getElementById("closeMenu");
 
-    </script>
-    <!-- Hamburger -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const hamburger = document.getElementById("hamburger");
-            const mobileMenu = document.getElementById("mobileMenu");
-            const closeMenu = document.getElementById("closeMenu");
+                hamburger.addEventListener("click", () => {
+                    mobileMenu.classList.add("active");
+                    hamburger.classList.add("active");
+                });
 
-            hamburger.addEventListener("click", () => {
-                mobileMenu.classList.add("active");
-                hamburger.classList.add("active");
-            });
-
-            closeMenu.addEventListener("click", () => {
-                mobileMenu.classList.remove("active");
-                hamburger.classList.remove("active");
-            });
-        });
-    </script>
-    <!--dropdown for mobile-->
-    <script>
-        document.querySelectorAll('.mobile-nav-links .has-submenu > a')
-            .forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    this.parentElement.classList.toggle('open');
+                closeMenu.addEventListener("click", () => {
+                    mobileMenu.classList.remove("active");
+                    hamburger.classList.remove("active");
                 });
             });
-    </script>
+        </script>
+        <!--dropdown for mobile-->
+        <script>
+            document.querySelectorAll('.mobile-nav-links .has-submenu > a')
+                .forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        this.parentElement.classList.toggle('open');
+                    });
+                });
+        </script>
+
+        <!-- Lightbox for image preview -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightboxImg" alt="">
+        </div>
+
 
 </body>
 
