@@ -25,7 +25,7 @@ body {
 }
 
 .hover-zoom:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 
@@ -135,7 +135,7 @@ body {
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
-    gap: 15px 25px;
+    gap: 15px 15px;
     margin: 0;
     padding: 25px 0 0 0;
 }
@@ -1238,7 +1238,7 @@ body {
     /* text-align: center; */
     color: #fff;
     z-index: 5;
-    margin: auto;
+    margin:auto;
 
 }
 
@@ -5787,6 +5787,36 @@ img {
     font-size: 16px;
 }
 
+.contact-hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+
+    position: relative;
+    top: -190px;
+    /*  move content up */
+}
+
+.contact-hero-content h1 {
+    font-size: 38px;
+    /* font-weight: 500; */
+    margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.contactus-button {
+    padding: 15px 80px;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    outline: none;
+    background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
 /* Responsiveness */
 .hamburger {
     display: none;
@@ -6677,6 +6707,18 @@ img {
         opacity: 0.25;
     }
 
+    .contact-hero-content {
+        top: 250px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 35px;
+    }
+
+    .contactus-button {
+        padding: 12px 40px;
+        font-size: 35px;
+    }
 
 
 }
@@ -7057,6 +7099,18 @@ img {
         opacity: 0.35;
     }
 
+    .contact-hero-content {
+        top: -250px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 25px;
+    }
+
+    .contactus-button {
+        padding: 12px 40px;
+        font-size: 25px;
+    }
 
 }
 
@@ -8311,6 +8365,20 @@ img {
         background: rgba(0, 0, 0, 0.5);
         /* optional: semi-transparent background */
     }
+
+    .contact-hero-content {
+        transform: translateY(-40px);
+    }
+
+    .contact-hero-content h1 {
+        font-size: 25px;
+    }
+
+    .contactus-button {
+        padding: 12px 40px;
+        font-size: 25px;
+    }
+
 }
 
 
@@ -8492,8 +8560,19 @@ img {
     .arc-content p {
         font-size: 10px;
         margin-top: -35px;
+    }
 
+    .contact-hero-content {
+        top: 260px;
+    }
 
+    .contact-hero-content h1 {
+        font-size: 18px;
+    }
+
+    .contactus-button {
+        padding: 12px 40px;
+        font-size: 18px;
     }
 
 }
@@ -9002,4 +9081,32 @@ img {
     z-index: 10;
     display: inline-block;
     pointer-events: auto;
+}
+
+@media (min-width: 1025px) and (max-width: 1105px) {
+
+  .navbar {
+    padding: 18px 30px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .navbar-menu a {
+    font-size: 11px;
+    margin: 0 4px;
+    white-space: nowrap;
+  }
+
+  .navbar-menu a:not(:last-child)::after {
+    content: "|";
+    margin-left: 6px;
+    color: #7D7C7C;
+  }
+
 }
