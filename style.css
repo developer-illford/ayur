@@ -4063,7 +4063,10 @@ img {
 .slide:nth-child(even):hover img {
     transform: translateY(30px);
 }
-
+.marari-image-slider{
+    margin: 50px;
+    overflow: hidden;
+}
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -5816,6 +5819,8 @@ img {
     font-weight: bolder;
     font-size: 25px;
 }
+
+
 
 /* Responsiveness */
 .hamburger {
