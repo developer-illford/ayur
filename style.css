@@ -6689,6 +6689,7 @@ img {
     .footer-items a,
     .footer-items li {
         font-size: 15px;
+        margin-bottom: 0;
     }
 
     .footer::after {
