@@ -1139,10 +1139,10 @@ body {
     transition: transform 0.5s ease, filter 0.3s ease;
 }
 
-.destination-card:hover img {
+/* .destination-card:hover img {
     transform: scale(1.1);
     filter: brightness(0.9);
-}
+} */
 
 .lightbox {
     position: fixed !important;
@@ -2491,7 +2491,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 0;
 }
 

@@ -91,64 +91,72 @@ function updateDots() {
   }
 }
 
-// Manual drag (mouse)
-let isDown = false;
-let startX, scrollStart;
+document.addEventListener('DOMContentLoaded', () => {
 
-container.addEventListener('mousedown', (e) => {
-  isDown = true;
-  isUserScrolling = true;
-  startX = e.pageX;
-  scrollStart = container.scrollLeft;
-  container.style.cursor = 'grabbing';
-  stopAutoScroll();
+  document.querySelectorAll('.marari-image-slider, .image-slider')
+    .forEach(container => {
+
+      let isDown = false;
+      let startX;
+      let scrollStart;
+      let autoScroll;
+      let pauseTimer;
+
+      const speed = 1;
+
+      function startAutoScroll() {
+        stopAutoScroll();
+        autoScroll = setInterval(() => {
+          container.scrollLeft += speed;
+
+          if (container.scrollLeft >= container.scrollWidth / 2) {
+            container.scrollLeft = 0;
+          }
+        }, 20);
+      }
+
+      function stopAutoScroll() {
+        clearInterval(autoScroll);
+      }
+
+      // Mouse
+      container.addEventListener('mousedown', e => {
+        isDown = true;
+        startX = e.pageX;
+        scrollStart = container.scrollLeft;
+        container.style.cursor = 'grabbing';
+        stopAutoScroll();
+      });
+
+      container.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        const walk = e.pageX - startX;
+        container.scrollLeft = scrollStart - walk;
+      });
+
+      container.addEventListener('mouseup', endDrag);
+      container.addEventListener('mouseleave', endDrag);
+
+      function endDrag() {
+        if (!isDown) return;
+        isDown = false;
+        container.style.cursor = 'grab';
+        resumeAuto();
+      }
+
+      // Touch
+      container.addEventListener('touchstart', stopAutoScroll);
+      container.addEventListener('touchend', resumeAuto);
+
+      function resumeAuto() {
+        clearTimeout(pauseTimer);
+        pauseTimer = setTimeout(startAutoScroll, 1000);
+      }
+
+      startAutoScroll();
+    });
+
 });
-
-container.addEventListener('mouseleave', () => {
-  isDown = false;
-  container.style.cursor = 'grab';
-});
-
-container.addEventListener('mouseup', () => {
-  isDown = false;
-  container.style.cursor = 'grab';
-  triggerAutoResume();
-});
-
-container.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  const x = e.pageX;
-  const walk = x - startX;
-  container.scrollLeft = scrollStart - walk;
-  updateDots();
-});
-
-// Touch support
-container.addEventListener('touchstart', () => {
-  isUserScrolling = true;
-  stopAutoScroll();
-  if (scrollPauseTimeout) clearTimeout(scrollPauseTimeout);
-});
-
-container.addEventListener('touchmove', () => {
-  updateDots();
-});
-
-container.addEventListener('touchend', () => {
-  triggerAutoResume();
-});
-
-// Resume auto-scroll after short delay
-function triggerAutoResume() {
-  if (scrollPauseTimeout) clearTimeout(scrollPauseTimeout);
-  scrollPauseTimeout = setTimeout(() => {
-    isUserScrolling = false;
-    startAutoScroll();
-  }, 1000); // Resume 1s after manual interaction ends
-}
-
-// Initial start
-startAutoScroll();
 
 // JS for click-to-enlarge
 const modal = document.getElementById("imageModal");
