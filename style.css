@@ -5814,7 +5814,7 @@ img {
     background: linear-gradient(135deg, #98755400 0%, #98755400 80%, #9999993d 80%, #9999993d 100%);
     margin-bottom: 30px;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 /* Responsiveness */
@@ -8337,7 +8337,9 @@ img {
     .contact-us-button {
         display: block;
         margin: 20px auto 0;
+        
     }
+   
 
     /* Social */
     .social-icons {
@@ -8366,8 +8368,8 @@ img {
         /* optional: semi-transparent background */
     }
 
-    .contact-hero-content {
-        transform: translateY(-40px);
+   .contact-hero-content {
+        top: 400px !important;
     }
 
     .contact-hero-content h1 {
@@ -8563,7 +8565,7 @@ img {
     }
 
     .contact-hero-content {
-        top: 260px;
+        top: 400px;
     }
 
     .contact-hero-content h1 {
