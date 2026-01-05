@@ -1145,53 +1145,69 @@ img:hover {
     filter: brightness(0.9);
 }
 
-/* Lightbox (click-to-enlarge) */
 .lightbox {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.85) 70%);
+    backdrop-filter: blur(8px);
     display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 50px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
+    justify-content: center;
+    align-items: center;
+    z-index: 2147483647;
 
-/* .lightbox-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 900px;
-  border-radius: 10px;
-} */
+}
 
 .lightbox-content {
-    margin: auto;
-    display: block;
-    width: 75%;
-    max-width: 1000px;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 10px;
+    max-width: 88%;
+    max-height: 88%;
+    border-radius: 12px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.6);
+    animation: zoomIn 0.3s ease;
 }
-
-
-
 
 .close {
     position: absolute;
     top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+    right: 25px;
+    font-size: 34px;
+    color: #fff;
     cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s;
 }
 
 .close:hover {
     color: #ccc;
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.92);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .nav-links a.active {
@@ -1368,42 +1384,7 @@ img:hover {
 }
 
 
-/* --- Modal styles --- */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    overflow: auto;
-}
 
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: #ddd;
-}
 
 .home-cta-section {
     display: flex;
@@ -4694,7 +4675,7 @@ img {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0,0);
+    background: rgba(0, 0, 0, 0);
     z-index: 0;
 }
 

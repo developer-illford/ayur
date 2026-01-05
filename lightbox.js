@@ -1,23 +1,25 @@
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImg");
+const modal = document.getElementById("lightbox");
+const modalImg = document.getElementById("lightboxImg");
 const closeBtn = document.querySelector(".close");
 
-// ONLY zoom main images
+// ONLY images with class="main-img"
 document.querySelectorAll(".main-img").forEach(img => {
-
     img.style.cursor = "zoom-in";
 
-    img.addEventListener("click", function () {
+    img.addEventListener("click", () => {
         modal.style.display = "flex";
-        modalImg.src = this.src;
+        modalImg.src = img.src;
     });
 });
 
-// Close modal
-closeBtn.onclick = () => modal.style.display = "none";
+// Close button
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
-window.onclick = function (e) {
+// Click outside image to close
+modal.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.style.display = "none";
     }
-};
+});
