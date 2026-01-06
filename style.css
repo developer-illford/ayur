@@ -3599,17 +3599,23 @@ img {
     /* ensures card stays above images */
     height: auto;
 }
-
-/* Move only even-number-image containers to the right */
-.image-card-row .col-md-6:nth-child(odd) img {
-    transform: translateX(-80px);
-    /* Increase / decrease as required */
+.left-info-card,
+.right-info-card {
+    background-image: url("images/ayurvedam-sreenilayam/cards-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;      /* or contain */
+    background-position: center;
 }
 
-/* Move only even-number-image containers to the right */
+.image-card-row .col-md-6:nth-child(odd) img {
+    transform: translateX(-80px);
+  
+}
+
+
 .image-card-row .col-md-6:nth-child(even) img {
     transform: translateX(20px);
-    /* Increase / decrease as required */
+
 }
 
 .left-info-card h4 {
@@ -8385,6 +8391,9 @@ img {
         padding: 12px 40px;
         font-size: 25px;
     }
+     
+
+
 
 }
 
@@ -9116,4 +9125,122 @@ img {
     color: #7D7C7C;
   }
 
+}
+
+/* reserve your retreat*/
+.booking-hero-section{
+   
+    position: relative;
+    height: 100vh;
+     background-color: #fbf6ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: "Raleway", sans-serif;
+    /* ensures overlay doesn’t overflow */
+
+}
+.booking-hero-section .nav-links a{
+    color: #313131;
+}
+.booking-hero-section .logo-text{
+    color: #313131;
+}
+.booking-hero-section .nav-links li:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    /* color: #8a8585; */
+}
+.booking-section {
+  background: #f6f1ea;
+  padding: 40px 0;
+  font-family: "Georgia", serif;
+}
+
+.booking-container {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #c9c1b7;
+}
+
+.booking-header {
+  text-align: center;
+  padding: 16px;
+  border-bottom: 1px solid #c9c1b7;
+}
+
+.booking-header h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.calendar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.calendar-month {
+  padding: 30px;
+}
+
+.calendar-month:first-child {
+  border-right: 1px solid #c9c1b7;
+}
+
+.calendar-month h4 {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.weekdays,
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.weekdays span {
+  font-size: 12px;
+  color: #777;
+  padding-bottom: 10px;
+}
+
+.dates span {
+  font-size: 13px;
+  padding: 8px 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dates span:hover {
+  background: #e7e1d8;
+  border-radius: 50%;
+}
+
+.dates span.selected {
+  background: #8b7d6b;
+  color: #fff;
+}
+
+.dates span.in-range {
+  background: #e7e1d8;
+  border-radius: 0;
+}
+
+.dates span.disabled {
+  pointer-events: none;
+  color: #ccc;
+}
+.modify-link {
+  display: block;
+  text-align: right;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #555;
 }
