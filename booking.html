@@ -10,6 +10,9 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 </head>
 
 <body>
@@ -163,33 +166,93 @@
 
     </header>
 
-   
 
 
+    <!-- Booking Tabs Section -->
+    <section class="booking-tabs-section">
+        <div class="container">
 
+            <!-- Place Tabs -->
+            <div class="place-tabs">
+                <button class="place-tab active" data-place="somatheeram">
+                    Somatheeram
+                </button>
+                <button class="place-tab" data-place="marari">
+                    Marari
+                </button>
+                <button class="place-tab" data-place="sreenilayam">
+                    Sreenilayam
+                </button>
+            </div>
 
+            <!-- Booking Form -->
+            <form class="booking-form" action="send-booking.php" method="POST">
 
+                <!-- Honeypot field (ANTI-SPAM) -->
+                <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
 
+                <!-- Selected place -->
+                <input type="hidden" name="place" id="selectedPlace" value="Somatheeram">
 
+                <!-- Row 1 -->
+                <div class="booking-field">
+                    <label>Check-in</label>
+                    <input type="text" id="checkin" name="checkin" placeholder="Checkin" required>
+                </div>
 
+                <div class="booking-field">
+                    <label>Check-out</label>
+                    <input type="text" id="checkout" name="checkout" placeholder="Checkout" required>
+                </div>
 
+                <div class="booking-field">
+                    <label>Guests</label>
+                    <select name="guests" required>
+                        <option value="">Select Guests</option>
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>2 Adults + 1 Child</option>
+                        <option>2 Adults + 2 Children</option>
+                    </select>
+                </div>
 
+                <!-- Row 2 -->
+                <div class="booking-field">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
 
+                <div class="booking-field">
+                    <label>Contact</label>
+                    <input type="text" name="contact" placeholder="Contact" required>
+                </div>
 
+                <div class="booking-field">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
 
+                <div class="booking-field">
+                    <label>Location</label>
+                    <input type="text" name="location" placeholder="Location">
+                </div>
 
+                <!-- Message -->
+                <div class="booking-field">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Message" rows="2"></textarea>
+                </div>
 
+                <!-- Submit -->
+                <div class="booking-field booking-btn">
+                    <label class="submit-label">Send us your message</label>
+                    <button type="submit">SUBMIT</button>
+                </div>
 
+            </form>
 
-
-
-
-
-
-
-
-
-
+        </div>
+    </section>
 
 
 
@@ -316,9 +379,36 @@
     <script src="motion.js"></script>
 
 
+    <script>
+        const tabs = document.querySelectorAll(".place-tab");
+        const placeInput = document.getElementById("selectedPlace");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                tabs.forEach(t => t.classList.remove("active"));
+                tab.classList.add("active");
+
+                placeInput.value = tab.innerText.trim();
+            });
+        });
+    </script>
 
 
-
+    <!--Initialize Flatpickr-->
+    <script>
+        flatpickr("#checkin, #checkout", {
+            dateFormat: "Y-m-d"
+        });
+    </script>
+    <!-- WHATSAPP FLOATING ICON -->
+    <div class="floating_btn_helpline">
+        <a target="_blank" href="tel:+919895174867">
+            <div class="contact_icon_helpline">
+                <img style="width: 40px;" src="images/whatsapp-brands-solid-full.svg" alt="">
+            </div>
+        </a>
+        <!-- <p class="text_icon_helpline">Helpline</p> -->
+    </div>
 </body>
 
 </html>

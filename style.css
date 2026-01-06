@@ -1238,7 +1238,7 @@ body {
     /* text-align: center; */
     color: #fff;
     z-index: 5;
-    margin:auto;
+    margin: auto;
 
 }
 
@@ -3599,17 +3599,19 @@ img {
     /* ensures card stays above images */
     height: auto;
 }
+
 .left-info-card,
 .right-info-card {
     background-image: url("images/ayurvedam-sreenilayam/cards-background.png");
     background-repeat: no-repeat;
-    background-size: cover;      /* or contain */
+    background-size: cover;
+    /* or contain */
     background-position: center;
 }
 
 .image-card-row .col-md-6:nth-child(odd) img {
     transform: translateX(-80px);
-  
+
 }
 
 
@@ -4069,10 +4071,12 @@ img {
 .slide:nth-child(even):hover img {
     transform: translateY(30px);
 }
-.marari-image-slider{
+
+.marari-image-slider {
     margin: 50px;
     overflow: hidden;
 }
+
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -8348,9 +8352,9 @@ img {
     .contact-us-button {
         display: block;
         margin: 20px auto 0;
-        
+
     }
-   
+
 
     /* Social */
     .social-icons {
@@ -8379,7 +8383,7 @@ img {
         /* optional: semi-transparent background */
     }
 
-   .contact-hero-content {
+    .contact-hero-content {
         top: 400px !important;
     }
 
@@ -8391,7 +8395,7 @@ img {
         padding: 12px 40px;
         font-size: 25px;
     }
-     
+
 
 
 
@@ -9101,208 +9105,370 @@ img {
 
 @media (min-width: 1025px) and (max-width: 1105px) {
 
-  .navbar {
-    padding: 18px 30px;
-  }
+    .navbar {
+        padding: 18px 30px;
+    }
 
-  .navbar-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 6px;
-  }
+    .navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
 
-  .navbar-menu a {
-    font-size: 11px;
-    margin: 0 4px;
-    white-space: nowrap;
-  }
+    .navbar-menu a {
+        font-size: 11px;
+        margin: 0 4px;
+        white-space: nowrap;
+    }
 
-  .navbar-menu a:not(:last-child)::after {
-    content: "|";
-    margin-left: 6px;
-    color: #7D7C7C;
-  }
+    .navbar-menu a:not(:last-child)::after {
+        content: "|";
+        margin-left: 6px;
+        color: #7D7C7C;
+    }
 
 }
 
 /* reserve your retreat*/
-.booking-hero-section{
-   
+.booking-hero-section {
+
     position: relative;
-    height: 100vh;
-     background-color: #fbf6ef;
+    height: 30vh;
+    background-color: #fbf6ef;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: visible;
     font-family: "Raleway", sans-serif;
     /* ensures overlay doesn’t overflow */
 
 }
-.booking-hero-section .nav-links a{
+
+.booking-hero-section .nav-links a {
     color: #313131;
 }
-.booking-hero-section .logo-text{
+
+.booking-hero-section .logo-text {
     color: #313131;
 }
+
 .booking-hero-section .nav-links li:not(:last-child)::after {
     content: "|";
     margin-left: 15px;
     /* color: #8a8585; */
 }
+
 .booking-section {
-  background: #f6f1ea;
-  padding: 40px 0;
-  font-family: "Georgia", serif;
+    background: #f6f1ea;
+    padding: 40px 0;
+    font-family: "Georgia", serif;
 }
 
 .booking-container {
-  max-width: 1100px;
-  margin: auto;
-  background: #fff;
-  border: 1px solid #c9c1b7;
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #c9c1b7;
 }
 
 .booking-header {
-  text-align: center;
-  padding: 16px;
-  border-bottom: 1px solid #c9c1b7;
+    text-align: center;
+    padding: 16px;
+    border-bottom: 1px solid #c9c1b7;
+
 }
 
 .booking-header h3 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-.calendar-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+
+
+
+
+
+
+.booking-tabs-section {
+    background: #fbf6ef;
+    padding: 80px 15px;
+    border-bottom: 1px solid #eee;
+    font-family: "Raleway", sans-serif;
 }
 
-.calendar-month {
-  padding: 30px;
+/* Place Tabs */
+.place-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.calendar-month:first-child {
-  border-right: 1px solid #c9c1b7;
+.place-tab {
+    background: #815153;
+    border: 1px solid #815153;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 35px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
 }
 
-.calendar-month h4 {
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+.place-tab.active {
+    color: #815153;
+    background-color: #FFFFFF;
+
+    font-weight: 600;
 }
 
-.weekdays,
-.dates {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  text-align: center;
+/* .place-tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #7a4a2e;
+} */
+
+/* Booking Form */
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background: #fbf6ef;
+    padding: 25px;
+    border-radius: 8px;
 }
 
-.weekdays span {
-  font-size: 12px;
-  color: #777;
-  padding-bottom: 10px;
+.booking-field {
+    display: flex;
+    flex-direction: column;
 }
 
-.dates span {
-  font-size: 13px;
-  padding: 8px 0;
-  cursor: pointer;
-  border-radius: 50%;
+.booking-field label {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 6px;
 }
 
-.dates span:hover {
-  background: #e7e1d8;
-  border-radius: 50%;
+.booking-field input,
+.booking-field select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-.dates span.selected {
-  background: #8b7d6b;
-  color: #fff;
+.booking-btn button {
+    padding: 12px;
+    background: #815153;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
 }
 
-.dates span.in-range {
-  background: #e7e1d8;
-  border-radius: 0;
+.booking-btn button:hover {
+    background: #FFFFFF;
+    color: #815153;
 }
 
-.dates span.disabled {
-  pointer-events: none;
-  color: #ccc;
+.booking-field textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
 }
-.modify-link {
-  display: block;
-  text-align: right;
-  padding: 15px 20px;
-  font-size: 12px;
-  text-decoration: underline;
-  color: #555;
+
+.booking-field input::placeholder,
+.booking-field textarea::placeholder {
+    color: #000;
 }
+
+/* Hover date */
+.flatpickr-day:hover {
+    background: #815153 !important;
+    color: #fff;
+}
+
+/* Selected date */
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+    background: #815153;
+    border-color: #815153;
+    color: #fff;
+}
+
+/* Today date */
+.flatpickr-day.today {
+    border-color: #815153;
+}
+
+/* Today + selected */
+.flatpickr-day.today.selected {
+    background: #815153;
+    color: #fff;
+}
+
+/* Bottom links: Today & Clear */
+.flatpickr-footer .flatpickr-clear,
+.flatpickr-footer .flatpickr-today {
+    color: #815153;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+
+    .place-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .place-tab {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+    }
+
+    .booking-btn button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .booking-form {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .place-tab {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .booking-form {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+.floating_btn_booking {
+    position: fixed;
+    bottom: 270px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.contact_icon_booking {
+    background-color: #815153;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 3px #999;
+
+    box-shadow: 0 0 0 0 #815153;
+    animation: pulsing-booking 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+/* Image size control */
+.contact_icon_booking img {
+    width: 28px;
+    height: auto;
+}
+
+@keyframes pulsing-booking {
+    to {
+        box-shadow: 0 0 0 30px rgba(255, 159, 28, 0);
+    }
+}
+
+
+/*whatsapp floating icon*/
 
 .floating_btn_helpline {
-  position: fixed;
-  bottom: 150px;
-  right: 30px;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    width: 100px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
 }
 
 
 
 @keyframes pulsing {
-  to {
-    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
-  }
+    to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
 }
 
 .contact_icon_helpline {
-  background-color: #42db87;
-  color: #fff;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: 2px 2px 3px #999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translatey(0px);
-  animation: pulse 1.5s infinite;
-  box-shadow: 0 0 0 0 #42db87;
-  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  font-weight: normal;
-  font-family: sans-serif;
-  text-decoration: none !important;
-  transition: all 300ms ease-in-out;
+    background-color: #42db87;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(0px);
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 #42db87;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
 }
 
 
 .text_icon {
-  margin-top: 4px;
-  font-size: 15px;
-  font-weight: bold;
-  color: rgb(13, 160, 25);
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(13, 160, 25);
 }
-
-
 @media (max-width:992px) {
-  .floating_btn_helpline {
-    right: 30px;
-    bottom: 100px;
-  }
+    .floating_btn_helpline {
+        right: 30px;
+        bottom: 100px;
+    }
 }
