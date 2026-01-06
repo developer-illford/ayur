@@ -8396,7 +8396,166 @@ img {
         font-size: 25px;
     }
 
+    .about-hero-section {
+        background-image: url('images/about/hero-img-phn.png');
+        height: 70vh;
+    }
 
+    .about-hero-section::after {
+        background: transparent;
+    }
+
+    .ayurveda-experiences-hero-section {
+        background-image: url('images/ayurveda-experiences/hero-img-phn.png');
+        height: 70vh;
+
+    }
+
+    .ayurveda-experiences-hero-section::after {
+        background: transparent;
+    }
+
+    .ayurvedam-sreenilayam-hero-section {
+        background-image: url('images/ayurvedam-sreenilayam/hero-img-phn.png');
+        height: 70vh;
+        background-position: right center;
+
+    }
+
+    .ayurvedam-sreenilayam-hero-section::after {
+        background: transparent;
+
+    }
+
+    .contact-hero-section {
+        background-image: url('images/contact/hero-img-phn.png');
+        height: 70vh;
+        background-position: left center;
+
+    }
+
+    .contact-hero-section::after {
+        background: transparent;
+
+    }
+
+    .destination-hero-section {
+        background-image: url('images/Destinations/hero-img-phn.jpg');
+        height: 70vh;
+    }
+
+    .destination-hero-section::after {
+        background: transparent;
+
+    }
+
+    .exclusive-offers-hero-section {
+        background-image: url('images/exclusive offers/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .exclusive-offers-hero-section::after {
+        background: transparent;
+
+    }
+
+    .marari-cottages-hero-section {
+        background-image: url('images/marari-cottages/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .marari-cottages-hero-section::after {
+        background: transparent;
+
+    }
+
+    .marari-ayurveda-hero-section {
+        background-image: url('images/marari-ayurveda/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .marari-ayurveda-hero-section::after {
+        background: transparent;
+    }
+
+    .marari-hero-section {
+        background-image: url('images/marari/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .marari-hero-section::after {
+        background: transparent;
+    }
+
+    .somatheeram-cottages-hero-section {
+        background-image: url('images/somatheeram-cottages/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .somatheeram-cottages-hero-section::after {
+        background: transparent;
+    }
+
+    .somatheeram-ayurveda-hero-section {
+        background-image: url('images/somatheeram-ayurveda/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .somatheeram-ayurveda-hero-section::after {
+        background: transparent;
+    }
+
+    .somatheeram-hero-section {
+        background-image: url('images/somatheeram/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .somatheeram-hero-section::after {
+        background: transparent;
+    }
+
+    .ayurvedam-sreenilayam-cottage-hero-section {
+        background-image: url('images/sreenilayam-cottages/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .ayurvedam-sreenilayam-cottage-hero-section::after {
+        background: transparent;
+    }
+
+    .sreenilayam-ayurveda-hero-section {
+        background-image: url('images/sreenilayam-ayurveda/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .sreenilayam-ayurveda-hero-section::after {
+        background: transparent;
+    }
+
+    .yoga-hero-section {
+        background-image: url('images/Yoga/hero-img-phn.png');
+        height: 70vh;
+    }
+
+    .yoga-hero-section::after {
+        background: transparent;
+    }
+
+    .home-hero-section {
+        height: 70vh;
+    }
+
+
+    .slide-1 {
+        background-image: url('images/home/hero-img-phn.png');
+    }
+
+    .slide-2 {
+        background-image: url('images/home/banner-slider2-phn.png') !important;
+        background-size: cover !important;
+        background-position: left center !important;
+
+    }
 
 
 }
@@ -9078,6 +9237,26 @@ img {
     /* behind text */
 }
 
+.slide-1 {
+    background-image: url('images/home/home-hero.jpg');
+}
+
+.slide-2 {
+    background-image: url('images/home/banner-slider2.png');
+}
+
+.slide-3 {
+    background-image: url('images/home/banner-slider3.jpg');
+}
+
+.slide-4 {
+    background-image: url('images/home/banner-slider4.jpg');
+}
+
+.slide-5 {
+    background-image: url('images/home/banner-slider5.jpeg');
+}
+
 /* Initial state */
 .fade-up {
     opacity: 0;
@@ -9418,7 +9597,7 @@ img {
     bottom: 150px;
     right: 30px;
     width: 100px;
-    height:100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9466,9 +9645,14 @@ img {
     font-weight: bold;
     color: rgb(13, 160, 25);
 }
+
 @media (max-width:992px) {
     .floating_btn_helpline {
         right: 30px;
         bottom: 100px;
+    }
+
+    .floating_btn_booking {
+        bottom: 230px;
     }
 }
