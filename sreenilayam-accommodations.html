@@ -349,7 +349,7 @@
                         For 25+ years, my partner and I have been sharing authentic Ayurveda in Kerala through trusted
                         partnerships with three renowned centers across the South, Central, and North regions.
                     </p>
-                    <button class="contact-us-button" onclick="window.location.href='contact.html'">Contact Us</button> 
+                    <button class="contact-us-button" onclick="window.location.href='contact.html'">Contact Us</button>
                 </div>
 
                 <!-- MORE INFO -->
@@ -420,52 +420,60 @@
             </div>
 
         </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Lightbox for image preview -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="">
+    </div>
 
-        <!-- Footer End -->
-        <!-- Lightbox for image preview -->
-        <div id="lightbox" class="lightbox">
-            <span class="close">&times;</span>
-            <img class="lightbox-content" id="lightboxImg" alt="">
-        </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="lightbox.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <script src="lightbox.js"></script>
-        
-        <script src="zoom.js"></script>
-        <script src="motion.js"></script>
-        <!-- Hamburger -->
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const hamburger = document.getElementById("hamburger");
-                const mobileMenu = document.getElementById("mobileMenu");
-                const closeMenu = document.getElementById("closeMenu");
+    <script src="zoom.js"></script>
+    <script src="motion.js"></script>
+    <!-- Hamburger -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
 
-                hamburger.addEventListener("click", () => {
-                    mobileMenu.classList.add("active");
-                    hamburger.classList.add("active");
-                });
+            hamburger.addEventListener("click", () => {
+                mobileMenu.classList.add("active");
+                hamburger.classList.add("active");
+            });
 
-                closeMenu.addEventListener("click", () => {
-                    mobileMenu.classList.remove("active");
-                    hamburger.classList.remove("active");
+            closeMenu.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    </script>
+    <!--dropdown for mobile-->
+    <script>
+        document.querySelectorAll('.mobile-nav-links .has-submenu > a')
+            .forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
                 });
             });
-        </script>
-        <!--dropdown for mobile-->
-        <script>
-            document.querySelectorAll('.mobile-nav-links .has-submenu > a')
-                .forEach(link => {
-                    link.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    });
-                });
-        </script>
-
+    </script>
+    <!-- WHATSAPP FLOATING ICON -->
+    <div class="floating_btn_helpline">
+        <a target="_blank" href="tel:+919895174867">
+            <div class="contact_icon_helpline">
+                <img style="width: 40px;" src="images/whatsapp-brands-solid-full.svg" alt="">
+            </div>
+        </a>
+        <!-- <p class="text_icon_helpline">Helpline</p> -->
+    </div>
 
 </body>
 
