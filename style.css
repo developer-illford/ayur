@@ -2765,7 +2765,7 @@ body {
 .exclusive-offers-hero-section {
     position: relative;
     height: 100vh;
-    background: url('images/exclusive offer/exclusive-offer-banner.jpg') center/cover no-repeat;
+    background: url('images/exclusive offers/exclusive-offer-banner.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
