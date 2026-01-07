@@ -461,7 +461,7 @@
                         For 25+ years, my partner and I have been sharing authentic Ayurveda in Kerala through trusted
                         partnerships with three renowned centers across the South, Central, and North regions.
                     </p>
-                    <button class="contact-us-button" onclick="window.location.href='contact.html'">Contact Us</button> 
+                    <button class="contact-us-button" onclick="window.location.href='contact.html'">Contact Us</button>
                 </div>
 
                 <!-- MORE INFO -->
@@ -546,8 +546,8 @@
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="lightbox.js"></script>
-    
-  
+
+
 
     <script src="zoom.js"></script>
     <script src="motion.js"></script>
@@ -637,17 +637,32 @@
         </div>
     </div>
 
- <!-- WHATSAPP FLOATING ICON -->
+  <!-- WHATSAPP FLOATING ICON -->
     <div class="floating_btn_helpline">
-        <a target="_blank" href="tel:+919895174867">
-            <div class="contact_icon_helpline">
-                <img style="width: 40px;" src="images/whatsapp-brands-solid-full.svg" alt="">
-            </div>
-        </a>
-        <!-- <p class="text_icon_helpline">Helpline</p> -->
+        <div class="contact_icon_helpline" onclick="toggleWhatsAppPopup()">
+            <img style="width: 40px;" src="images/whatsapp-brands-solid-full.svg" alt="WhatsApp">
+        </div>
+
+        <!-- WhatsApp Popup -->
+        <div class="whatsapp_popup" id="whatsappPopup">
+            <a href="https://wa.me/+919895174867" target="_blank">
+                <img src="images/flags/india.svg" class="flag-icon" alt="India">
+                India
+            </a>
+            <a href="https://wa.me/+33781626629" target="_blank">
+                <img src="images/flags/eu.svg" class="flag-icon" alt="Europe">
+                Europe
+            </a>
+        </div>
     </div>
 
-    
+    <script>
+        function toggleWhatsAppPopup() {
+            const popup = document.getElementById("whatsappPopup");
+            popup.style.display = popup.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
     <!-- CALENDAR FLOATING ICON -->
     <div class="floating_btn_booking">
         <a href="booking.html">
